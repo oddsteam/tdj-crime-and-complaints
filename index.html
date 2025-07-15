@@ -21,10 +21,14 @@
       background-size: cover;   /* ปรับให้ครอบเต็มพื้นที่ */
       background-position: center;
     }
+
+    .section {
+      scroll-snap-align: start;
+    }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="overflow-y-scroll scroll-smooth">
+<body class="">
 
   <!-- Fixed Navigation -->
   <nav class="fixed top-1/2 right-6 transform -translate-y-1/2 space-y-4 z-50">
@@ -40,61 +44,64 @@
     <a href="#section10" class="block w-3 h-3 rounded-full bg-gray-400 hover:bg-blue-500 transition"></a>
   </nav>
 
-  <section id="section1" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold heading">
-    <!-- <img src="heading.png" alt="Background" class="w-full h-full object-cover">
-    <div class="absolute inset-0 flex items-center justify-center">
-      <h1 class="text-white text-4xl font-bold bg-black bg-opacity-50 p-4 rounded">
-        ถอดรหัสวิกฤติคดีอาชญากรรมไทย<br/>
-        เมื่อความยุติธรรมที่ล่าช้า คือความอยุติธรรม
-      </h1>
-    </div>
-    <img src="highlight.png"
-       alt="Decorative image"
-       class="absolute h-auto left-[35%] w-[13%]"
-    /> -->
-    <!-- <img src="landing.png" alt="" class="w-full object-cover"> -->
-    <div class="flex items-center justify-center" style="flex-direction: column; margin-top: -20px;">
-      <div style="font-family: 'ChakraPetch-Bold'; font-size: 135px;">ถอดรหัสวิกฤต</div>
-      <div style="font-family: 'ChakraPetch-Bold'; font-size: 96px; margin-top: 100px;">คดีอาชญากรรมไทย</div>
-      <div style="font-family: 'Kart-Satapat'; font-size: 64px; transform: rotate(-6.4deg); margin-top: 100px;">เมื่อ<span style="color: #FEEF38">ความยุติธรรม</span>ที่ล่าช้า</div>
-      <div style="font-family: 'Kart-Satapat'; font-size: 64px; transform: rotate(-6.4deg); margin-top: 30px;">คือ<span style="color: #FEEF38">ความอยุติธรรม</span></div>
-    </div>
-  </section>
+  <div style="scroll-snap-type: y mandatory; overflow-y: scroll; height: 100vh;">
+    <section id="section1" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold heading">
+      <!-- <img src="heading.png" alt="Background" class="w-full h-full object-cover">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="text-white text-4xl font-bold bg-black bg-opacity-50 p-4 rounded">
+          ถอดรหัสวิกฤติคดีอาชญากรรมไทย<br/>
+          เมื่อความยุติธรรมที่ล่าช้า คือความอยุติธรรม
+        </h1>
+      </div>
+      <img src="highlight.png"
+        alt="Decorative image"
+        class="absolute h-auto left-[35%] w-[13%]"
+      /> -->
+      <!-- <img src="landing.png" alt="" class="w-full object-cover"> -->
+      <div class="flex items-center justify-center" style="flex-direction: column; margin-top: -20px;">
+        <div style="font-family: 'ChakraPetch-Bold'; font-size: 135px;">ถอดรหัสวิกฤต</div>
+        <div style="font-family: 'ChakraPetch-Bold'; font-size: 96px; margin-top: 100px;">คดีอาชญากรรมไทย</div>
+        <div style="font-family: 'Kart-Satapat'; font-size: 64px; transform: rotate(-6.4deg); margin-top: 100px;">เมื่อ<span style="color: #FEEF38">ความยุติธรรม</span>ที่ล่าช้า</div>
+        <div style="font-family: 'Kart-Satapat'; font-size: 64px; transform: rotate(-6.4deg); margin-top: 30px;">คือ<span style="color: #FEEF38">ความอยุติธรรม</span></div>
+      </div>
+    </section>
 
-  <section id="section2" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="stats.png" alt="" class="w-full object-cover">
-  </section>
+    <section id="section2" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="stats.png" alt="" class="w-full object-cover">
+    </section>
 
-  <section id="section3" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="stats-scene-1.png" alt="" class="w-full h-full object-cover">
-  </section>
+    <section id="section3" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="stats-scene-1.png" alt="" class="w-full h-full object-cover">
+    </section>
 
-  <section id="section4" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="stats-scene-2.png" alt="" class="w-full h-full object-cover">
-  </section>
+    <section id="section4" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="stats-scene-2.png" alt="" class="w-full h-full object-cover">
+    </section>
 
-  <section id="section5" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="stats-scene-3.png" alt="" class="w-full h-full object-cover">
-  </section>
+    <section id="section5" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="stats-scene-3.png" alt="" class="w-full h-full object-cover">
+    </section>
 
-  <section id="section6" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="stats-scene-4.png" alt="" class="w-full h-full object-cover">
-  </section>
+    <section id="section6" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="stats-scene-4.png" alt="" class="w-full h-full object-cover">
+    </section>
 
-  <section id="section7" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="stats-scene-5.png" alt="" class="w-full h-full object-cover">
-  </section>
+    <section id="section7" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="stats-scene-5.png" alt="" class="w-full h-full object-cover">
+    </section>
 
-  <section id="section8" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="stats-scene-6.png" alt="" class="w-full h-full object-cover">
-  </section>
+    <section id="section8" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="stats-scene-6.png" alt="" class="w-full h-full object-cover">
+    </section>
 
-  <section id="section9" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="data-folders.png" alt="" class="w-full h-full object-cover">
-  </section>
+    <section id="section9" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="data-folders.png" alt="" class="w-full h-full object-cover">
+    </section>
 
-  <section id="section10" class="h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-    <img src="investigation-process.png" alt="" class="w-full h-full object-cover">
-  </section>
+    <section id="section10" class="section h-100 flex items-center justify-center bg-black text-white text-4xl font-bold">
+      <img src="investigation-process.png" alt="" class="w-full h-full object-cover">
+    </section>
+  </div>
+
 </body>
 </html>
