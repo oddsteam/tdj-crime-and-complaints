@@ -11,6 +11,16 @@
     }
 
     @font-face {
+      font-family: ChakraPetch-BoldItalic;
+      src: url('css/fonts/Chakra_Petch/ChakraPetch-BoldItalic.ttf');
+    }
+
+    @font-face {
+      font-family: ChakraPetch-Regular;
+      src: url('css/fonts/Chakra_Petch/ChakraPetch-Regular.ttf');
+    }
+
+    @font-face {
       font-family: Kart-Satapat;
       src: url('css/fonts/Kart-Satapat.ttf');
     }
@@ -19,6 +29,13 @@
       background-image: url('landing.png');
       background-repeat: no-repeat;
       background-size: cover;   /* ปรับให้ครอบเต็มพื้นที่ */
+      background-position: center;
+    }
+
+    #section2 {
+      background-image: url('stats.png');
+      background-repeat: no-repeat;
+      background-size: cover;
       background-position: center;
     }
 
@@ -75,7 +92,12 @@
     </section>
 
     <section id="section2" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
-      <img src="stats.png" alt="" class="w-full object-cover">
+      <div class="relative" style="margin-top: -160px;">
+        <div class="flex items-center justify-center tracking-[0.2em] spin-count" style="font-family: 'ChakraPetch-BoldItalic'; color: #261DC4; font-size: 120px;" data-target="1371008">0000000</div>
+        <div class="h-24"></div>
+        <div class="relative flex items-center justify-center top-4" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">จำนวนการรับแจ้งความ คดีอาชญากรรม ปี 2566</div>
+        <div class="relative flex items-center justify-center top-10"style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">5 ปี อาชญากรรมไทยพุ่ง <span style="font-family: 'ChakraPetch-Bold'; font-size: 54px;">144%</span></div>
+      </div>
     </section>
 
     <section id="section3" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
@@ -113,7 +135,7 @@
   </div>
 
   <script>
-    const observer = new IntersectionObserver((entries) => {
+    const observer1 = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('opacity-100', 'translate-y-0');
@@ -122,8 +144,38 @@
     }, {
       threshold: 0.1
     });
+    document.querySelectorAll('.fade-in-on-scroll').forEach(el => observer1.observe(el));
 
-    document.querySelectorAll('.fade-in-on-scroll').forEach(el => observer.observe(el));
+    const observer2 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = +el.getAttribute('data-target');
+          let current = 0;
+          const step = Math.ceil(target / 45);
+
+          const updateCount = () => {
+            current += step;
+            console.log(current)
+            if (current >= target) {
+              el.textContent = target.toLocaleString();
+            } else {
+              el.innerHTML = current
+                .toString()
+                .split('')
+                .map(d => `<span>${d}</span>`)
+                .join('');
+              requestAnimationFrame(updateCount);
+            }
+          };
+
+          updateCount();
+          observer2.unobserve(el);
+        }
+      });
+    });
+
+    document.querySelectorAll('.spin-count').forEach(el => observer2.observe(el));
   </script>
 
 </body>
