@@ -57,7 +57,7 @@
           .domain(d3.extent(data, xAccessor))
           .range([0, dimensions.boundedWidth])
           .nice()
-        console.log(xScale.domain())
+        // console.log(xScale.domain())
 
         const binGenerator = d3.bin()
           .domain(xScale.domain())
@@ -65,13 +65,13 @@
           .thresholds(12) // space between bars -- if we want 13 bars, then we get 12 spaces
 
         const bins = binGenerator(data)
-        console.log(bins)
+        // console.log(bins)
 
         const yScale = d3.scaleLinear()
           .domain([0, d3.max(bins, yAccessor)]) // yAccessor เอาไว้ดูจำนวน object ที่อยู่ใน bin นั้น ๆ
           .range([dimensions.boundedHeight, 0])
           .nice()
-        console.log(yScale.domain())
+        // console.log(yScale.domain())
 
         const binsGroup = bounds.append('g')
           .attr('tabindex', '0')
@@ -139,25 +139,41 @@
         //   .attr("role", "presentation")
         //   .attr("aria-hidden", true)
 
-        const xAxisGenerator = d3.axisBottom()
-          .scale(xScale)
-        const xAxis = bounds.append("g")
-          .call(xAxisGenerator)
-          .style("transform", `translateY(${
-            dimensions.boundedHeight
-          }px)`)
-          .attr("role", "presentation")
-          .attr("aria-hidden", true)
+        const d = [
+          { year: 2020, value: 30 },
+          { year: 2021, value: 45 },
+          { year: 2022, value: 60 }
+        ]
 
-        const xAxisLabel = xAxis.append("text")
-          .attr("x", dimensions.boundedWidth / 2)
-          .attr("y", dimensions.margin.bottom - 10)
-          .attr("fill", "black")
-          .style("font-size", "1.4em")
-          .text("humidity")
-          .style("text-transform", "capitalize")
-          .attr("role", "presentation")
-          .attr("aria-hidden", true)
+        const x = d3.scaleBand()
+          .domain(d.map(d => d.year))
+          .range([0, dimensions.width])
+          .padding(0.1);
+
+        bounds.append("g")
+          .attr("transform", `translate(0, ${dimensions.boundedHeight})`)
+          .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+        // const xAxisGenerator = d3.axisBottom()
+        //   .scale(xScale)
+        // // console.log(xAxisGenerator)
+        // const xAxis = bounds.append("g")
+        //   .call(xAxisGenerator)
+        //   .style("transform", `translateY(${
+        //     dimensions.boundedHeight
+        //   }px)`)
+        //   .attr("role", "presentation")
+        //   .attr("aria-hidden", true)
+
+        // const xAxisLabel = xAxis.append("text")
+        //   .attr("x", dimensions.boundedWidth / 2)
+        //   .attr("y", dimensions.margin.bottom - 10)
+        //   .attr("fill", "black")
+        //   .style("font-size", "1.4em")
+        //   .text("humidity")
+        //   .style("text-transform", "capitalize")
+        //   .attr("role", "presentation")
+        //   .attr("aria-hidden", true)
       }
 
       drawBars()
