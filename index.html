@@ -95,8 +95,8 @@
       <div class="relative" style="margin-top: -160px;">
         <div class="flex items-center justify-center tracking-[0.2em] spin-count" style="font-family: 'ChakraPetch-BoldItalic'; color: #261DC4; font-size: 120px;" data-target="1371008">0000000</div>
         <div class="h-24"></div>
-        <div class="relative flex items-center justify-center top-4" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">จำนวนการรับแจ้งความ คดีอาชญากรรม ปี 2566</div>
-        <div class="relative flex items-center justify-center top-10"style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">5 ปี อาชญากรรมไทยพุ่ง <span class="p-2" style="font-family: 'ChakraPetch-Bold'; font-size: 54px;">144%</span></div>
+        <div class="relative flex items-center justify-center top-4" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">จำนวนการ<span class="text-[#EA3F61] text-[54px]">รับแจ้งความ</span>คดี<span class="text-[#EA3F61] text-[54px]">อาชญากรรม</span> ปี 2566</div>
+        <div class="relative flex items-center justify-center top-10"style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span> อาชญากรรมไทยพุ่ง <span class="pl-2 text-[#EA3F61] text-[54px]" style="font-family: 'ChakraPetch-Bold';">143%</span></div>
       </div>
     </section>
 
@@ -168,13 +168,11 @@
               requestAnimationFrame(updateCount);
             }
           };
-
           updateCount();
           observer2.unobserve(el);
         }
       });
     });
-
     document.querySelectorAll('.spin-count').forEach(el => observer2.observe(el));
   </script>
 
