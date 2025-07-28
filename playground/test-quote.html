@@ -1,0 +1,54 @@
+<style>
+  .fancy-quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #0066ff;
+    padding-left: 16px;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+
+  .quote-shadow {
+    font-size: 1.2em;
+    position: relative;
+    background: #f9f9f9;
+    padding: 20px 30px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+
+  .quote-shadow::before {
+    content: "“";
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: #bbb;
+  }
+
+  .quote-shadow::after {
+    content: "”";
+    font-size: 50px;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    color: #bbb;
+  }
+</style>
+
+<blockquote class="fancy-quote">
+  "The only limit to our realization of tomorrow is our doubts of today."
+</blockquote>
+
+<blockquote class="quote-shadow">
+  Success is not final, failure is not fatal: It is the courage to continue that counts.
+</blockquote>
+
+<figure>
+  <blockquote class="fancy-quote">
+    "Stay hungry, stay foolish."
+  </blockquote>
+  <figcaption>— Steve Jobs</figcaption>
+</figure>

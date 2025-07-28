@@ -1,0 +1,36 @@
+<style>
+  #typing {
+    /* font-family: monospace; */
+    font-size: 24px;
+    white-space: pre;
+    border-right: 2px solid black; /* Cursor */
+    width: fit-content;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0% { border-color: black; }
+    50% { border-color: transparent; }
+    100% { border-color: black; }
+  }
+</style>
+
+<div id="typing"></div>
+
+<script>
+  const text = "Hello, this is a typing animation!";
+  const typingElement = document.getElementById("typing");
+
+  let index = 0;
+
+  function typeChar() {
+    if (index < text.length) {
+      typingElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeChar, 100); // typing speed
+    }
+  }
+
+  typeChar();
+</script>
+

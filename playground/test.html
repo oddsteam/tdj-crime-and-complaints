@@ -1,0 +1,38 @@
+<style>
+  html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  /* height: 100vh; */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.section {
+  scroll-snap-align: start;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.element {
+  animation: fadeOut 2s forwards;
+  animation-timeline: scroll();
+}
+</style>
+<div class="container">
+  <section class="element section" style="height: 900px;">Section 1</section>
+  <section class="section" style="height: 1500px;">Section 2</section>
+  <section class="section">Section 3</section>
+</div>
