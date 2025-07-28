@@ -179,10 +179,20 @@
       margin: 20px 0;
       line-height: 1.6;
     }
+
+    .blur-gradient {
+      filter: blur(1px);
+      mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+      -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+      mask-size: 100% 100%;
+      -webkit-mask-size: 100% 100%;
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+    }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="">
+<body class="bg-gradient-to-b from-[#110D55] to-[#EBE9FD]">
 
   <!-- Fixed Navigation -->
   <nav class="fixed top-1/2 right-6 transform -translate-y-1/2 space-y-4 z-50">
@@ -203,19 +213,9 @@
     <a href="#section15" class="block w-3 h-3 rounded-full bg-gray-400 hover:bg-blue-500 transition"></a>
     <a href="#section-credit" class="block w-3 h-3 rounded-full bg-gray-400 hover:bg-blue-500 transition"></a>
   </nav>
-<style>
-  .blur-gradient {
-    filter: blur(1px);
-    mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
-    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
-    mask-size: 100% 100%;
-    -webkit-mask-size: 100% 100%;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
-  }
-</style>
-  <div style="scroll-snap-type: y mandatory; overflow-y: scroll; overflow-x: hidden; height: 100vh;">
-    <section id="section1" class="section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold heading">
+
+  <div class="h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden bg-transparent">
+    <section id="section1" class="section h-screen flex items-center justify-center text-white text-4xl font-bold heading bg-transparent">
       <div class="relative">
         <div class="flex items-center justify-center" style="flex-direction: column; margin-top: -20px;">
           <div class="text-base" style="font-family: 'ChakraPetch-Bold'; font-size: 135px;">ถอดรหัสวิกฤต</div>
@@ -234,7 +234,7 @@
       </div>
     </section>
 
-    <section id="section2" class="section h-screen relative bg-black text-white text-4xl font-bold">
+    <section id="section2" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-3/4">
         <div class="flex flex-col items-center justify-center gap-10 w-screen">
           <div class="tracking-[0.2em] spin-count" style="font-family: 'ChakraPetch-BoldItalic'; color: #261DC4; font-size: 120px;" data-target="1371008">0000000</div>
@@ -245,7 +245,7 @@
       </div>
     </section>
 
-    <section id="section3" class="section h-screen relative bg-black text-white text-4xl font-bold">
+    <section id="section3" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[110%]">
         <div class="flex flex-col items-center justify-center gap-10 w-screen">
           <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">สถิติแจ้งความสูง <span class="text-[#EA3F61] text-[54px] px-2">อันดับ 1</span> กลุ่ม<span class="text-[#EA3F61] text-[54px]">คดีที่รัฐเป็นผู้เสียหาย</span></div>
@@ -256,7 +256,7 @@
       <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-[16px] text-center font-[ChakraPetch-Regular]">กลุ่มคดีเกี่ยวกับรัฐเป็นผู้เสียหาย เช่น คดีเกี่ยวกับยาเสพติด อาวุธและวัตถุระเบิด การพนัน และอื่น ๆ ที่กระทบต่อความสงบเรียบร้อยของสังคม</div>
     </section>
 
-    <section id="section4" class="section h-screen relative bg-black text-white text-4xl font-bold">
+    <section id="section4" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[110%]">
         <div class="flex flex-col items-center justify-center gap-5 w-screen">
           <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 2</span> กลุ่ม<span class="text-[#EA3F61] text-[54px]">ความผิดเกี่ยวกับทรัพย์</span></div>
@@ -267,7 +267,7 @@
       <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-[16px] text-center font-[ChakraPetch-Regular]">กลุ่มคดีเกี่ยวกับทรัพย์ เช่น ลักทรัพย์ วิ่งราวทรัพย์ ชิงทรัพย์ ปล้นทรัพย์ ฉ้อโกง หรือทำให้เสียทรัพย์</div>
     </section>
 
-    <section id="section5" class="section h-screen relative bg-black text-white text-4xl font-bold">
+    <section id="section5" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[70%]">
         <div class="flex flex-col items-center justify-center gap-5 w-screen">
           <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 3</span> กลุ่ม<span class="text-[#EA3F61] text-[54px]">ความผิดพิเศษ</span></div>
@@ -283,7 +283,7 @@
       <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center text-[16px] font-[ChakraPetch-Regular]">กลุ่มคดีเกี่ยวกับความผิดพิเศษ เช่น พ.ร.บ. ป้องกันและปราบปรามการค้ามนุษย์</div>
     </section>
 
-    <section id="section6" class="section h-screen relative bg-black text-white text-4xl font-bold">
+    <section id="section6" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[100%]">
         <div class="flex flex-col items-center justify-center gap-5 w-screen">
           <div class="flex items-center justify-center font-[ChakraPetch-Regular] text-[40px]"><span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 4</span> กลุ่มคดี<span class="text-[#EA3F61] text-[54px]">ชีวิต ร่างกาย และเพศ</span></div>
@@ -294,7 +294,7 @@
       <div class="absolute w-screen bottom-0 left-1/2 -translate-x-1/2 text-[16px] text-center font-[ChakraPetch-Regular]">กลุ่มคดีเกี่ยวกับชีวิต ร่างกาย และเพศ เช่น ฆ่าผู้อื่น ทำร้ายร่างกาย ข่มขืนกระทำชำเรา และอื่น ๆ ที่เกี่ยวข้อง</div>
     </section>
 
-    <section class="section h-screen relative bg-black text-white">
+    <section class="section h-screen relative text-white bg-black">
       <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
         <div class="font-[ChakraPetch-Regular] text-center">
           อาชญากรรมต่าง ๆ มีคามซับซ้อนเพิ่มมากขึ้น ขณะที่ขีดความสามารถของระบบยุติธรรมกลับดูเหมือนว่าไม่ได้ขยายตัวตาม จนส่งผลกระทบเป็นลูกโซ่ตั้งแต่ <span class="italic">การสอบสวน การพิจารณาคดี ไปจนถึงการบังคับโทษ และการควบคุมผู้ต้องขัง</span>
@@ -310,12 +310,12 @@
       </div>
     </section>
 
-    <section id="section7" class="section h-screen relative bg-black text-white text-4xl font-bold">
+    <section id="section7" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <img src="stats-scene-4.png" alt="" class="w-full h-full object-cover">
       <div class="absolute w-screen bottom-0 left-1/2 -translate-x-1/2 text-[16px] text-center font-[ChakraPetch-Regular]">ตามมาตรฐานของสำนักงานตำรวจแห่งชาติ มาตรฐานในการทำคดีของพนักงานสอบสวนจะอยู่ที่ 70 คดี ต่อคน ต่อปี</div>
     </section>
 
-    <section class="section h-screen relative bg-black text-white">
+    <section class="section h-screen relative text-white bg-black">
       <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
         <div class="font-[ChakraPetch-Regular] text-center text-lg">
           นั่นหมายความว่า จะกลายเป็นภาระงานที่หนักถาโถมใส่พนักงานสอบสวนที่คงเหลืออยู่?
@@ -327,7 +327,7 @@
       </div>
     </section>
 
-    <section id="section8" class="relative section h-screen flex items-center justify-center bg-black text-white text-4xl font-bold">
+    <section id="section8" class="relative section h-screen flex items-center justify-center text-white text-4xl font-bold bg-transparent">
       <div class="z-50 -mt-[525px]">
         <div class="flex items-center justify-center font-[Kart-Satapat] text-[112px] text-white">ทำงาน 6 เท่า</div>
         <div class="flex items-center justify-center mt-5 text-[32px] font-[ChakraPetch-Regular]">พนักงานสอบสวน 1 คน ต้องรับผิดชอบคดี 70 คดีต่อปี</div>
@@ -343,7 +343,7 @@
       <img src="stats-scene-6-5.png" alt="" class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[5.0s]">
     </section>
 
-    <section id="section9" class="relative section h-screen flex items-center justify-center bg-[#1A1A1A] text-white text-4xl font-bold">
+    <section id="section9" class="relative section h-screen flex items-center justify-center bg-[#1A1A1A] text-white text-4xl font-bold bg-transparent">
       <a href="#interview-work-overload-1">
         <div class="absolute left-[415px] bottom-[153px] w-[115px] h-[20px] z-20" style="opacity: 0.3; background-color: #EA3F61;"></div>
       </a>
@@ -470,15 +470,15 @@
       </div>
     </div>
 
-    <section id="section10" class="section flex items-center justify-center bg-black text-white text-4xl font-bold">
+    <section id="section10" class="section flex items-center justify-center text-white text-4xl font-bold bg-transparent">
       <img src="investigation-process.png" alt="" class="w-full h-full object-cover">
     </section>
 
-    <section id="section11" class="section h-screen items-center justify-center bg-black text-white text-4xl font-bold">
+    <section id="section11" class="section h-screen items-center justify-center text-white text-4xl font-bold bg-transparent">
       <!-- <img src="case-records.png" alt="" class="w-full h-full object-cover"> -->
     </section>
 
-    <section id="section12" class="relative section h-screen flex items-center justify-center bg-[#1A1A1A] text-white text-4xl font-bold">
+    <section id="section12" class="relative section h-screen flex items-center justify-center bg-[#1A1A1A] text-white text-4xl font-bold bg-transparent">
       <a href="#interview-investigation-process-1">
         <div class="absolute left-[520px] bottom-[169px] w-[115px] h-[20px] z-20" style="opacity: 0.3; background-color: #EA3F61;"></div>
       </a>
@@ -643,15 +643,15 @@
       </div>
     </div>
 
-    <section id="section13" class="section h-[1600px] text-white text-4xl font-bold">
+    <section id="section13" class="section h-[1600px] text-white text-4xl font-bold bg-transparent">
       <!-- <img src="painful-experience.png" alt="" class=""> -->
     </section>
     
-    <section id="section14" class="section h-[1850px] text-white text-4xl font-bold">
+    <section id="section14" class="section h-[1850px] text-white text-4xl font-bold bg-transparent">
       <!-- <img src="alternatives.png" alt="" class=""> -->
     </section>
 
-    <section id="section-credit" class="relative section h-screen">
+    <section id="section-credit" class="relative section h-screen bg-transparent">
       <div class="absolute left-1/2 bottom-0 -translate-x-3/4 -translate-y-3/4 font-[Kanit-Regular] text-lg">
         <h3 class="font-bold">คณะผู้จัดทำ</h3>
         <div>เรียบเรียงเนื้อหา: ดารินทร์ หอวัฒนกุล, ธีรนันท์ ขันตี, คทาวุธ แช่ม, พิกุลทิพย์ ยุระพันธุ์</div>
