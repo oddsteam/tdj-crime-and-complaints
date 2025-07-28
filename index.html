@@ -189,6 +189,19 @@
       mask-repeat: no-repeat;
       -webkit-mask-repeat: no-repeat;
     }
+
+    #typing {
+      font-size: 24px;
+      border-right: 2px solid rgb(255, 255, 255); /* Cursor */
+      animation: blink 0.7s infinite;
+      width: fit-content;
+    }
+
+    @keyframes blink {
+      0% { border-color: rgb(255, 255, 255); }
+      50% { border-color: transparent; }
+      100% { border-color: rgb(255, 255, 255); }
+    }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -316,14 +329,12 @@
     </section>
 
     <section class="section h-screen relative text-white bg-black">
-      <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+      <div class="absolute w-screen left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
         <div class="font-[ChakraPetch-Regular] text-center text-lg">
           นั่นหมายความว่า จะกลายเป็นภาระงานที่หนักถาโถมใส่พนักงานสอบสวนที่คงเหลืออยู่?
         </div>
         <div class="h-8"></div>
-        <div class="font-[ChakraPetch-Regular] text-3xl text-center fade-in-on-scroll opacity-0 duration-[5.0s]">
-          เราเลื่อนลงไปดูสถิติ และอ่านบทสัมภาษณ์กัน
-        </div>
+        <div id="typing" class="absolute left-1/2 -translate-x-1/2 [ChakraPetch-Regular] text-3xl text-center"></div>
       </div>
     </section>
 
@@ -1241,6 +1252,29 @@
       });
     });
     document.querySelectorAll('.spin-count').forEach(el => observer2.observe(el));
+
+    // Typing
+    const text = "เราเลื่อนลงไปดูสถิติ และอ่านบทสัมภาษณ์กัน";
+    const typingElement = document.getElementById("typing");
+    console.log(typingElement.textContent);
+    let index = 0;
+    function typeChar() {
+      if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeChar, 100); // typing speed
+      }
+    }
+    const observer3 = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          typeChar();
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+    document.querySelectorAll('#typing').forEach(el => observer3.observe(el));
   </script>
 
 </body>
