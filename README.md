@@ -9,4 +9,5 @@
 <div>เว็บไซต์นี้เป็นส่วนหนึ่งของโครงการ Data Journalism for Investigative Reporting 2025</div>
 <div>จัดทำโดย <a class="underline" href="https://tja.or.th/" target="_blank">สมาคมนักข่าวนักหนังสือพิมพ์แห่งประเทศไทย</a> x <a class="underline" href="https://odds.team/" target="_blank">ODDS-TEAM</a></div><br />
 
-<div>ขอบคุณข้อมูลจาก xxx</div>
+<div>ขอบคุณข้อมูลจาก <a href="https://www.oja.go.th" target="_blank">สำนักงานกิจการยุติธรรม</a>, <a href="https://www.coj.go.th" target="_blank">สำนักงานศาลยุติธรรม</a>, <a href="https://www3.ago.go.th/information" target="_blank">สำนักงานอัยการพิเศษฝ่ายสารสนเทศ</a>, <a href="http://thaicrimes.org" target="_blank">กองแผนงานอาชญากรรม สำนักงานตำรวจแห่งชาติ</a></div>
+
