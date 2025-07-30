@@ -1,112 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ถอดรหัสวิกฤติคดีอาชญากรรมไทย เมื่อความยุติธรรมที่ล่าช้า คือความอยุติธรรม</title>
+  <title>
+    ถอดรหัสวิกฤติคดีอาชญากรรมไทย เมื่อความยุติธรรมที่ล่าช้า คือความอยุติธรรม
+  </title>
   <style>
     @font-face {
       font-family: ChakraPetch-Bold;
-      src: url('css/fonts/Chakra_Petch/ChakraPetch-Bold.ttf');
+      src: url("css/fonts/Chakra_Petch/ChakraPetch-Bold.ttf");
     }
 
     @font-face {
       font-family: ChakraPetch-BoldItalic;
-      src: url('css/fonts/Chakra_Petch/ChakraPetch-BoldItalic.ttf');
+      src: url("css/fonts/Chakra_Petch/ChakraPetch-BoldItalic.ttf");
     }
 
     @font-face {
       font-family: ChakraPetch-SemiBold;
-      src: url('css/fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf');
+      src: url("css/fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf");
     }
 
     @font-face {
       font-family: ChakraPetch-Regular;
-      src: url('css/fonts/Chakra_Petch/ChakraPetch-Regular.ttf');
+      src: url("css/fonts/Chakra_Petch/ChakraPetch-Regular.ttf");
     }
 
     @font-face {
       font-family: Kart-Satapat;
-      src: url('css/fonts/Kart-Satapat.ttf');
+      src: url("css/fonts/Kart-Satapat.ttf");
     }
 
     @font-face {
       font-family: Kanit-Regular;
-      src: url('css/fonts/Kanit/Kanit-Regular.ttf');
+      src: url("css/fonts/Kanit/Kanit-Regular.ttf");
     }
 
     .heading {
-      background-image: url('assets/images/landing.png');
+      background-image: url("assets/images/landing.png");
       background-repeat: no-repeat;
-      background-size: cover;   /* ปรับให้ครอบเต็มพื้นที่ */
+      background-size: cover;
+      /* ปรับให้ครอบเต็มพื้นที่ */
       background-position: center;
     }
 
     #section2 {
-      background-image: url('assets/images/stats.png');
+      background-image: url("assets/images/stats.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     #section3 {
-      background-image: url('assets/images/stats-scene-1.png');
+      background-image: url("assets/images/stats-scene-1.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     #section4 {
-      background-image: url('assets/images/stats-scene-2.png');
+      background-image: url("assets/images/stats-scene-2.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     #section5 {
-      background-image: url('assets/images/stats-scene-3.png');
+      background-image: url("assets/images/stats-scene-3.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     #section6 {
-      background-image: url('assets/images/stats-scene-3-1.png');
+      background-image: url("assets/images/stats-scene-3-1.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
 
     #section9 {
-      background-image: url('assets/images/interview-work-overload.png');
+      background-image: url("assets/images/interview-work-overload.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
     }
 
     #section12 {
-      background-image: url('assets/images/interview-investigation-process.png');
+      background-image: url("assets/images/interview-investigation-process.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
     }
 
     #section13 {
-      background-image: url('assets/images/painful-experience.png');
+      background-image: url("assets/images/painful-experience.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
     }
 
     #section14 {
-      background-image: url('assets/images/alternatives.png');
+      background-image: url("assets/images/alternatives.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
     }
 
     #section-credit {
-      background-image: url('assets/images/credit.png');
+      background-image: url("assets/images/credit.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -124,7 +128,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      backdrop-filter: blur(6px); /* blur effect */
+      backdrop-filter: blur(6px);
+      /* blur effect */
       background-color: rgba(0, 0, 0, 0.4);
       z-index: 999;
       animation: fadeIn 0.3s ease-in-out;
@@ -162,13 +167,25 @@
 
     /* Animations */
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     @keyframes slideIn {
-      from { transform: translateY(-40px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
 
     .quote {
@@ -182,8 +199,10 @@
 
     .blur-gradient {
       filter: blur(1px);
-      mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
-      -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+      mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+      -webkit-mask-image: linear-gradient(to top,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1));
       mask-size: 100% 100%;
       -webkit-mask-size: 100% 100%;
       mask-repeat: no-repeat;
@@ -192,21 +211,30 @@
 
     #typing {
       font-size: 24px;
-      border-right: 2px solid rgb(255, 255, 255); /* Cursor */
+      border-right: 2px solid rgb(255, 255, 255);
+      /* Cursor */
       animation: blink 0.7s infinite;
       width: fit-content;
     }
 
     @keyframes blink {
-      0% { border-color: rgb(255, 255, 255); }
-      50% { border-color: transparent; }
-      100% { border-color: rgb(255, 255, 255); }
+      0% {
+        border-color: rgb(255, 255, 255);
+      }
+
+      50% {
+        border-color: transparent;
+      }
+
+      100% {
+        border-color: rgb(255, 255, 255);
+      }
     }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-b from-[#110D55] to-[#EBE9FD]">
 
+<body class="bg-gradient-to-b from-[#110D55] to-[#EBE9FD]">
   <!-- Fixed Navigation -->
   <nav class="fixed top-1/2 right-6 transform -translate-y-1/2 space-y-4 z-50">
     <a href="#section1" class="block w-3 h-3 rounded-full bg-gray-400 hover:bg-blue-500 transition"></a>
@@ -228,32 +256,66 @@
   </nav>
 
   <div class="h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden bg-transparent">
-    <section id="section1" class="section h-screen flex items-center justify-center text-white text-4xl font-bold heading bg-transparent">
+    <section id="section1"
+      class="section h-screen flex items-center justify-center text-white text-4xl font-bold heading bg-transparent">
       <div class="relative">
-        <div class="flex items-center justify-center" style="flex-direction: column; margin-top: -20px;">
-          <div class="text-base" style="font-family: 'ChakraPetch-Bold'; font-size: 135px;">ถอดรหัสวิกฤต</div>
-          <div style="font-family: 'ChakraPetch-Bold'; font-size: 96px; margin-top: 100px;">คดีอาชญากรรมไทย</div>
+        <div class="flex items-center justify-center" style="flex-direction: column; margin-top: -20px">
+          <div class="text-base" style="font-family: 'ChakraPetch-Bold'; font-size: 135px">
+            ถอดรหัสวิกฤต
+          </div>
+          <div style="
+                font-family: 'ChakraPetch-Bold';
+                font-size: 96px;
+                margin-top: 100px;
+              ">
+            คดีอาชญากรรมไทย
+          </div>
           <div class="h-24"></div>
-          <div class="relative top-6" style="font-family: 'Kart-Satapat'; font-size: 64px; transform: rotate(-6.4deg);">เมื่อ<span style="color: #FEEF38">ความยุติธรรม</span>ที่ล่าช้า</div>
+          <div class="relative top-6" style="
+                font-family: 'Kart-Satapat';
+                font-size: 64px;
+                transform: rotate(-6.4deg);
+              ">
+            เมื่อ<span style="color: #feef38">ความยุติธรรม</span>ที่ล่าช้า
+          </div>
           <div class="relative overflow-visible top-10">
-            <div class="relative blur-gradient" style="font-family: 'Kart-Satapat'; font-size: 64px; transform: rotate(-6.4deg); display: inline-block; padding: 1.5rem;">คือ<span style="color: #FEEF38">ความอยุติธรรม</span></div>
+            <div class="relative blur-gradient" style="
+                  font-family: 'Kart-Satapat';
+                  font-size: 64px;
+                  transform: rotate(-6.4deg);
+                  display: inline-block;
+                  padding: 1.5rem;
+                ">
+              คือ<span style="color: #feef38">ความอยุติธรรม</span>
+            </div>
           </div>
         </div>
-        <img src="assets/images/highlight-circle.png"
-          class="absolute left-0 object-cover z-20 w-100%"
-          style="top: -4em; left: -3em;"
-          alt=""
-        />
+        <img src="assets/images/highlight-circle.png" class="absolute left-0 object-cover z-20 w-100%"
+          style="top: -4em; left: -3em" alt="" />
       </div>
     </section>
 
     <section id="section2" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-3/4">
         <div class="flex flex-col items-center justify-center gap-10 w-screen">
-          <div class="tracking-[0.2em] spin-count" style="font-family: 'ChakraPetch-BoldItalic'; color: #261DC4; font-size: 120px;" data-target="1371008">0000000</div>
+          <div class="tracking-[0.2em] spin-count" style="
+                font-family: 'ChakraPetch-BoldItalic';
+                color: #261dc4;
+                font-size: 120px;
+              " data-target="1371008">
+            0000000
+          </div>
           <div class="h-16"></div>
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">จำนวนการ<span class="text-[#EA3F61] text-[54px]">รับแจ้งความ</span>คดี<span class="text-[#EA3F61] text-[54px]">อาชญากรรม</span> ปี 2566</div>
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span> อาชญากรรมไทยพุ่ง <span class="font-[ChakraPetch-Bold] pl-2 text-[#EA3F61] text-[54px]">143%</span></div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            จำนวนการ<span class="text-[#EA3F61] text-[54px]">รับแจ้งความ</span>คดี<span
+              class="text-[#EA3F61] text-[54px]">อาชญากรรม</span> ปี
+            2566
+          </div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            <span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span>
+            อาชญากรรมไทยพุ่ง
+            <span class="font-[ChakraPetch-Bold] pl-2 text-[#EA3F61] text-[54px]">143%</span>
+          </div>
         </div>
       </div>
     </section>
@@ -261,100 +323,189 @@
     <section id="section3" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[110%]">
         <div class="flex flex-col items-center justify-center gap-10 w-screen">
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">สถิติแจ้งความสูง <span class="text-[#EA3F61] text-[54px] px-2">อันดับ 1</span> กลุ่ม<span class="text-[#EA3F61] text-[54px]">คดีที่รัฐเป็นผู้เสียหาย</span></div>
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span> แจ้งความพุ่ง <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[54px] pl-2">143.3%</span></div>
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">โดยเฉพาะ<span class="text-[#EA3F61] text-[54px]">ประเภทคดียาเสพติด</span></div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            สถิติแจ้งความสูง
+            <span class="text-[#EA3F61] text-[54px] px-2">อันดับ 1</span>
+            กลุ่ม<span class="text-[#EA3F61] text-[54px]">คดีที่รัฐเป็นผู้เสียหาย</span>
+          </div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            <span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span>
+            แจ้งความพุ่ง
+            <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[54px] pl-2">143.3%</span>
+          </div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            โดยเฉพาะ<span class="text-[#EA3F61] text-[54px]">ประเภทคดียาเสพติด</span>
+          </div>
         </div>
       </div>
-      <div class="absolute w-screen bottom-0 left-1/2 -translate-x-1/2 text-[14px] text-center font-[ChakraPetch-Regular]">กลุ่มคดีเกี่ยวกับรัฐเป็นผู้เสียหาย เช่น คดีเกี่ยวกับยาเสพติด อาวุธและวัตถุระเบิด การพนัน และอื่น ๆ ที่กระทบต่อความสงบเรียบร้อยของสังคม</div>
+      <div
+        class="absolute w-screen bottom-0 left-1/2 -translate-x-1/2 text-[14px] text-center font-[ChakraPetch-Regular]">
+        กลุ่มคดีเกี่ยวกับรัฐเป็นผู้เสียหาย เช่น คดีเกี่ยวกับยาเสพติด
+        อาวุธและวัตถุระเบิด การพนัน และอื่น ๆ
+        ที่กระทบต่อความสงบเรียบร้อยของสังคม
+      </div>
     </section>
 
     <section id="section4" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[110%]">
         <div class="flex flex-col items-center justify-center gap-5 w-screen">
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 2</span> กลุ่ม<span class="text-[#EA3F61] text-[54px]">ความผิดเกี่ยวกับทรัพย์</span></div>
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span> แจ้งความพุ่ง <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[54px] pl-2">153.8%</span></div>
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;">โดยเฉพาะ<span class="text-[#EA3F61] text-[54px]">ประเภทคดีลักทรัพย์</span></div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            <span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 2</span>
+            กลุ่ม<span class="text-[#EA3F61] text-[54px]">ความผิดเกี่ยวกับทรัพย์</span>
+          </div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            <span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span>
+            แจ้งความพุ่ง
+            <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[54px] pl-2">153.8%</span>
+          </div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            โดยเฉพาะ<span class="text-[#EA3F61] text-[54px]">ประเภทคดีลักทรัพย์</span>
+          </div>
         </div>
       </div>
-      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-[14px] text-center font-[ChakraPetch-Regular]">กลุ่มคดีเกี่ยวกับทรัพย์ เช่น ลักทรัพย์ วิ่งราวทรัพย์ ชิงทรัพย์ ปล้นทรัพย์ ฉ้อโกง หรือทำให้เสียทรัพย์</div>
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-[14px] text-center font-[ChakraPetch-Regular]">
+        กลุ่มคดีเกี่ยวกับทรัพย์ เช่น ลักทรัพย์ วิ่งราวทรัพย์ ชิงทรัพย์
+        ปล้นทรัพย์ ฉ้อโกง หรือทำให้เสียทรัพย์
+      </div>
     </section>
 
     <section id="section5" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[70%]">
         <div class="flex flex-col items-center justify-center gap-5 w-screen">
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 3</span> กลุ่ม<span class="text-[#EA3F61] text-[54px]">ความผิดพิเศษ</span></div>
-          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px;"><span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span> ตัวเลขแจ้งความพุ่ง <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[54px] pl-2">119.1%</span></div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            <span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 3</span>
+            กลุ่ม<span class="text-[#EA3F61] text-[54px]">ความผิดพิเศษ</span>
+          </div>
+          <div class="flex items-center justify-center" style="font-family: 'ChakraPetch-Regular'; font-size: 40px">
+            <span class="text-[#EA3F61] text-[54px] pr-2">5 ปี</span>
+            ตัวเลขแจ้งความพุ่ง
+            <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[54px] pl-2">119.1%</span>
+          </div>
         </div>
       </div>
-      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-[35%] text-[28px] text-center font-[ChakraPetch-Regular]">
-        <div class="w-screen">โดยเฉพาะ<span class="text-[#EA3F61] text-[32px]">ความผิดฐานฉ้อโกงที่กระทำผ่านคอมพิวเตอร์</span></div>
-        <div class="">เพิ่มขึ้น <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[32px] px-2">759.2%</span>เทียบกับสถิติคดีปี 2564 กับ 2566</div>
+      <div
+        class="absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-[35%] text-[28px] text-center font-[ChakraPetch-Regular]">
+        <div class="w-screen">
+          โดยเฉพาะ<span class="text-[#EA3F61] text-[32px]">ความผิดฐานฉ้อโกงที่กระทำผ่านคอมพิวเตอร์</span>
+        </div>
+        <div class="">
+          เพิ่มขึ้น
+          <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[32px] px-2">759.2%</span>เทียบกับสถิติคดีปี 2564 กับ
+          2566
+        </div>
         <div class="h-4"></div>
-        <div class="text-[16px] mx-32">โดยจากข้อมูล ตัวเลในปี 2566 มีการแจ้งความ 13,112 คดี แต่เมื่อมาดูสถิติการจับกุม แม้อาจจะเป็นการจับกุมจากคดีค้างเก่ารวมอยู่ด้วย แต่ตัวเลขที่ปรากฎจับกุมได้ 5,103 คดี นั่นหมายความว่า หากเทียบเป็นสัดส่วนแล้วสามารถจับกุมได้เพียง 4 ใน 10 คดี ของที่มีการแจ้งความ</div>
+        <div class="text-[16px] mx-32">
+          โดยจากข้อมูล ตัวเลในปี 2566 มีการแจ้งความ 13,112 คดี
+          แต่เมื่อมาดูสถิติการจับกุม
+          แม้อาจจะเป็นการจับกุมจากคดีค้างเก่ารวมอยู่ด้วย
+          แต่ตัวเลขที่ปรากฎจับกุมได้ 5,103 คดี นั่นหมายความว่า
+          หากเทียบเป็นสัดส่วนแล้วสามารถจับกุมได้เพียง 4 ใน 10 คดี
+          ของที่มีการแจ้งความ
+        </div>
       </div>
-      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center text-[14px] font-[ChakraPetch-Regular]">กลุ่มคดีเกี่ยวกับความผิดพิเศษ เช่น พ.ร.บ. ป้องกันและปราบปรามการค้ามนุษย์</div>
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center text-[14px] font-[ChakraPetch-Regular]">
+        กลุ่มคดีเกี่ยวกับความผิดพิเศษ เช่น พ.ร.บ.
+        ป้องกันและปราบปรามการค้ามนุษย์
+      </div>
     </section>
 
     <section id="section6" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
       <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[100%]">
         <div class="flex flex-col items-center justify-center gap-5 w-screen">
-          <div class="flex items-center justify-center font-[ChakraPetch-Regular] text-[40px]"><span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 4</span> กลุ่มคดี<span class="text-[#EA3F61] text-[54px]">ชีวิต ร่างกาย และเพศ</span></div>
-          <div class="flex items-center justify-center font-[ChakraPetch-Regular] text-[40px]">ตัวเลขแจ้งความ <span class="text-[#EA3F61] text-[54px] px-2">5 ปี</span> พุ่ง <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[54px] pl-2">132.32%</span></div>
-          <div class="flex items-center justify-center font-[ChakraPetch-Regular] text-[40px]">โดยเฉพาะ<span class="text-[#EA3F61] text-[54px]">ประเภททำร้ายร่างกายสาหัส</span></div>
+          <div class="flex items-center justify-center font-[ChakraPetch-Regular] text-[40px]">
+            <span class="text-[#EA3F61] text-[54px] pr-2">อันดับ 4</span>
+            กลุ่มคดี<span class="text-[#EA3F61] text-[54px]">ชีวิต ร่างกาย และเพศ</span>
+          </div>
+          <div class="flex items-center justify-center font-[ChakraPetch-Regular] text-[40px]">
+            ตัวเลขแจ้งความ
+            <span class="text-[#EA3F61] text-[54px] px-2">5 ปี</span> พุ่ง
+            <span class="font-[ChakraPetch-Bold] text-[#EA3F61] text-[54px] pl-2">132.32%</span>
+          </div>
+          <div class="flex items-center justify-center font-[ChakraPetch-Regular] text-[40px]">
+            โดยเฉพาะ<span class="text-[#EA3F61] text-[54px]">ประเภททำร้ายร่างกายสาหัส</span>
+          </div>
         </div>
       </div>
-      <div class="absolute w-screen bottom-0 left-1/2 -translate-x-1/2 text-[14px] text-center font-[ChakraPetch-Regular]">กลุ่มคดีเกี่ยวกับชีวิต ร่างกาย และเพศ เช่น ฆ่าผู้อื่น ทำร้ายร่างกาย ข่มขืนกระทำชำเรา และอื่น ๆ ที่เกี่ยวข้อง</div>
+      <div
+        class="absolute w-screen bottom-0 left-1/2 -translate-x-1/2 text-[14px] text-center font-[ChakraPetch-Regular]">
+        กลุ่มคดีเกี่ยวกับชีวิต ร่างกาย และเพศ เช่น ฆ่าผู้อื่น ทำร้ายร่างกาย
+        ข่มขืนกระทำชำเรา และอื่น ๆ ที่เกี่ยวข้อง
+      </div>
     </section>
 
     <section class="section h-screen relative text-white bg-black">
       <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
         <div class="font-[ChakraPetch-Regular] text-center">
-          อาชญากรรมต่าง ๆ มีคามซับซ้อนเพิ่มมากขึ้น ขณะที่ขีดความสามารถของระบบยุติธรรมกลับดูเหมือนว่าไม่ได้ขยายตัวตาม จนส่งผลกระทบเป็นลูกโซ่ตั้งแต่ <span class="italic">การสอบสวน การพิจารณาคดี ไปจนถึงการบังคับโทษ และการควบคุมผู้ต้องขัง</span>
+          อาชญากรรมต่าง ๆ มีคามซับซ้อนเพิ่มมากขึ้น
+          ขณะที่ขีดความสามารถของระบบยุติธรรมกลับดูเหมือนว่าไม่ได้ขยายตัวตาม
+          จนส่งผลกระทบเป็นลูกโซ่ตั้งแต่
+          <span class="italic">การสอบสวน การพิจารณาคดี ไปจนถึงการบังคับโทษ
+            และการควบคุมผู้ต้องขัง</span>
         </div>
         <div class="h-2"></div>
-        <div class="font-[ChakraPetch-Regular] text-center"">
-          โดยเฉพาะพนักงานสอบสวน ซึ่งถือเป็นต้นธารของกระบวนการยุติธรรม ทำหน้าที่ทั้งการสอบสวน และรวบรวมพยานหลักฐานเพื่อนำตัวผู้กระทำผิดมาเข้าสู่กระบวนการยุติธรรม ซึ่งถือเป็นภาระงานที่หนักที่สุดในระบบตำรวจ
+        <div class="font-[ChakraPetch-Regular] text-center">
+          โดยเฉพาะพนักงานสอบสวน ซึ่งถือเป็นต้นธารของกระบวนการยุติธรรม
+          ทำหน้าที่ทั้งการสอบสวน
+          และรวบรวมพยานหลักฐานเพื่อนำตัวผู้กระทำผิดมาเข้าสู่กระบวนการยุติธรรม
+          ซึ่งถือเป็นภาระงานที่หนักที่สุดในระบบตำรวจ
         </div>
         <div class="h-8"></div>
-        <div class="font-[ChakraPetch-Regular] text-3xl text-center"">
+        <div class="font-[ChakraPetch-Regular] text-3xl text-center">
           เมื่อมาดูข้อมูลตัวเลขกำลังพลของพนักงานสอบสวนทั่วประเทศ พบว่า..
         </div>
       </div>
     </section>
 
     <section id="section7" class="section h-screen relative text-white text-4xl font-bold bg-transparent">
-      <img src="assets/images/stats-scene-4.png" alt="" class="w-full h-full object-cover">
-      <div class="absolute w-screen bottom-0 left-1/2 -translate-x-1/2 text-[16px] text-center font-[ChakraPetch-Regular]">ตามมาตรฐานของสำนักงานตำรวจแห่งชาติ มาตรฐานในการทำคดีของพนักงานสอบสวนจะอยู่ที่ 70 คดี ต่อคน ต่อปี</div>
+      <img src="assets/images/stats-scene-4.png" alt="" class="w-full h-full object-cover" />
+      <div
+        class="absolute w-screen bottom-0 left-1/2 -translate-x-1/2 text-[16px] text-center font-[ChakraPetch-Regular]">
+        ตามมาตรฐานของสำนักงานตำรวจแห่งชาติ
+        มาตรฐานในการทำคดีของพนักงานสอบสวนจะอยู่ที่ 70 คดี ต่อคน ต่อปี
+      </div>
     </section>
 
     <section class="section h-screen relative text-white bg-black">
       <div class="absolute w-screen left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
         <div class="font-[ChakraPetch-Regular] text-center text-lg">
-          นั่นหมายความว่า จะกลายเป็นภาระงานที่หนักถาโถมใส่พนักงานสอบสวนที่คงเหลืออยู่?
+          นั่นหมายความว่า
+          จะกลายเป็นภาระงานที่หนักถาโถมใส่พนักงานสอบสวนที่คงเหลืออยู่?
         </div>
         <div class="h-8"></div>
         <div id="typing" class="absolute left-1/2 -translate-x-1/2 [ChakraPetch-Regular] text-3xl text-center"></div>
       </div>
     </section>
 
-    <section id="section8" class="relative section h-screen flex items-center justify-center text-white text-4xl font-bold bg-transparent">
+    <section id="section8"
+      class="relative section h-screen flex items-center justify-center text-white text-4xl font-bold bg-transparent">
       <div class="z-50 -mt-[525px]">
-        <div class="flex items-center justify-center font-[Kart-Satapat] text-[112px] text-white">ทำงาน 6 เท่า</div>
-        <div class="flex items-center justify-center mt-5 text-[32px] font-[ChakraPetch-Regular]">พนักงานสอบสวน 1 คน ต้องรับผิดชอบคดี 70 คดีต่อปี</div>
-        <div class="flex items-center justify-center mt-2 text-[32px] font-[ChakraPetch-Regular]">แต่ความเป็นจริงคือ <span class="font-[ChakraPetch-Bold] pl-2">200-450 คดีต่อปี</span></div>
+        <div class="flex items-center justify-center font-[Kart-Satapat] text-[112px] text-white">
+          ทำงาน 6 เท่า
+        </div>
+        <div class="flex items-center justify-center mt-5 text-[32px] font-[ChakraPetch-Regular]">
+          พนักงานสอบสวน 1 คน ต้องรับผิดชอบคดี 70 คดีต่อปี
+        </div>
+        <div class="flex items-center justify-center mt-2 text-[32px] font-[ChakraPetch-Regular]">
+          แต่ความเป็นจริงคือ
+          <span class="font-[ChakraPetch-Bold] pl-2">200-450 คดีต่อปี</span>
+        </div>
       </div>
       <div class="absolute z-40 -mt-[415px] ml-[165px]">
         <img class="object-cover" src="assets/images/highlight-desk-6-times.png" />
       </div>
-      <img src="assets/images/stats-scene-6-1.png" alt="" class="absolute inset-0 w-full h-full object-cover">
-      <img src="assets/images/stats-scene-6-2.png" alt="" class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[2.0s]">
-      <img src="assets/images/stats-scene-6-3.png" alt="" class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[3.0s]">
-      <img src="assets/images/stats-scene-6-4.png" alt="" class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[4.0s]">
-      <img src="assets/images/stats-scene-6-5.png" alt="" class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[5.0s]">
+      <img src="assets/images/stats-scene-6-1.png" alt="" class="absolute inset-0 w-full h-full object-cover" />
+      <img src="assets/images/stats-scene-6-2.png" alt=""
+        class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[2.0s]" />
+      <img src="assets/images/stats-scene-6-3.png" alt=""
+        class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[3.0s]" />
+      <img src="assets/images/stats-scene-6-4.png" alt=""
+        class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[4.0s]" />
+      <img src="assets/images/stats-scene-6-5.png" alt=""
+        class="absolute inset-0 w-full h-full object-cover fade-in-on-scroll opacity-0 transition-all duration-[5.0s]" />
     </section>
 
-    <section id="section9" class="relative section h-screen flex items-center justify-center bg-[#1A1A1A] text-white text-4xl font-bold bg-transparent">
+    <section id="section9"
+      class="relative section h-screen flex items-center justify-center bg-[#1A1A1A] text-white text-4xl font-bold bg-transparent">
       <a href="#interview-work-overload-1">
         <div class="absolute left-[415px] bottom-[153px] w-[115px] h-[20px] z-20 bg-red-500 opacity-50"></div>
       </a>
@@ -366,34 +517,108 @@
     <div id="interview-work-overload-1" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">การบริหารจัดการกำลังพล : ปริมาณงาน</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          การบริหารจัดการกำลังพล : ปริมาณงาน
+        </h2>
         <p>
-          พล.ต.ท.อาชยน ไกรทอง ผู้บัญชาการสำนักงานกำลังพล ในฐานะโฆษกสำนักงานตำรวจแห่งชาติ อธิบายเรื่องนี้ว่า ในความเป็นจริงแล้วคงไม่สามารถระบุตัวเลขมาตรฐานได้ตายตัว ว่าพนักงานสอบสวน 1 คน ควรทำกี่คดีต่อปี โดยพนักงานสอบสวนในกรุงเทพฯ และปริมณฑล เช่น 191 มีปริมาณงานประเภทหนึ่ง พนักงานสอบสวนในต่างจังหวัดก็มีอีกประเภทหนึ่ง ส่วนพนักงานสอบสวนคดีพิเศษ เช่น บก.ปอท. คดีเกี่ยวกับคอมพิวเตอร์ , คดีค้ามนุษย์ หรือคดีที่ต้องใช้ความเชี่ยวชาญเฉพาะทางอีกหลายด้าน ก็เป็นอีกประเภทหนึ่ง ดังนั้นการวัดผลเป็นรายบุคคลให้เท่ากันคงไม่สามารถกำหนดชัดเจนแบบนั้นได้ อีกทั้งงานยากบางครั้งอาจต้องทำเป็นปีจึงจะเสร็จหนึ่งคดี ต้องมีการวางแผนประเมินพนักงานสอบสวนที่รับคดีพื้นฐานในสถานีตำรวจ ว่าแต่ละคนไม่ควรรับเกินเท่าไร
+          พล.ต.ท.อาชยน ไกรทอง ผู้บัญชาการสำนักงานกำลังพล
+          ในฐานะโฆษกสำนักงานตำรวจแห่งชาติ อธิบายเรื่องนี้ว่า
+          ในความเป็นจริงแล้วคงไม่สามารถระบุตัวเลขมาตรฐานได้ตายตัว
+          ว่าพนักงานสอบสวน 1 คน ควรทำกี่คดีต่อปี โดยพนักงานสอบสวนในกรุงเทพฯ
+          และปริมณฑล เช่น 191 มีปริมาณงานประเภทหนึ่ง
+          พนักงานสอบสวนในต่างจังหวัดก็มีอีกประเภทหนึ่ง
+          ส่วนพนักงานสอบสวนคดีพิเศษ เช่น บก.ปอท. คดีเกี่ยวกับคอมพิวเตอร์ ,
+          คดีค้ามนุษย์ หรือคดีที่ต้องใช้ความเชี่ยวชาญเฉพาะทางอีกหลายด้าน
+          ก็เป็นอีกประเภทหนึ่ง
+          ดังนั้นการวัดผลเป็นรายบุคคลให้เท่ากันคงไม่สามารถกำหนดชัดเจนแบบนั้นได้
+          อีกทั้งงานยากบางครั้งอาจต้องทำเป็นปีจึงจะเสร็จหนึ่งคดี
+          ต้องมีการวางแผนประเมินพนักงานสอบสวนที่รับคดีพื้นฐานในสถานีตำรวจ
+          ว่าแต่ละคนไม่ควรรับเกินเท่าไร
         </p>
         <blockquote class="quote">
-          "ผู้บังคับบัญชาและหัวหน้าโรงพักต้องใส่ใจดูว่าปริมาณงานกับตัวบุคคลมีความสอดคล้องกันหรือไม่  เพราะคดีไม่รู้ตัว 80 คดี อาจเสร็จใน 3 วัน แต่คดีฆ่า หลบหนี ยาเสพติด ฟอกเงิน หรือคดีออนไลน์ บางครั้งปีหนึ่งก็ทำไม่เสร็จ  พนักงานสอบสวนรับแจ้งความร้องทุกข์ทั้งหมด ซึ่งปะปนไปด้วยความยากง่าย คดีที่ต้องสอบพยานเป็น 100 ปาก คดีเดียวก็อาจเทียบเท่า 40 คดีง่ายๆ  ดังนั้นความยากง่ายของสำนวนและเคสที่ผ่านมาเป็นสิ่งสำคัญ
-          ผู้บังคับบัญชาต้องพิจารณาว่าคดีที่ยากควรทำเป็น “คณะพนักงานสอบสวน” หรือไม่ หรือให้สารวัตรช่วยดูแล หรือโอนสำนวนให้รองผู้กำกับช่วยทำโดยมีทีมลูกน้อง ต้องดูเป็นกรณีไป (case by case) แม้จะมีค่าเฉลี่ยอยู่แล้ว แต่คดีพิเศษก็มีไม่น้อย
-          ส่วนการบริหารจัดการคดีที่ค้างอยู่ อาจให้พนักงานสอบสวนบางคน เช่น 4 ใน 10 คน มารวมกันทำสำนวนที่ค้างโรงพักให้เสร็จ ส่วนที่เหลืออีก 6 คนก็รับเวรและรับคดีใหม่  ไม่ควรให้พนักงานสอบสวนแบกรับสำนวนที่เยอะเกินไป เพราะมีผลต่อหน้าที่ ความเครียดสะสม และอาจถึงขั้นคิดสั้นจากโรคซึมเศร้า ตรงนี้ผู้บังคับบัญชาและหัวหน้าโรงพักมีส่วนสำคัญมากในการทำหน้าที่ใส่ใจดูแลผู้ใต้บังคับบัญชา"
+          "ผู้บังคับบัญชาและหัวหน้าโรงพักต้องใส่ใจดูว่าปริมาณงานกับตัวบุคคลมีความสอดคล้องกันหรือไม่
+          เพราะคดีไม่รู้ตัว 80 คดี อาจเสร็จใน 3 วัน แต่คดีฆ่า หลบหนี ยาเสพติด
+          ฟอกเงิน หรือคดีออนไลน์ บางครั้งปีหนึ่งก็ทำไม่เสร็จ
+          พนักงานสอบสวนรับแจ้งความร้องทุกข์ทั้งหมด ซึ่งปะปนไปด้วยความยากง่าย
+          คดีที่ต้องสอบพยานเป็น 100 ปาก คดีเดียวก็อาจเทียบเท่า 40 คดีง่ายๆ
+          ดังนั้นความยากง่ายของสำนวนและเคสที่ผ่านมาเป็นสิ่งสำคัญ
+          ผู้บังคับบัญชาต้องพิจารณาว่าคดีที่ยากควรทำเป็น “คณะพนักงานสอบสวน”
+          หรือไม่ หรือให้สารวัตรช่วยดูแล
+          หรือโอนสำนวนให้รองผู้กำกับช่วยทำโดยมีทีมลูกน้อง ต้องดูเป็นกรณีไป
+          (case by case) แม้จะมีค่าเฉลี่ยอยู่แล้ว แต่คดีพิเศษก็มีไม่น้อย
+          ส่วนการบริหารจัดการคดีที่ค้างอยู่ อาจให้พนักงานสอบสวนบางคน เช่น 4 ใน
+          10 คน มารวมกันทำสำนวนที่ค้างโรงพักให้เสร็จ ส่วนที่เหลืออีก 6
+          คนก็รับเวรและรับคดีใหม่
+          ไม่ควรให้พนักงานสอบสวนแบกรับสำนวนที่เยอะเกินไป เพราะมีผลต่อหน้าที่
+          ความเครียดสะสม และอาจถึงขั้นคิดสั้นจากโรคซึมเศร้า
+          ตรงนี้ผู้บังคับบัญชาและหัวหน้าโรงพักมีส่วนสำคัญมากในการทำหน้าที่ใส่ใจดูแลผู้ใต้บังคับบัญชา"
         </blockquote>
 
         <h2 class="text-2xl mt-4">ปัญหาการขาดแคลนพนักงานสอบสวน</h2>
-        <p>ผู้บัญชาการสำนักงานกำลังพล และโฆษกสำนักงานตำรวจแห่งชาติ ชี้แจงว่า สาเหตุที่สำนักงานตำรวจแห่งชาติไม่ได้มีการบรรจุพนักงานสอบสวนครบทุกตำแหน่งตามที่ขอไว้ เนื่องจากมาตรการบริหารภาครัฐไม่สามารถเพิ่มจำนวนกรอบของงบประมาณได้ ทำให้ทุกภาคส่วนมีความขาดแคลนอยู่แล้ว กรอบตำแหน่งตามอัตรากำลังพลของสำนักงานตำรวจแห่งชาติที่กำหนดไว้ 300,000 หรือ 200,000 ตำแหน่งนั้น ปัจจุบันก็ยังขาดบุคลากรอีกหลายหมื่นนาย งานสอบสวนก็เป็นส่วนหนึ่งที่ประสบปัญหาขาดแคลน</p>
+        <p>
+          ผู้บัญชาการสำนักงานกำลังพล และโฆษกสำนักงานตำรวจแห่งชาติ ชี้แจงว่า
+          สาเหตุที่สำนักงานตำรวจแห่งชาติไม่ได้มีการบรรจุพนักงานสอบสวนครบทุกตำแหน่งตามที่ขอไว้
+          เนื่องจากมาตรการบริหารภาครัฐไม่สามารถเพิ่มจำนวนกรอบของงบประมาณได้
+          ทำให้ทุกภาคส่วนมีความขาดแคลนอยู่แล้ว
+          กรอบตำแหน่งตามอัตรากำลังพลของสำนักงานตำรวจแห่งชาติที่กำหนดไว้
+          300,000 หรือ 200,000 ตำแหน่งนั้น
+          ปัจจุบันก็ยังขาดบุคลากรอีกหลายหมื่นนาย
+          งานสอบสวนก็เป็นส่วนหนึ่งที่ประสบปัญหาขาดแคลน
+        </p>
         <blockquote class="quote">
-          "การมีกรอบตำแหน่งไม่ได้หมายความว่าจะบรรจุได้หมด เพราะขึ้นอยู่กับงบประมาณที่ได้รับ การจะเป็นพนักงานสอบสวนมีความยากลำบากและใช้เวลาอบรมประมาณ 15 เดือน  หลังจากรับเข้ามาในแต่ละปี ซึ่งจริงๆแล้วทางหน่วยงานให้ความสำคัญกับการบรรจุพนักงานสอบสวนเป็นอันดับแรก นักเรียนนายร้อยตำรวจ 95% ประมาณ 200 กว่าคน ต้องไปอยู่หน้างานสอบสวนก่อน  
-          นอกจากนี้ ยังมีการรับบุคคลภายนอกที่มีคุณวุฒิด้านนิติศาสตร์หรือกฎหมายจากต่างประเทศเข้ามาเป็นพนักงานสอบสวน ซึ่งรวมแล้วประมาณพันกว่านายต่อปีที่มีแผนจะบรรจุ หลังจากผ่านการอบรม การอบรมมีความสำคัญมาก เพราะงานสอบสวนกระทบสิทธิของประชาชน ต้องทำสำนวน รวบรวมหลักฐาน และปฏิบัติตามประมวลกฎหมายวิธีพิจารณาความอาญา พนักงานสอบสวนต้องเข้าใจอย่างถ่องแท้ว่าคดีและ พ.ร.บ. ต่างๆ หลายร้อยฉบับมีวิธีปฏิบัติอย่างไร แม้จะไม่เชี่ยวชาญทุกเรื่อง แต่จะอบรมให้มีคุณภาพก่อนส่งลงสถานีตำรวจ"
+          "การมีกรอบตำแหน่งไม่ได้หมายความว่าจะบรรจุได้หมด
+          เพราะขึ้นอยู่กับงบประมาณที่ได้รับ
+          การจะเป็นพนักงานสอบสวนมีความยากลำบากและใช้เวลาอบรมประมาณ 15 เดือน
+          หลังจากรับเข้ามาในแต่ละปี
+          ซึ่งจริงๆแล้วทางหน่วยงานให้ความสำคัญกับการบรรจุพนักงานสอบสวนเป็นอันดับแรก
+          นักเรียนนายร้อยตำรวจ 95% ประมาณ 200 กว่าคน
+          ต้องไปอยู่หน้างานสอบสวนก่อน นอกจากนี้
+          ยังมีการรับบุคคลภายนอกที่มีคุณวุฒิด้านนิติศาสตร์หรือกฎหมายจากต่างประเทศเข้ามาเป็นพนักงานสอบสวน
+          ซึ่งรวมแล้วประมาณพันกว่านายต่อปีที่มีแผนจะบรรจุ หลังจากผ่านการอบรม
+          การอบรมมีความสำคัญมาก เพราะงานสอบสวนกระทบสิทธิของประชาชน ต้องทำสำนวน
+          รวบรวมหลักฐาน และปฏิบัติตามประมวลกฎหมายวิธีพิจารณาความอาญา
+          พนักงานสอบสวนต้องเข้าใจอย่างถ่องแท้ว่าคดีและ พ.ร.บ. ต่างๆ
+          หลายร้อยฉบับมีวิธีปฏิบัติอย่างไร แม้จะไม่เชี่ยวชาญทุกเรื่อง
+          แต่จะอบรมให้มีคุณภาพก่อนส่งลงสถานีตำรวจ"
         </blockquote>
         <p>
-          พล.ต.ท.อาชยน ยอมรับว่างานสอบสวนเป็นงานที่เหนื่อย มีความกดดัน และมีคู่กรณี  ทำให้หลายคนต้องใช้กำลังใจ แรงจูงใจจึงมาจากเงินประจำตำแหน่งและเงินค่าทำสำนวน ประเด็นที่สองคือการกำหนดตำแหน่งให้มีความเจริญเติบโตหรือการเลื่อนไหลที่พอสมควร  มีแนวโน้มที่จะกลับมาดำเนินการในส่วนนี้ เพื่อให้พนักงานสอบสวนยังคงอยู่ในสายงาน มีแรงจูงใจและความก้าวหน้า โดยมีการพยายามอัดฉีดเม็ดเงินเพื่อดูแลพนักงานสอบสวนให้ได้รับค่าตอบแทนที่เหมาะสม สามารถดำรงชีพได้อย่างมีเกียรติและศักดิ์ศรี  และมีแผนระยะยาวครอบคลุมหลายปี โดยจะพิจารณาบรรจุเป็นพนักงานสอบสวนเป็นอันดับแรก ซึ่งมีอัตราส่วนมากกว่าสายงานอื่นเกือบทั้งหมด ระบบการดูแลพนักงานสอบสวน รวมถึงการเข้ามาและการให้อยู่ต่อ โดยต้องมีแรงจูงใจและการสนับสนุนความก้าวหน้า
+          พล.ต.ท.อาชยน ยอมรับว่างานสอบสวนเป็นงานที่เหนื่อย มีความกดดัน
+          และมีคู่กรณี ทำให้หลายคนต้องใช้กำลังใจ
+          แรงจูงใจจึงมาจากเงินประจำตำแหน่งและเงินค่าทำสำนวน
+          ประเด็นที่สองคือการกำหนดตำแหน่งให้มีความเจริญเติบโตหรือการเลื่อนไหลที่พอสมควร
+          มีแนวโน้มที่จะกลับมาดำเนินการในส่วนนี้
+          เพื่อให้พนักงานสอบสวนยังคงอยู่ในสายงาน มีแรงจูงใจและความก้าวหน้า
+          โดยมีการพยายามอัดฉีดเม็ดเงินเพื่อดูแลพนักงานสอบสวนให้ได้รับค่าตอบแทนที่เหมาะสม
+          สามารถดำรงชีพได้อย่างมีเกียรติและศักดิ์ศรี
+          และมีแผนระยะยาวครอบคลุมหลายปี
+          โดยจะพิจารณาบรรจุเป็นพนักงานสอบสวนเป็นอันดับแรก
+          ซึ่งมีอัตราส่วนมากกว่าสายงานอื่นเกือบทั้งหมด
+          ระบบการดูแลพนักงานสอบสวน รวมถึงการเข้ามาและการให้อยู่ต่อ
+          โดยต้องมีแรงจูงใจและการสนับสนุนความก้าวหน้า
         </p>
 
         <h2 class="text-2xl mt-4">การบริหารจัดการกำลังพล : ปริมาณงาน</h2>
         <p>
-          การขาดแคลน มีทั้งเกิดจากการเกษียณ, การปรับโอน, การสอบเป็นเนติบัณฑิตไปเป็นอัยการ/ผู้พิพากษา, หรือการโยกย้ายไปตำแหน่งอื่นที่ไม่ใช่พนักงานสอบสวน ผู้บังคับบัญชาทุกระดับทั่วประเทศต้องใส่ใจในการเกลี่ยกำลังพนักงานสอบสวนให้เพียงพอต่อปริมาณงานที่มีอยู่ทุกวัน เพราะพนักงานสอบสวนเป็นต้นทางของกระบวนการยุติธรรมที่สำคัญ และเป็นหลักของตำรวจที่ต้องทำสำนวน มีความเห็นส่งไปยังพนักงานอัยการ
+          การขาดแคลน มีทั้งเกิดจากการเกษียณ, การปรับโอน,
+          การสอบเป็นเนติบัณฑิตไปเป็นอัยการ/ผู้พิพากษา,
+          หรือการโยกย้ายไปตำแหน่งอื่นที่ไม่ใช่พนักงานสอบสวน
+          ผู้บังคับบัญชาทุกระดับทั่วประเทศต้องใส่ใจในการเกลี่ยกำลังพนักงานสอบสวนให้เพียงพอต่อปริมาณงานที่มีอยู่ทุกวัน
+          เพราะพนักงานสอบสวนเป็นต้นทางของกระบวนการยุติธรรมที่สำคัญ
+          และเป็นหลักของตำรวจที่ต้องทำสำนวน มีความเห็นส่งไปยังพนักงานอัยการ
         </p>
         <blockquote class="quote">
-          "หน่วยงานมีแผนพัฒนาพนักงานสอบสวนมาโดยตลอด ผู้บังคับบัญชาต้องดูแลพนักงานสอบสวนให้เข้าใจลักษณะงานว่าปริมาณงานแต่ละวันกับจำนวนพนักงานสอบสวนบางที่อาจขาดแคลน ล่าสุด ผู้บัญชาได้ออกคำสั่ง ห้ามช่วยราชการเด็ดขาด เพราะตามกฎหมายก็ช่วยไม่ได้อยู่แล้ว ผู้บังคับการจังหวัดหรือผู้บัญชาการที่เกี่ยวข้อง ต้องเกลี่ยกำลังตำรวจที่เคยอยู่ในกองบังคับการด้านกฎหมายและคดีลงมาช่วยงานในโรงพักด้วย เนื่องจากบางจุดอยู่ในภาวะขาดแคลนและวิกฤต เช่น สน.พญาไท ที่เหลือพนักงานสอบสวนไม่กี่ราย"
+          "หน่วยงานมีแผนพัฒนาพนักงานสอบสวนมาโดยตลอด
+          ผู้บังคับบัญชาต้องดูแลพนักงานสอบสวนให้เข้าใจลักษณะงานว่าปริมาณงานแต่ละวันกับจำนวนพนักงานสอบสวนบางที่อาจขาดแคลน
+          ล่าสุด ผู้บัญชาได้ออกคำสั่ง ห้ามช่วยราชการเด็ดขาด
+          เพราะตามกฎหมายก็ช่วยไม่ได้อยู่แล้ว
+          ผู้บังคับการจังหวัดหรือผู้บัญชาการที่เกี่ยวข้อง
+          ต้องเกลี่ยกำลังตำรวจที่เคยอยู่ในกองบังคับการด้านกฎหมายและคดีลงมาช่วยงานในโรงพักด้วย
+          เนื่องจากบางจุดอยู่ในภาวะขาดแคลนและวิกฤต เช่น สน.พญาไท
+          ที่เหลือพนักงานสอบสวนไม่กี่ราย"
         </blockquote>
-        <p class="italic">พล.ต.ท.อาชยน ไกรทอง ผู้บัญชาการสำนักงานกำลังพล ในฐานะโฆษกสำนักงานตำรวจแห่งชาติ กล่าว</p>
+        <p class="italic">
+          พล.ต.ท.อาชยน ไกรทอง ผู้บัญชาการสำนักงานกำลังพล
+          ในฐานะโฆษกสำนักงานตำรวจแห่งชาติ กล่าว
         </p>
       </div>
     </div>
@@ -401,218 +626,493 @@
     <div id="interview-work-overload-2" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">"70 คดีต่อปี" ไม่มีอยู่จริง! เปิดใจพนักงานสอบสอน เมื่อ "ระบบยุติธรรมไทย" ทรุดหนักใส่ 12,010 คน</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          "70 คดีต่อปี" ไม่มีอยู่จริง! เปิดใจพนักงานสอบสอน เมื่อ
+          "ระบบยุติธรรมไทย" ทรุดหนักใส่ 12,010 คน
+        </h2>
         <p>
-          พ.ต.อ.มานะ เผาะช่วย เลขานุการชมรมพนักงานสอบสวนตำรวจ อธิบายให้ฟังถึงภาระหน้าที่การทำงานของพนักงานสอบสวน ที่ต้องการทำงานตลอด 24 ชั่วโมง 7 วันต่อสัปดาห์นี้ กลับเต็มไปด้วยความท้าทายที่สาธารณชนอาจไม่เคยรู้
+          พ.ต.อ.มานะ เผาะช่วย เลขานุการชมรมพนักงานสอบสวนตำรวจ
+          อธิบายให้ฟังถึงภาระหน้าที่การทำงานของพนักงานสอบสวน
+          ที่ต้องการทำงานตลอด 24 ชั่วโมง 7 วันต่อสัปดาห์นี้
+          กลับเต็มไปด้วยความท้าทายที่สาธารณชนอาจไม่เคยรู้
         </p>
         <p>
-          ประเทศไทยมีสถานีตำรวจทั่วประเทศ รวมทั้งสิ้น 1,484 แห่ง แบ่งออกเป็นสถานีตำรวจนครบาล (สน.) 88 แห่งในกรุงเทพฯ และสถานีตำรวจภูธร (สภ.) ในต่างจังหวัด อีก 1,396 แห่ง  ขณะที่ สถานภาพกำลังพลที่ทำหน้าที่สอบสวน ตามข้อมูลปี 2567  มีจำนวน 18,599 ตำแหน่ง
+          ประเทศไทยมีสถานีตำรวจทั่วประเทศ รวมทั้งสิ้น 1,484 แห่ง
+          แบ่งออกเป็นสถานีตำรวจนครบาล (สน.) 88 แห่งในกรุงเทพฯ
+          และสถานีตำรวจภูธร (สภ.) ในต่างจังหวัด อีก 1,396 แห่ง ขณะที่
+          สถานภาพกำลังพลที่ทำหน้าที่สอบสวน ตามข้อมูลปี 2567 มีจำนวน 18,599
+          ตำแหน่ง
         </p>
         <p>
-          แต่จากการสำรวจของชมรมพนักงานสอบสวนตำรวจ พบว่าคนครองตำแหน่งหรือที่นั่งทำงานจริง มีแค่  12,010 ตำแหน่ง ขณะที่ตำแหน่งว่าง มี 6,589 ตำแหน่ง เท่ากับว่าคนขาดอยู่ถึง 1 ใน 3  ซึ่งหลักเกณฑ์ของสำนักงานตำรวจแห่งชาติที่กำหนดไว้ว่าพนักงานสอบสวน 1 คน ควรรับผิดชอบดูแลคดี ปีละไม่เกิน 70 สำนวนคดี แต่ความเป็นจริงคือ ปัจจุบันนี้ พนักงานสอบสวน 1 คน ต้องรับผิดชอบทำคดีเฉลี่ยคนละ 200-300 คดี บางคนทำมากกว่า 450 คดีต่อปี
+          แต่จากการสำรวจของชมรมพนักงานสอบสวนตำรวจ
+          พบว่าคนครองตำแหน่งหรือที่นั่งทำงานจริง มีแค่ 12,010 ตำแหน่ง
+          ขณะที่ตำแหน่งว่าง มี 6,589 ตำแหน่ง เท่ากับว่าคนขาดอยู่ถึง 1 ใน 3
+          ซึ่งหลักเกณฑ์ของสำนักงานตำรวจแห่งชาติที่กำหนดไว้ว่าพนักงานสอบสวน 1
+          คน ควรรับผิดชอบดูแลคดี ปีละไม่เกิน 70 สำนวนคดี แต่ความเป็นจริงคือ
+          ปัจจุบันนี้ พนักงานสอบสวน 1 คน ต้องรับผิดชอบทำคดีเฉลี่ยคนละ 200-300
+          คดี บางคนทำมากกว่า 450 คดีต่อปี
         </p>
         <blockquote class="quote">
-          "ต้องยอมรับว่าตำแหน่งพนักงานสอบสวนไม่เป็นที่นิยมของข้าราชการตำรวจ โดยเฉพาะตำรวจรุ่นใหม่ๆ เพราะมองไม่เห็นโอกาสเติบโต งานหนัก รายได้น้อย และยังพบว่าอัตราที่ยังว่างอยู่ในตอนนี้ เป็นการว่างที่เกิดจากการถูกผู้บังคับบัญชาเรียกตัวไปช่วยราชการ แล้วไม่มีคนมาทำงานทดแทน"
+          "ต้องยอมรับว่าตำแหน่งพนักงานสอบสวนไม่เป็นที่นิยมของข้าราชการตำรวจ
+          โดยเฉพาะตำรวจรุ่นใหม่ๆ เพราะมองไม่เห็นโอกาสเติบโต งานหนัก รายได้น้อย
+          และยังพบว่าอัตราที่ยังว่างอยู่ในตอนนี้
+          เป็นการว่างที่เกิดจากการถูกผู้บังคับบัญชาเรียกตัวไปช่วยราชการ
+          แล้วไม่มีคนมาทำงานทดแทน"
         </blockquote>
 
-        <h2 class="text-2xl mt-4">กว่าจะเป็น "สำนวน" : ในความซับซ้อนที่ซ่อนอยู่</h2>
-        <p>พ.ต.อ.มานะ ฉายให้เห็นภาพงานของพนักงานสอบสวน ต่อให้เป็นคดีดูว่าเป็นคดี “ง่าย”  แต่การทำงานไม่ได้ง่ายอย่างที่หลายคนคิด เพราะมีรายละเอียดที่ต้องลงลึกและใช้เวลามาก ยกตัวอย่าง เช่น คดีรถหาย</p>
-        <p>สิ่งแรกที่พนักงานสอบสวนจะสอบถามคือ "เหตุเกิดที่ไหน" เพื่อยืนยันเขตอำนาจการสอบสวน หากประชาชนไปผิดโรงพัก เรื่องก็จะต้องถูกส่งต่อไปยังพื้นที่ที่รับผิดชอบอยู่ดี จากนั้นจะมีการซักถามรายละเอียดเกี่ยวกับทรัพย์สินที่หายไป สถานที่เกิดเหตุ พฤติการณ์การจอดรถ การล็อก และเวลาที่เกิดเหตุ "พนักงานสอบสวนมีหน้าที่รวบรวมพยานหลักฐาน" ซึ่งหมายถึงการออกไปตรวจที่เกิดเหตุร่วมกับฝ่ายสืบสวนและป้องกันปราบปราม ทำแผนที่และบันทึกสถานที่เกิดเหตุ ถ่ายรูป รวบรวมพยานหลักฐาน เช่น กล้องวงจรปิด ซักถาม รปภ. และผู้เสียหายอย่างละเอียด การประสานงานหน่วยงาน แจ้งฝ่ายสืบสวนเพื่อติดตามคนร้าย รอข้อมูลจากหน่วยงานอื่น กองพิสูจน์หลักฐาน, โรงพยาบาล, ธนาคาร</p>
-        <blockquote class="quote">
-          "การสอบปากคำ ก็ใช้เวลาเป็นชั่วโมง ไม่ใช่ทำได้รวดเดียวจบ นั่งซักถามไปตามแบบฟอร์ม จากนั้นก็ต้องจัดทำเอกสารสำคัญต่างๆ เช่น บัญชีทรัพย์ที่ถูกประทุษร้าย บันทึกสถานการณ์ที่เกิดเหตุ ซึ่งล้วนต้องใช้เวลาและรายละเอียดสูง คดีง่ายๆเพียงคดีเดียว หากไม่มีปัจจัยอื่นแทรก หน่วยงานอื่นให้ความร่วมมือ ให้ข้อมูลกลับมาอย่างรวดเร็ว และที่เกิดเหตุไม่ได้อยู่ไกลจากโรงพัก ทั้งหมดนี้น่าจะ "ใช้เวลาประมาณ 3 ชั่วโมง" แต่ในความเป็นจริง "ไม่ใช่ เพราะมีคดีซ้อนเข้ามาตลอดเวลา" หลายปัจจัยที่เกี่ยวข้อง ทำให้แต่ละคดีล่าช้า"
-        </blockquote>
+        <h2 class="text-2xl mt-4">
+          กว่าจะเป็น "สำนวน" : ในความซับซ้อนที่ซ่อนอยู่
+        </h2>
         <p>
-          หรือแม้แต่คดีที่ไม่ต้องออกตรวจที่เกิดเหตุ เช่น คดีเช็คเด้ง พนักงานสอบสวนก็ยังต้องตรวจสอบรายละเอียดมากมาย ตั้งแต่เช็คและใบคืนเช็ค เขตอำนาจของธนาคาร มูลหนี้ว่าเป็นการกู้ยืมที่มีหลักฐานทางกฎหมายหรือไม่ และที่สำคัญคือต้องดูว่าการแจ้งความอยู่ภายในอายุความ 3 เดือนหรือไม่
+          พ.ต.อ.มานะ ฉายให้เห็นภาพงานของพนักงานสอบสวน
+          ต่อให้เป็นคดีดูว่าเป็นคดี “ง่าย”
+          แต่การทำงานไม่ได้ง่ายอย่างที่หลายคนคิด
+          เพราะมีรายละเอียดที่ต้องลงลึกและใช้เวลามาก ยกตัวอย่าง เช่น คดีรถหาย
+        </p>
+        <p>
+          สิ่งแรกที่พนักงานสอบสวนจะสอบถามคือ "เหตุเกิดที่ไหน"
+          เพื่อยืนยันเขตอำนาจการสอบสวน หากประชาชนไปผิดโรงพัก
+          เรื่องก็จะต้องถูกส่งต่อไปยังพื้นที่ที่รับผิดชอบอยู่ดี
+          จากนั้นจะมีการซักถามรายละเอียดเกี่ยวกับทรัพย์สินที่หายไป
+          สถานที่เกิดเหตุ พฤติการณ์การจอดรถ การล็อก และเวลาที่เกิดเหตุ
+          "พนักงานสอบสวนมีหน้าที่รวบรวมพยานหลักฐาน"
+          ซึ่งหมายถึงการออกไปตรวจที่เกิดเหตุร่วมกับฝ่ายสืบสวนและป้องกันปราบปราม
+          ทำแผนที่และบันทึกสถานที่เกิดเหตุ ถ่ายรูป รวบรวมพยานหลักฐาน เช่น
+          กล้องวงจรปิด ซักถาม รปภ. และผู้เสียหายอย่างละเอียด
+          การประสานงานหน่วยงาน แจ้งฝ่ายสืบสวนเพื่อติดตามคนร้าย
+          รอข้อมูลจากหน่วยงานอื่น กองพิสูจน์หลักฐาน, โรงพยาบาล, ธนาคาร
         </p>
         <blockquote class="quote">
-          "การพึ่งพาหน่วยงานภายนอก เป็นปัจจัยหนึ่งเหมือนกันที่ทำให้มีความล่าช้าของคดี พนักงานสอบสวนต้องรอเอกสารหรือผลพิสูจน์จากหน่วยงานอื่น เช่น กองพิสูจน์หลักฐาน ธนาคาร โรงพยาบาล หรือเรือนจำ หรือแม้แต่การที่พยาน ผู้เสียหายไม่มาตามนัด"
+          "การสอบปากคำ ก็ใช้เวลาเป็นชั่วโมง ไม่ใช่ทำได้รวดเดียวจบ
+          นั่งซักถามไปตามแบบฟอร์ม จากนั้นก็ต้องจัดทำเอกสารสำคัญต่างๆ เช่น
+          บัญชีทรัพย์ที่ถูกประทุษร้าย บันทึกสถานการณ์ที่เกิดเหตุ
+          ซึ่งล้วนต้องใช้เวลาและรายละเอียดสูง คดีง่ายๆเพียงคดีเดียว
+          หากไม่มีปัจจัยอื่นแทรก หน่วยงานอื่นให้ความร่วมมือ
+          ให้ข้อมูลกลับมาอย่างรวดเร็ว และที่เกิดเหตุไม่ได้อยู่ไกลจากโรงพัก
+          ทั้งหมดนี้น่าจะ "ใช้เวลาประมาณ 3 ชั่วโมง" แต่ในความเป็นจริง "ไม่ใช่
+          เพราะมีคดีซ้อนเข้ามาตลอดเวลา" หลายปัจจัยที่เกี่ยวข้อง
+          ทำให้แต่ละคดีล่าช้า"
         </blockquote>
         <p>
-          อีกหนึ่งประเด็นสำคัญที่พนักงานสอบสวนเผชิญคือความเข้าใจผิดของประชาชนเกี่ยวกับวัตถุประสงค์ของการแจ้งความ ประชาชนจำนวนมากมาแจ้งความคดีอาญา โดยหวังให้ได้เงินคืน ซึ่งเป็นความเข้าใจที่คลาดเคลื่อน เพราะการเรียกร้องค่าเสียหาย ต้องดำเนินการทางคดีแพ่งต่างหาก ต้องฟ้องที่ศาลแพ่งและมักต้องใช้ทนาย
+          หรือแม้แต่คดีที่ไม่ต้องออกตรวจที่เกิดเหตุ เช่น คดีเช็คเด้ง
+          พนักงานสอบสวนก็ยังต้องตรวจสอบรายละเอียดมากมาย
+          ตั้งแต่เช็คและใบคืนเช็ค เขตอำนาจของธนาคาร
+          มูลหนี้ว่าเป็นการกู้ยืมที่มีหลักฐานทางกฎหมายหรือไม่
+          และที่สำคัญคือต้องดูว่าการแจ้งความอยู่ภายในอายุความ 3 เดือนหรือไม่
         </p>
         <blockquote class="quote">
-          "การสอบสวนไม่ใช่มีวัตถุประสงค์เพื่อให้คุณได้เงินคืน  แต่มีวัตถุประสงค์เพื่อเอาตัวผู้กระทำความผิดมาฟ้องลงโทษทางอาญา ไม่ใช่มาทวงหนี้ อันนี้ก็เป็นความเข้าใจผิดของประชาชนที่ต้องแก้"
+          "การพึ่งพาหน่วยงานภายนอก
+          เป็นปัจจัยหนึ่งเหมือนกันที่ทำให้มีความล่าช้าของคดี
+          พนักงานสอบสวนต้องรอเอกสารหรือผลพิสูจน์จากหน่วยงานอื่น เช่น
+          กองพิสูจน์หลักฐาน ธนาคาร โรงพยาบาล หรือเรือนจำ หรือแม้แต่การที่พยาน
+          ผู้เสียหายไม่มาตามนัด"
         </blockquote>
         <p>
-          จำนวนคดีกับจำนวนของกำลังพลที่ทำหน้าที่งานสอบสวน ซึ่งดูเหมือนสวนทางกัน อีกทั้งปริมาณคดีที่เพิ่มขึ้นอย่างก้าวกระโดด ทำให้พนักงานสอบสวนเป็น "มนุษย์ธรรมดา" ที่รับไม่ไหว นำไปสู่ความเครียดสะสม ปัญหาสุขภาพจิต บางคนเป็นซึมเศร้า และการฆ่าตัวตาย 
+          อีกหนึ่งประเด็นสำคัญที่พนักงานสอบสวนเผชิญคือความเข้าใจผิดของประชาชนเกี่ยวกับวัตถุประสงค์ของการแจ้งความ
+          ประชาชนจำนวนมากมาแจ้งความคดีอาญา โดยหวังให้ได้เงินคืน
+          ซึ่งเป็นความเข้าใจที่คลาดเคลื่อน เพราะการเรียกร้องค่าเสียหาย
+          ต้องดำเนินการทางคดีแพ่งต่างหาก ต้องฟ้องที่ศาลแพ่งและมักต้องใช้ทนาย
+        </p>
+        <blockquote class="quote">
+          "การสอบสวนไม่ใช่มีวัตถุประสงค์เพื่อให้คุณได้เงินคืน
+          แต่มีวัตถุประสงค์เพื่อเอาตัวผู้กระทำความผิดมาฟ้องลงโทษทางอาญา
+          ไม่ใช่มาทวงหนี้ อันนี้ก็เป็นความเข้าใจผิดของประชาชนที่ต้องแก้"
+        </blockquote>
+        <p>
+          จำนวนคดีกับจำนวนของกำลังพลที่ทำหน้าที่งานสอบสวน
+          ซึ่งดูเหมือนสวนทางกัน อีกทั้งปริมาณคดีที่เพิ่มขึ้นอย่างก้าวกระโดด
+          ทำให้พนักงานสอบสวนเป็น "มนุษย์ธรรมดา" ที่รับไม่ไหว
+          นำไปสู่ความเครียดสะสม ปัญหาสุขภาพจิต บางคนเป็นซึมเศร้า
+          และการฆ่าตัวตาย
         </p>
 
-        <h2 class="text-2xl mt-4">ภาระงานที่หนัก ความรับผิดชอบมาก : ความกดดันมี</h2>
+        <h2 class="text-2xl mt-4">
+          ภาระงานที่หนัก ความรับผิดชอบมาก : ความกดดันมี
+        </h2>
         <p>
-          เมื่อมาดูที่ตัวเลขข้อมูลของสำนักงานกำลังพล สำนักงานตำรวจแห่งชาติ ระบุว่าระหว่างปีงบประมาณ 2562-2567 มีเจ้าหน้าที่ตำรวจเสียชีวิตจากภาวะรุนแรง รวม 173 ราย โดยปี 2565 มีจำนวนสูงถึง 44 ราย โดยหลายคนมีภาวะซึมเศร้า เครียดสะสมจากงานสอบสวน 
+          เมื่อมาดูที่ตัวเลขข้อมูลของสำนักงานกำลังพล สำนักงานตำรวจแห่งชาติ
+          ระบุว่าระหว่างปีงบประมาณ 2562-2567
+          มีเจ้าหน้าที่ตำรวจเสียชีวิตจากภาวะรุนแรง รวม 173 ราย โดยปี 2565
+          มีจำนวนสูงถึง 44 ราย โดยหลายคนมีภาวะซึมเศร้า เครียดสะสมจากงานสอบสวน
         </p>
         <p>
-          ขณะที่ข้อมูลจากโครงการ Depress We Care ซึมเศร้าเราใส่ใจ ของ รพ.ตำรวจ ระบุว่า ระหว่างปี 2561-2567 มีข้าราชการตำรวจและครอบครัวใช้บริการเพิ่มขึ้นอย่างต่อเนื่อง โดยปี 2566 ตำรวจใช้บริการผ่าน Inbox มากถึง 61 ครั้ง และสายด่วนอีก 82 ครั้ง
+          ขณะที่ข้อมูลจากโครงการ Depress We Care ซึมเศร้าเราใส่ใจ ของ รพ.ตำรวจ
+          ระบุว่า ระหว่างปี 2561-2567
+          มีข้าราชการตำรวจและครอบครัวใช้บริการเพิ่มขึ้นอย่างต่อเนื่อง โดยปี
+          2566 ตำรวจใช้บริการผ่าน Inbox มากถึง 61 ครั้ง และสายด่วนอีก 82 ครั้ง
         </p>
 
         <h2 class="text-2xl mt-4">ต้นตอความเครียดจากหลายปัจจัย</h2>
         <p>เลขานุการชมรมพนักงานสอบสวนตำรวจ ไล่เรียงเริ่มจากอย่างแรก คือ</p>
-        <p>ปริมาณงานที่มากเกินไป พนักงานสอบสวนต้องรับมือกับสารพัดคดีที่เข้ามาพร้อมกัน ทั้งรถชน เช็คเด้ง ฉ้อโกงออนไลน์ ทะเลาะวิวาท คดีเด็กและเยาวชน หรือเรียกได้ว่าสารพัดรูปแบบคดี</p>
-        <p>ขาดผู้ช่วยและอัตรากำลังไม่เพียงพอ อัตราที่ควรจะเป็น 18,000 นายทั่วประเทศ แต่ปัจจุบันตัวเลขที่แท้จริง มีกำลังคนเพียงแค่ 2 ใน 3 และเป็นการทำงานลำพัง ไม่มีตำแหน่ง “ผู้ช่วยพนักงานสอบสวน”</p>
-        <p>ค่าตอบแทนต่ำและไม่มีความก้าวหน้าในอาชีพ ระบบ "เลื่อนไหล" ที่เคยช่วยส่งเสริมขวัญกำลังใจและให้พนักงานสอบสวนสามารถเลื่อนตำแหน่งตามความสามารถโดยไม่ต้องวิ่งเต้น ถูกยกเลิกไปในปี 2559 ทำให้ขวัญกำลังใจลดลง นอกจากนี้ ค่าตอบแทนสำนวนการสอบสวนไม่สอดคล้องกับความรับผิดชอบงานที่หนักหน่วง เพราะเป็นอัตราเดิมที่ใช้มาตั้งแต่ปี 2534</p>
-        <p>สำนวนคดีอาญาซึ่งมีอัตราโทษจำคุกไม่เกิน 3 ปี ค่าตอบแทนทำสำนวน 500 บาท</p>
-        <p>สำนวนคดีอาญาซึ่งมีอัตราโทษจำคุกเกิน 3 ปี ไม่เกิน 10 ปี ค่าตอบแทนทำสำนวน 1,000 บาท</p> 
-        <p>สำนวนคดีอาญาซึ่งมีอัตราโทษจำคุกเกิน 10 ปี ค่าตอบแทนทำสำนวน 1,500 บาท</p>
-        <p>สำนวนคดีจราจรทางบก มีผู้ได้รับอันตรายสาหัส หรือเสียชีวิต ค่าตอบแทนทำสำนวน 500-1,000 บาท</p>
+        <p>
+          ปริมาณงานที่มากเกินไป
+          พนักงานสอบสวนต้องรับมือกับสารพัดคดีที่เข้ามาพร้อมกัน ทั้งรถชน
+          เช็คเด้ง ฉ้อโกงออนไลน์ ทะเลาะวิวาท คดีเด็กและเยาวชน
+          หรือเรียกได้ว่าสารพัดรูปแบบคดี
+        </p>
+        <p>
+          ขาดผู้ช่วยและอัตรากำลังไม่เพียงพอ อัตราที่ควรจะเป็น 18,000
+          นายทั่วประเทศ แต่ปัจจุบันตัวเลขที่แท้จริง มีกำลังคนเพียงแค่ 2 ใน 3
+          และเป็นการทำงานลำพัง ไม่มีตำแหน่ง “ผู้ช่วยพนักงานสอบสวน”
+        </p>
+        <p>
+          ค่าตอบแทนต่ำและไม่มีความก้าวหน้าในอาชีพ ระบบ "เลื่อนไหล"
+          ที่เคยช่วยส่งเสริมขวัญกำลังใจและให้พนักงานสอบสวนสามารถเลื่อนตำแหน่งตามความสามารถโดยไม่ต้องวิ่งเต้น
+          ถูกยกเลิกไปในปี 2559 ทำให้ขวัญกำลังใจลดลง นอกจากนี้
+          ค่าตอบแทนสำนวนการสอบสวนไม่สอดคล้องกับความรับผิดชอบงานที่หนักหน่วง
+          เพราะเป็นอัตราเดิมที่ใช้มาตั้งแต่ปี 2534
+        </p>
+        <p>
+          สำนวนคดีอาญาซึ่งมีอัตราโทษจำคุกไม่เกิน 3 ปี ค่าตอบแทนทำสำนวน 500 บาท
+        </p>
+        <p>
+          สำนวนคดีอาญาซึ่งมีอัตราโทษจำคุกเกิน 3 ปี ไม่เกิน 10 ปี
+          ค่าตอบแทนทำสำนวน 1,000 บาท
+        </p>
+        <p>
+          สำนวนคดีอาญาซึ่งมีอัตราโทษจำคุกเกิน 10 ปี ค่าตอบแทนทำสำนวน 1,500 บาท
+        </p>
+        <p>
+          สำนวนคดีจราจรทางบก มีผู้ได้รับอันตรายสาหัส หรือเสียชีวิต
+          ค่าตอบแทนทำสำนวน 500-1,000 บาท
+        </p>
         <blockquote class="quote">
-          "ดังนั้นควรที่จะเพิ่มค่าตอบแทนการทำสำนวนให้เหมาะสม...อย่างน้อยๆ ต้องเท่ากับ พนักงานสอบสวน DSI"
+          "ดังนั้นควรที่จะเพิ่มค่าตอบแทนการทำสำนวนให้เหมาะสม...อย่างน้อยๆ
+          ต้องเท่ากับ พนักงานสอบสวน DSI"
         </blockquote>
         <p class="italic">พ.ต.อ.มานะ เสนอ</p>
 
-        <h2 class="text-2xl mt-4">แทรกแซงคดี : ด้วยระบบพวกพ้อง นิยมเงิน ยศถาบรรดาศักดิ์ และ “ระบบรุ่น”</h2>
-        <p>พ.ต.อ.มานะ สะท้อนให้ฟังว่าสังคมไทยยังคงมี ระบบพวกพ้อง นิยมเงิน ยศถาบรรดาศักดิ์ และระบบรุ่น ทำให้เกิดการแทรกแซงคดี แม้แต่ตัวเขาเองยังเคยเจอ</p>
+        <h2 class="text-2xl mt-4">
+          แทรกแซงคดี : ด้วยระบบพวกพ้อง นิยมเงิน ยศถาบรรดาศักดิ์ และ “ระบบรุ่น”
+        </h2>
+        <p>
+          พ.ต.อ.มานะ สะท้อนให้ฟังว่าสังคมไทยยังคงมี ระบบพวกพ้อง นิยมเงิน
+          ยศถาบรรดาศักดิ์ และระบบรุ่น ทำให้เกิดการแทรกแซงคดี
+          แม้แต่ตัวเขาเองยังเคยเจอ
+        </p>
         <blockquote class="quote">
-          "ผมทำคดีกำลังสอบปากคำอยู่ จู่ๆก็ส่งสายโทรศัพท์มาให้คุย บอกคนชื่อนี้ อยากคุยด้วย แต่ผมก็ปฏิเสธไป และย้อนถามเขานั่งมาในรถคุณรึเปล่า อยู่ในเหตุการณ์ไหม ถ้าไม่ใช่ผมไม่คุย ผมจะสอบปากคำคนที่อยู่ในเหตุการณ์"
-          หรือแม้แต่บางครั้งพนักงานสอบสวนอาจถูก "ฝาก" ให้ดูแลคดีพิเศษ บางครั้งก็มีที่มาจากผู้บังคับบัญชาเอง เรียกไปบอกว่า "นายฝากมา พรรคพวกกันนะดูแลด้วย" แม้จะไม่ใช่การสั่งพลิกคดีโดยตรง แต่ก็สร้างความอึดอัด นอกจากนี้ยังมีการโยกย้ายตำแหน่งที่จิ้มใส่เลย โดยไม่คำนึงถึงความถนัดหรือประสบการณ์ของเจ้าหน้าที่"
+          "ผมทำคดีกำลังสอบปากคำอยู่ จู่ๆก็ส่งสายโทรศัพท์มาให้คุย บอกคนชื่อนี้
+          อยากคุยด้วย แต่ผมก็ปฏิเสธไป และย้อนถามเขานั่งมาในรถคุณรึเปล่า
+          อยู่ในเหตุการณ์ไหม ถ้าไม่ใช่ผมไม่คุย
+          ผมจะสอบปากคำคนที่อยู่ในเหตุการณ์"
+          หรือแม้แต่บางครั้งพนักงานสอบสวนอาจถูก "ฝาก" ให้ดูแลคดีพิเศษ
+          บางครั้งก็มีที่มาจากผู้บังคับบัญชาเอง เรียกไปบอกว่า "นายฝากมา
+          พรรคพวกกันนะดูแลด้วย" แม้จะไม่ใช่การสั่งพลิกคดีโดยตรง
+          แต่ก็สร้างความอึดอัด นอกจากนี้ยังมีการโยกย้ายตำแหน่งที่จิ้มใส่เลย
+          โดยไม่คำนึงถึงความถนัดหรือประสบการณ์ของเจ้าหน้าที่"
         </blockquote>
 
-        <h2 class="text-2xl mt-4">แรงกดดันจาก KPI : บิดเบือนภาพอาชญากรรมจริง</h2>
-        <p>การประเมิน KPI โรงพัก ก็มีส่วนที่สร้างแรงกดดันให้การทำงานของพนักงานสอบสวน และนำไปสู่การสร้างเทคนิคเพื่อหลบเลี่ยง “ความจริง”</p>
+        <h2 class="text-2xl mt-4">
+          แรงกดดันจาก KPI : บิดเบือนภาพอาชญากรรมจริง
+        </h2>
+        <p>
+          การประเมิน KPI โรงพัก
+          ก็มีส่วนที่สร้างแรงกดดันให้การทำงานของพนักงานสอบสวน
+          และนำไปสู่การสร้างเทคนิคเพื่อหลบเลี่ยง “ความจริง”
+        </p>
         <blockquote class="quote">
-          "บางครั้งก็มีเรื่องของ นโยบายปากเปล่า ของผู้บังคับบัญชา ไม่ให้รับคดีที่ไม่รู้ตัวผู้กระทำผิด เข้าสู่ระบบสำนวน เช่น คดีลักวิ่งชิงปล้น ถ้ายังไม่รู้ว่าใครกระทำความผิด ก็ยังไม่ให้รับคดีเป็นสำนวน แค่ให้ลงบันทึกประจำวันไว้ ไม่ต้องลงเข้าสู่ระบบสำนวนคดี เพราะกลัว KPI มันจะเสีย ไม่อยากให้กระทบ KPI ด้านการป้องกัน เพราะมันจะต้องไปรายงานประจำเดือนว่า มีเหตุลักทรัพย์ ทำไมยังจับไม่ได้ 
-          แต่การทำแบบนี้ส่วนตัวผมไม่เห็นด้วย เพราะมันทำให้ข้อมูลอาชญากรรมไม่ตรงกับความเป็นจริง และส่งผลต่อการวางแผนป้องกัน เมื่ออาชญากรรมมันเกิดขึ้น สํานักงานตำรวจต้องกล้าที่จะรับแจ้งความทุกเรื่อง เพื่อให้ได้ข้อมูลจริงเอาไปบริหารในการวางแผนป้องกันอาชญากรรมอย่างมีประสิทธิภาพ"
+          "บางครั้งก็มีเรื่องของ นโยบายปากเปล่า ของผู้บังคับบัญชา
+          ไม่ให้รับคดีที่ไม่รู้ตัวผู้กระทำผิด เข้าสู่ระบบสำนวน เช่น
+          คดีลักวิ่งชิงปล้น ถ้ายังไม่รู้ว่าใครกระทำความผิด
+          ก็ยังไม่ให้รับคดีเป็นสำนวน แค่ให้ลงบันทึกประจำวันไว้
+          ไม่ต้องลงเข้าสู่ระบบสำนวนคดี เพราะกลัว KPI มันจะเสีย ไม่อยากให้กระทบ
+          KPI ด้านการป้องกัน เพราะมันจะต้องไปรายงานประจำเดือนว่า
+          มีเหตุลักทรัพย์ ทำไมยังจับไม่ได้ แต่การทำแบบนี้ส่วนตัวผมไม่เห็นด้วย
+          เพราะมันทำให้ข้อมูลอาชญากรรมไม่ตรงกับความเป็นจริง
+          และส่งผลต่อการวางแผนป้องกัน เมื่ออาชญากรรมมันเกิดขึ้น
+          สํานักงานตำรวจต้องกล้าที่จะรับแจ้งความทุกเรื่อง
+          เพื่อให้ได้ข้อมูลจริงเอาไปบริหารในการวางแผนป้องกันอาชญากรรมอย่างมีประสิทธิภาพ"
         </blockquote>
         <p class="italic">พ.ต.อ.มานะ กล่าว</p>
         <blockquote class="quote">
-          "ถึงเราจะเห็นคนหันไปพึ่งช่องทางอื่นๆ เช่น รายการทีวี หรือนักเคลื่อนไหวทางสังคม แต่อย่าลืมว่าสุดท้ายแล้วเรื่องส่วนใหญ่ก็มักจะถูกส่งกลับมาให้ตำรวจเป็นผู้ดำเนินการอยู่ดี...ผมยังเชื่อมั่นว่าประชาชนเขายังเชื่อมั่นในการทำงานของตำรวจ เพียงแต่ระบบต้องเปลี่ยน แม้จะมีปัญหาและความล่าช้า เห็นได้จากปริมาณคนที่ยังคงมาแจ้งความที่โรงพักเป็นจำนวนมาก ถ้าเขาไม่เชื่อมั่นการทำงานของตำรวจแล้ว โรงพักก็คงจะไม่มีคนหรอกครับ 
-          หากปัญหาของพนักงานสอบสวนถูกมองข้าม เราก็จะยิ่งสูญเสียพนักงานสอบสวนที่มีคุณภาพไปเรื่อยๆ...ที่สำคัญการให้การสนับสนุนที่เพียงพอ ผลที่คืนกลับมาไม่ใช่แค่เพื่อตัวพนักงานสอบสวน แต่เพื่อสร้างความยุติธรรมให้กับประชาชน"
+          "ถึงเราจะเห็นคนหันไปพึ่งช่องทางอื่นๆ เช่น รายการทีวี
+          หรือนักเคลื่อนไหวทางสังคม
+          แต่อย่าลืมว่าสุดท้ายแล้วเรื่องส่วนใหญ่ก็มักจะถูกส่งกลับมาให้ตำรวจเป็นผู้ดำเนินการอยู่ดี...ผมยังเชื่อมั่นว่าประชาชนเขายังเชื่อมั่นในการทำงานของตำรวจ
+          เพียงแต่ระบบต้องเปลี่ยน แม้จะมีปัญหาและความล่าช้า
+          เห็นได้จากปริมาณคนที่ยังคงมาแจ้งความที่โรงพักเป็นจำนวนมาก
+          ถ้าเขาไม่เชื่อมั่นการทำงานของตำรวจแล้ว โรงพักก็คงจะไม่มีคนหรอกครับ
+          หากปัญหาของพนักงานสอบสวนถูกมองข้าม
+          เราก็จะยิ่งสูญเสียพนักงานสอบสวนที่มีคุณภาพไปเรื่อยๆ...ที่สำคัญการให้การสนับสนุนที่เพียงพอ
+          ผลที่คืนกลับมาไม่ใช่แค่เพื่อตัวพนักงานสอบสวน
+          แต่เพื่อสร้างความยุติธรรมให้กับประชาชน"
         </blockquote>
-        <p class="italic">พ.ต.อ.มานะ เผาะช่วย เลขานุการชมรมพนักงานสอบสวนตำรวจ สะท้อนมุมมอง</p>
+        <p class="italic">
+          พ.ต.อ.มานะ เผาะช่วย เลขานุการชมรมพนักงานสอบสวนตำรวจ สะท้อนมุมมอง
+        </p>
       </div>
     </div>
 
-    <section id="section10" class="section flex items-center justify-center text-white text-4xl font-bold bg-transparent">
-      <img src="assets/images/investigation-process.png" alt="" class="w-full h-full object-cover">
+    <section id="section10"
+      class="section flex items-center justify-center text-white text-4xl font-bold bg-transparent">
+      <img src="assets/images/investigation-process.png" alt="" class="w-full h-full object-cover" />
     </section>
 
     <section id="section11" class="flex section h-screen text-white bg-transparent justify-center items-center">
       <div class="text-center w-[700px] font-[Kanit-Regular]">
-        <h1 class="font-[ChakraPetch-Bold] text-4xl text-[#EA3F61]">จากต้นน้ำ สู่กลางน้ำ กระบวนการยุติธรรม</h1>
+        <h1 class="font-[ChakraPetch-Bold] text-4xl text-[#EA3F61]">
+          จากต้นน้ำ สู่กลางน้ำ กระบวนการยุติธรรม
+        </h1>
         <div class="h-8"></div>
         <p>
-          แม้จากข้อมูลของตำรวจ จะพบว่าสถิติจำนวนคดีที่รับแจ้งความและจับกุมของตำรวจจะเพิ่มสูงขึ้น แต่เมื่อดูที่ข้อมูลของจำนวนคดีที่ส่งไปยังพนักงานอัยการ กลับพบว่ามีจำนวนลดลง  รวมถึงจำนวนคดีที่เข้าสู่ชั้นศาล แสดงให้เห็นถึงความไม่สอดคล้องกันระหว่าง ต้นน้ำ และ กลางน้ำ ของกระบวนการยุติธรรม 
+          แม้จากข้อมูลของตำรวจ
+          จะพบว่าสถิติจำนวนคดีที่รับแจ้งความและจับกุมของตำรวจจะเพิ่มสูงขึ้น
+          แต่เมื่อดูที่ข้อมูลของจำนวนคดีที่ส่งไปยังพนักงานอัยการ
+          กลับพบว่ามีจำนวนลดลง รวมถึงจำนวนคดีที่เข้าสู่ชั้นศาล
+          แสดงให้เห็นถึงความไม่สอดคล้องกันระหว่าง ต้นน้ำ และ กลางน้ำ
+          ของกระบวนการยุติธรรม
         </p>
         <div class="h-4"></div>
         <p>
-          โดยเฉพาะในปี 2565 และ 2566 คดีที่ถูกจับกุมจำนวนมากของตำรวจ ไม่ได้นำไปสู่การดำเนินการในชั้นอัยการหรือศาลในสัดส่วนเดียวกัน คือ ตัวเลขของจำนวนคดีการรับแจ้งความและการจับกุมของตำรวจเพิ่มสูงขึ้น แต่ตัวเลขคดีที่ส่งมาให้อัยการลดลง แม้ว่าตัวเลขบางปีจะมีความผกผันอยู่บ้างก็ตาม 
+          โดยเฉพาะในปี 2565 และ 2566 คดีที่ถูกจับกุมจำนวนมากของตำรวจ
+          ไม่ได้นำไปสู่การดำเนินการในชั้นอัยการหรือศาลในสัดส่วนเดียวกัน คือ
+          ตัวเลขของจำนวนคดีการรับแจ้งความและการจับกุมของตำรวจเพิ่มสูงขึ้น
+          แต่ตัวเลขคดีที่ส่งมาให้อัยการลดลง
+          แม้ว่าตัวเลขบางปีจะมีความผกผันอยู่บ้างก็ตาม
         </p>
         <div class="h-4"></div>
         <p>
-          อีกประเด็นหนึ่งที่น่าสนใจที่พบจากดาต้าข้อมูลคือ จำนวนคดีที่อัยการส่งฟ้องมีจำนวนลดลง และคดีที่คงค้างของอัยการในแต่ละปี ไม่มีแนวโน้มลดลง แสดงให้เห็นถึงภาระงานที่สะสมเรื่อย ๆ และอาจสะท้อนถึง “ปัญหาคอขวด” หรือ “รอยรั่ว” ในกระบวนการยุติธรรม ที่กำลังต้องการการแก้ไขอย่างเป็นระบบ
+          อีกประเด็นหนึ่งที่น่าสนใจที่พบจากดาต้าข้อมูลคือ
+          จำนวนคดีที่อัยการส่งฟ้องมีจำนวนลดลง
+          และคดีที่คงค้างของอัยการในแต่ละปี ไม่มีแนวโน้มลดลง
+          แสดงให้เห็นถึงภาระงานที่สะสมเรื่อย ๆ และอาจสะท้อนถึง “ปัญหาคอขวด”
+          หรือ “รอยรั่ว” ในกระบวนการยุติธรรม
+          ที่กำลังต้องการการแก้ไขอย่างเป็นระบบ
         </p>
         <div class="h-8"></div>
-        <a class="underline" href="#interview-attorney">อ่านเพิ่มเติม</a>
+        <a id="interview-attorney-open" class="underline" href="#interview-attorney">อ่านเพิ่มเติม</a>
       </div>
     </section>
 
     <div id="interview-attorney" class="modal">
       <div class="modal-content">
-        <a href="#" class="close">&times;</a>
-        <h1>จากต้นน้ำ สู่กลางน้ำ กระบวนการยุติธรรม</h1>
-        <p>
-          แม้จากข้อมูลของตำรวจ จะพบว่าสถิติจำนวนคดีที่รับแจ้งความและจับกุมของตำรวจจะเพิ่มสูงขึ้น แต่เมื่อดูที่ข้อมูลของจำนวนคดีที่ส่งไปยังพนักงานอัยการ กลับพบว่ามีจำนวนลดลง  รวมถึงจำนวนคดีที่เข้าสู่ชั้นศาล แสดงให้เห็นถึงความไม่สอดคล้องกันระหว่าง ต้นน้ำ และ กลางน้ำ ของกระบวนการยุติธรรม 
+        <a id="interview-attorney-close" href="#" class="close">&times;</a>
+        <h2 class="font-[ChakraPetch-SemiBold] text-3xl font-bold">
+          จากต้นน้ำ สู่กลางน้ำ กระบวนการยุติธรรม
+        </h2>
+        <p class="">
+          แม้จากข้อมูลของตำรวจ
+          จะพบว่าสถิติจำนวนคดีที่รับแจ้งความและจับกุมของตำรวจจะเพิ่มสูงขึ้น
+          แต่เมื่อดูที่ข้อมูลของจำนวนคดีที่ส่งไปยังพนักงานอัยการ
+          กลับพบว่ามีจำนวนลดลง รวมถึงจำนวนคดีที่เข้าสู่ชั้นศาล
+          แสดงให้เห็นถึงความไม่สอดคล้องกันระหว่าง ต้นน้ำ และ กลางน้ำ
+          ของกระบวนการยุติธรรม
         </p>
-        <p>
-          โดยเฉพาะในปี 2565 และ 2566 คดีที่ถูกจับกุมจำนวนมากของตำรวจ ไม่ได้นำไปสู่การดำเนินการในชั้นอัยการหรือศาลในสัดส่วนเดียวกัน คือ ตัวเลขของจำนวนคดีการรับแจ้งความและการจับกุมของตำรวจเพิ่มสูงขึ้น แต่ตัวเลขคดีที่ส่งมาให้อัยการลดลง แม้ว่าตัวเลขบางปีจะมีความผกผันอยู่บ้างก็ตาม 
+        <p class="mt-3">
+          โดยเฉพาะในปี 2565 และ 2566 คดีที่ถูกจับกุมจำนวนมากของตำรวจ
+          ไม่ได้นำไปสู่การดำเนินการในชั้นอัยการหรือศาลในสัดส่วนเดียวกัน คือ
+          ตัวเลขของจำนวนคดีการรับแจ้งความและการจับกุมของตำรวจเพิ่มสูงขึ้น
+          แต่ตัวเลขคดีที่ส่งมาให้อัยการลดลง
+          แม้ว่าตัวเลขบางปีจะมีความผกผันอยู่บ้างก็ตาม
         </p>
-        <p>
-          อีกประเด็นหนึ่งที่น่าสนใจที่พบจากดาต้าข้อมูลคือ จำนวนคดีที่อัยการส่งฟ้องมีจำนวนลดลง และคดีที่คงค้างของอัยการในแต่ละปี ไม่มีแนวโน้มลดลง แสดงให้เห็นถึงภาระงานที่สะสมเรื่อย ๆ และอาจสะท้อนถึง “ปัญหาคอขวด” หรือ “รอยรั่ว” ในกระบวนการยุติธรรม ที่กำลังต้องการการแก้ไขอย่างเป็นระบบ
+        <p class="mt-3">
+          อีกประเด็นหนึ่งที่น่าสนใจที่พบจากดาต้าข้อมูลคือ
+          จำนวนคดีที่อัยการส่งฟ้องมีจำนวนลดลง
+          และคดีที่คงค้างของอัยการในแต่ละปี ไม่มีแนวโน้มลดลง
+          แสดงให้เห็นถึงภาระงานที่สะสมเรื่อย ๆ และอาจสะท้อนถึง “ปัญหาคอขวด”
+          หรือ “รอยรั่ว” ในกระบวนการยุติธรรม
+          ที่กำลังต้องการการแก้ไขอย่างเป็นระบบ
         </p>
-        <p>
-          เมื่อมาดูที่สถิติข้อมูลจำนวนของอัยการ อัตรากำลังรวมของข้าราชการอัยการ ตั้งแต่ปี พ.ศ. 2562 ถึง 2567  
+        <p class="mt-3">
+          เมื่อมาดูที่สถิติข้อมูลจำนวนของอัยการ
+          อัตรากำลังรวมของข้าราชการอัยการ ตั้งแต่ปี พ.ศ. 2562 ถึง 2567
         </p>
-        <ul>
+        <ul class="list-disc m-5">
           <li>พ.ศ. 2562 อัตรากำลังรวม 3,862 คน</li>
           <li>พ.ศ. 2563 อัตรากำลังรวม 4,236 คน (เพิ่มขึ้นมาก)</li>
           <li>พ.ศ. 2564 อัตรากำลังรวม 4,151 คน (ลดลงเล็กน้อยจากปี 2563)</li>
-          <li>พ.ศ. 2565 อัตรากำลังรวม 4,224 คน (เพิ่มขึ้นจากปี 2564 แต่ยังน้อยกว่าปี 2563 เล็กน้อย)</li>
-          <li>พ.ศ. 2566 อัตรากำลังรวม 4,360 คน (เพิ่มขึ้นสูงสุดในรอบ 5 ปี)</li>
+          <li>
+            พ.ศ. 2565 อัตรากำลังรวม 4,224 คน (เพิ่มขึ้นจากปี 2564
+            แต่ยังน้อยกว่าปี 2563 เล็กน้อย)
+          </li>
+          <li>
+            พ.ศ. 2566 อัตรากำลังรวม 4,360 คน (เพิ่มขึ้นสูงสุดในรอบ 5 ปี)
+          </li>
           <li>พ.ศ. 2567 อัตรากำลังรวม 4,257 คน (ลดลงจากปี 2566 เล็กน้อย)</li>
         </ul>
         <p>
-          การที่อัตรากำลังข้าราชการอัยการโดยรวมเพิ่มขึ้นอย่างมีนัยสำคัญจาก 3,862 คนในปี 2562 เป็น 4,360 คนในปี 2566 (เพิ่มขึ้น 498 คน) สูงที่สุดในช่วง 5 ปีที่ผ่านมา สะท้อนถึงความต้องการที่เพิ่มขึ้นในการปฏิบัติภารกิจ หรืออาจบ่งชี้ว่าสำนักงานอัยการสูงสุดมีการขยายตัวของภารกิจ หรือมีปริมาณงานที่เพิ่มขึ้น ซับซ้อนขึ้น จึงทำให้จำเป็นต้องเพิ่มกำลังคน เพื่อรองรับงานดังกล่าว เช่น คดีอาชญากรรมทางเศรษฐกิจ คดีไซเบอร์ หรือคดีข้ามชาติ อาจมีความต้องการบุคลากรที่มีความเชี่ยวชาญเฉพาะทาง ซึ่งส่งผลให้มีการเพิ่มอัตรากำลังในบางตำแหน่งหรือบางระดับ สะท้อนถึงแผนระยะยาวของหน่วยงานในการขยายขีดความสามารถ
+          การที่อัตรากำลังข้าราชการอัยการโดยรวมเพิ่มขึ้นอย่างมีนัยสำคัญจาก
+          3,862 คนในปี 2562 เป็น 4,360 คนในปี 2566 (เพิ่มขึ้น 498 คน)
+          สูงที่สุดในช่วง 5 ปีที่ผ่านมา
+          สะท้อนถึงความต้องการที่เพิ่มขึ้นในการปฏิบัติภารกิจ
+          หรืออาจบ่งชี้ว่าสำนักงานอัยการสูงสุดมีการขยายตัวของภารกิจ
+          หรือมีปริมาณงานที่เพิ่มขึ้น ซับซ้อนขึ้น
+          จึงทำให้จำเป็นต้องเพิ่มกำลังคน เพื่อรองรับงานดังกล่าว เช่น
+          คดีอาชญากรรมทางเศรษฐกิจ คดีไซเบอร์ หรือคดีข้ามชาติ
+          อาจมีความต้องการบุคลากรที่มีความเชี่ยวชาญเฉพาะทาง
+          ซึ่งส่งผลให้มีการเพิ่มอัตรากำลังในบางตำแหน่งหรือบางระดับ
+          สะท้อนถึงแผนระยะยาวของหน่วยงานในการขยายขีดความสามารถ
         </p>
 
-        <h2>เจาะลึก “คอขวด” กระบวนการยุติธรรม ปัญหาคดีคงค้างและทางออกเชิงระบบ</h2>
-        <p>
-          ภาพรวมของคดีคงค้างจำนวนมหาศาลในชั้นอัยการ มักถูกมองว่าเป็นเพียงตัวเลขบนหน้ากระดาษ แต่เบื้องหลังตัวเลขเหล่านี้ สะท้อนถึงปัญหาเชิงระบบที่ซับซ้อนมากกว่าสถิติจะบอกได้
+        <h2 class="font-bold text-2xl mt-3">
+          เจาะลึก “คอขวด” กระบวนการยุติธรรม ปัญหาคดีคงค้างและทางออกเชิงระบบ
+        </h2>
+        <p class="mt-3">
+          ภาพรวมของคดีคงค้างจำนวนมหาศาลในชั้นอัยการ
+          มักถูกมองว่าเป็นเพียงตัวเลขบนหน้ากระดาษ แต่เบื้องหลังตัวเลขเหล่านี้
+          สะท้อนถึงปัญหาเชิงระบบที่ซับซ้อนมากกว่าสถิติจะบอกได้
         </p>
         <blockquote class="quote">
-          “ เรื่องนี้อาจต้องแยกเป็น 2 ส่วน ส่วนแรกคือ สาเหตุการเพิ่มขึ้นของคดี ต้องบอกว่าการเพิ่มขึ้นของคดีอาชญากรรม ไม่ได้ขึ้นกับคนในกระบวนการยุติธรรม ไม่ขึ้นกับตำรวจ อัยการ หรือศาลที่ทำให้คดีเพิ่มขึ้น แต่เกิดจากปัญหาเศรษฐกิจ สังคม การเมือง เช่น เศรษฐกิจไม่ดีทำให้เกิดอาชญากรรมเกี่ยวกับทรัพย์สิน หรือปัญหาความขัดแย้งทางความคิด"
+          “ เรื่องนี้อาจต้องแยกเป็น 2 ส่วน ส่วนแรกคือ สาเหตุการเพิ่มขึ้นของคดี
+          ต้องบอกว่าการเพิ่มขึ้นของคดีอาชญากรรม
+          ไม่ได้ขึ้นกับคนในกระบวนการยุติธรรม ไม่ขึ้นกับตำรวจ อัยการ
+          หรือศาลที่ทำให้คดีเพิ่มขึ้น แต่เกิดจากปัญหาเศรษฐกิจ สังคม การเมือง
+          เช่น เศรษฐกิจไม่ดีทำให้เกิดอาชญากรรมเกี่ยวกับทรัพย์สิน
+          หรือปัญหาความขัดแย้งทางความคิด"
         </blockquote>
-        <p class="italic">นายวัชรินทร์ ภาณุรัตน์ รองอธิบดีอัยการ สำนักงานการสอบสวน กล่าวอย่างชัดเจน</p>
-        <blockquote class="quote">
-          "และอีกส่วนหนึ่ง ถึงแม้ว่าจำนวนคดีเข้ามามาก แต่ปัญหาคดีค้าง ไม่ได้เกิดจากคดีซับซ้อน หรือยาก แต่เกิดจาก “บุคลากร” ไม่เพียงพอ "
-        </blockquote>
-
-        <h2>คดีค้าง: ปัญหาที่ไม่ได้มาจากความซับซ้อน</h2>
-        <p>
-          "ปัจจุบันอัยการทั่วประเทศมีไม่ถึง 5,000 คน เรามีแค่ประมาณ 4,000 กว่าคน ซึ่งไม่สอดรับกับปริมาณงานที่เพิ่มขึ้น" นายวัชรินทร์ ภาณุรัตน์ รองอธิบดีอัยการ สำนักงานการสอบสวน เริ่มต้นด้วยฉายภาพให้เห็นถึงสถานการณ์ของปัญหา ด้วยตัวเลขจำนวนของบุคลากรที่เปรียบเสมือนเป็น “กลางน้ำ” ของกระบวนการยุติธรรม ชนิดที่น่าตกใจเมื่อเทียบกับจำนวนคดีที่เพิ่มขึ้นอย่างต่อเนื่องในช่วง 5 ปีที่ผ่านมา
-        </p>
-        <p>
-          ความหนักหน่วงของภาระงานนี้ รองอธิบดีอัยการ เล่าผ่านประสบการณ์ตรงจากอดีตเมื่อครั้งที่เป็น “อัยการจังหวัดพัทยา” ปี 2557 แต่ละวันต้องรับสำนวนใหม่เฉลี่ยวันละ 80 คดี ซึ่งมีเข้ามาทุกวัน แม้ว่าราชการจะหยุดเสาร์-อาทิตย์ แต่การกระทำความผิดไม่หยุด
-        </p>
-
-        <h2>เมื่อมาตรฐานสูง ส่วนทางกับความต้องการ กลายเป็นอุปสรรคสำคัญ</h2>
-        <p>
-          ปัญหาการขาดแคลนบุคลากรไม่ได้เกิดจากการไม่มีผู้สนใจเข้ามาทำงาน แต่อยู่ที่ความยากของการสรรหา เนื่องจากการสรรหาบุคลากรเป็นเรื่องยากและเข้มงวดมาก เนื่องจากมีการตั้งมาตรฐานคุณสมบัติไว้สูงคล้ายกับผู้พิพากษา เพื่อรักษาคุณภาพในการวินิจฉัยคดีและเรื่องความยุติธรรม คือ ต้องจบปริญญาตรีนิติศาสตร์ เนติบัณฑิตไทย และมีประสบการณ์วิชาชีพด้านกฎหมายอย่างน้อย 2 ปี เช่น เป็นทนายความ นิติกร หรือพนักงานสอบสวน อายุต้อง 25 ปีขึ้นไป
-        </p>
-        <p>
-          สิ่งที่น่าสนใจคือตัวเลขการสอบที่มีอัตราการแข่งขันสูง และผู้สอบผ่านน้อยมาก เพราะทำคะแนนไม่ถึงเกณฑ์ครึ่งหนึ่งที่กำหนดไว้ ซึ่งเป็นไปตามมาตรฐานที่สูงขององค์กร สะท้อนถึงความยากของการเข้าสู่อาชีพนี้ ทั้งๆที่มีตำแหน่งว่างรออยู่
-        </p>
-        <p>
-          เช่น การสอบใน "สนามใหญ่" (นิติศาสตร์บัณฑิต เนติบัณฑิตไทย) มีผู้สมัครเกือบ 7,000 คน แต่สอบได้เพียง 58 คน
-        </p>
-        <p>
-          ส่วน "สนามเล็ก" (นิติศาสตร์บัณฑิต เนติบัณฑิตไทย และปริญญาโทกฎหมาย) มีผู้สมัคร 2,000 คน แต่สอบได้เพียง 22 คน
-        </p>
-        <p>
-          แน่นอนว่า เมื่อคนน้อย คดีมาก การบริหารจัดการคดีย่อมเป็นไปอย่างยากลำบาก ผลกระทบที่ตามมาคือ ทำให้มีคดีค้างสะสม ส่งผลโดยตรงต่อการบริหารคดี กลายเป็น "คอขวด" ของกระบวนการยุติธรรม เพราะแม้มีตำแหน่งว่าง แต่กลับไม่มีคนที่มีคุณสมบัติเพียงพอที่จะสอบผ่านเข้ามาทำหน้าที่ได้
-        </p>
-        <p>
-          ซึ่งปัญหาการขาดแคลนบุคลากรและการสรรหานี้ “ผู้พิพากษา” ก็ประสบปัญหาเช่นเดียวกัน
-        </p>
-        <p>
-          ซึ่งรองอธิบดีอัยการ สำนักงานการสอบสวน เสนอแนวคิดในการแก้ปัญหานี้ว่า ควรเปลี่ยนจากการคัดกรองที่จุดเข้า หรือการสอบ มาเป็นการพัฒนาหลังเข้าทำงาน ด้วยการฝึกอบรม ซึ่งอาจช่วยแก้ปัญหาการขาดแคลนบุคลากรได้มีประสิทธิภาพมากขึ้น 
+        <p class="italic">
+          นายวัชรินทร์ ภาณุรัตน์ รองอธิบดีอัยการ สำนักงานการสอบสวน
+          กล่าวอย่างชัดเจน
         </p>
         <blockquote class="quote">
-          “ ถ้าถามความเห็นของผมในมุมมองส่วนตัว การแก้ไขปัญหาบุคลากรขาดแคลนเราอาจจะต้องลดความยากของการออกข้อสอบลง เพื่อให้ได้จำนวนคนตามตำแหน่งที่ว่างอยู่  เพราะปัจจุบันอัยการมีตำแหน่งว่าง 180 อัตรา แต่สอบได้เพียง 58 คนในสนามใหญ่ และ 22 คนในสนามเล็ก จากที่ต้องการทั้งหมด 90 คน
-          เพราะถ้าเราดูคุณสมบัติอื่นๆ ที่กำหนดไว้ในการจะสมัครสอบได้  คุณสมบัติค่อนข้างสูงอยู่แล้ว ดังนั้นสิ่งที่ต้องทำคือเมื่อมีผู้สอบผ่านเข้ามาได้มากขึ้น จะต้องมีการฝึกอบรมเพิ่มเติมอย่างเข้มข้น เพื่อให้ได้บุคลากรที่มีความรู้และความมุ่งมั่นเพียงพอ " 
+          "และอีกส่วนหนึ่ง ถึงแม้ว่าจำนวนคดีเข้ามามาก แต่ปัญหาคดีค้าง
+          ไม่ได้เกิดจากคดีซับซ้อน หรือยาก แต่เกิดจาก “บุคลากร” ไม่เพียงพอ "
         </blockquote>
 
-        <h2>"กลางน้ำ" ที่ลำบากที่สุด</h2>
-        <p>
-          อีกสิ่งที่น่าสนใจจากมุมมองของอัยการ คือ กระบวนการทำงาน การเป็น "กลางน้ำ" ที่ลำบากที่สุดในกระบวนการยุติธรรม เพราะกระบวนการยุติธรรมในไทย มีการแบ่งแยกหน้าที่มากเกินไป ระหว่างชั้นสอบสวน กับชั้นสั่งคดี ทำให้ 'กลางน้ำ' อย่างอัยการ เผชิญสถานการณ์ทำงานที่ยากลำบาก 
+        <h2 class="font-bold text-2xl mt-3">
+          คดีค้าง: ปัญหาที่ไม่ได้มาจากความซับซ้อน
+        </h2>
+        <p class="mt-3">
+          "ปัจจุบันอัยการทั่วประเทศมีไม่ถึง 5,000 คน เรามีแค่ประมาณ 4,000
+          กว่าคน ซึ่งไม่สอดรับกับปริมาณงานที่เพิ่มขึ้น" นายวัชรินทร์ ภาณุรัตน์
+          รองอธิบดีอัยการ สำนักงานการสอบสวน
+          เริ่มต้นด้วยฉายภาพให้เห็นถึงสถานการณ์ของปัญหา
+          ด้วยตัวเลขจำนวนของบุคลากรที่เปรียบเสมือนเป็น “กลางน้ำ”
+          ของกระบวนการยุติธรรม
+          ชนิดที่น่าตกใจเมื่อเทียบกับจำนวนคดีที่เพิ่มขึ้นอย่างต่อเนื่องในช่วง
+          5 ปีที่ผ่านมา
+        </p>
+        <p class="mt-3">
+          ความหนักหน่วงของภาระงานนี้ รองอธิบดีอัยการ
+          เล่าผ่านประสบการณ์ตรงจากอดีตเมื่อครั้งที่เป็น “อัยการจังหวัดพัทยา”
+          ปี 2557 แต่ละวันต้องรับสำนวนใหม่เฉลี่ยวันละ 80 คดี
+          ซึ่งมีเข้ามาทุกวัน แม้ว่าราชการจะหยุดเสาร์-อาทิตย์
+          แต่การกระทำความผิดไม่หยุด
+        </p>
+
+        <h2 class="font-bold text-2xl mt-3">
+          เมื่อมาตรฐานสูง ส่วนทางกับความต้องการ กลายเป็นอุปสรรคสำคัญ
+        </h2>
+        <p class="mt-3">
+          ปัญหาการขาดแคลนบุคลากรไม่ได้เกิดจากการไม่มีผู้สนใจเข้ามาทำงาน
+          แต่อยู่ที่ความยากของการสรรหา
+          เนื่องจากการสรรหาบุคลากรเป็นเรื่องยากและเข้มงวดมาก
+          เนื่องจากมีการตั้งมาตรฐานคุณสมบัติไว้สูงคล้ายกับผู้พิพากษา
+          เพื่อรักษาคุณภาพในการวินิจฉัยคดีและเรื่องความยุติธรรม คือ
+          ต้องจบปริญญาตรีนิติศาสตร์ เนติบัณฑิตไทย
+          และมีประสบการณ์วิชาชีพด้านกฎหมายอย่างน้อย 2 ปี เช่น เป็นทนายความ
+          นิติกร หรือพนักงานสอบสวน อายุต้อง 25 ปีขึ้นไป
+        </p>
+        <p class="mt-3">
+          สิ่งที่น่าสนใจคือตัวเลขการสอบที่มีอัตราการแข่งขันสูง
+          และผู้สอบผ่านน้อยมาก เพราะทำคะแนนไม่ถึงเกณฑ์ครึ่งหนึ่งที่กำหนดไว้
+          ซึ่งเป็นไปตามมาตรฐานที่สูงขององค์กร
+          สะท้อนถึงความยากของการเข้าสู่อาชีพนี้ ทั้งๆที่มีตำแหน่งว่างรออยู่
+        </p>
+        <p class="mt-3">
+          เช่น การสอบใน "สนามใหญ่" (นิติศาสตร์บัณฑิต เนติบัณฑิตไทย)
+          มีผู้สมัครเกือบ 7,000 คน แต่สอบได้เพียง 58 คน
+        </p>
+        <p class="mt-3">
+          ส่วน "สนามเล็ก" (นิติศาสตร์บัณฑิต เนติบัณฑิตไทย และปริญญาโทกฎหมาย)
+          มีผู้สมัคร 2,000 คน แต่สอบได้เพียง 22 คน
+        </p>
+        <p class="mt-3">
+          แน่นอนว่า เมื่อคนน้อย คดีมาก
+          การบริหารจัดการคดีย่อมเป็นไปอย่างยากลำบาก ผลกระทบที่ตามมาคือ
+          ทำให้มีคดีค้างสะสม ส่งผลโดยตรงต่อการบริหารคดี กลายเป็น "คอขวด"
+          ของกระบวนการยุติธรรม เพราะแม้มีตำแหน่งว่าง
+          แต่กลับไม่มีคนที่มีคุณสมบัติเพียงพอที่จะสอบผ่านเข้ามาทำหน้าที่ได้
+        </p>
+        <p class="mt-3">
+          ซึ่งปัญหาการขาดแคลนบุคลากรและการสรรหานี้ “ผู้พิพากษา”
+          ก็ประสบปัญหาเช่นเดียวกัน
+        </p>
+        <p class="mt-3">
+          ซึ่งรองอธิบดีอัยการ สำนักงานการสอบสวน เสนอแนวคิดในการแก้ปัญหานี้ว่า
+          ควรเปลี่ยนจากการคัดกรองที่จุดเข้า หรือการสอบ
+          มาเป็นการพัฒนาหลังเข้าทำงาน ด้วยการฝึกอบรม
+          ซึ่งอาจช่วยแก้ปัญหาการขาดแคลนบุคลากรได้มีประสิทธิภาพมากขึ้น
         </p>
         <blockquote class="quote">
-          “ การแบ่งแยกแบบนี้ ทำให้อัยการไม่เคยเห็นตัวพยานจริง มีแต่เห็นสำนวนกระดาษ นอกจากวันที่ไปขึ้นศาล ต้องเข้าใจว่าการที่อัยการต้องพิจารณาคดีจากเอกสารเพียงอย่างเดียว โดยที่ไม่มีโอกาสได้พบพยานหรือผู้เกี่ยวข้องโดยตรง ทำให้การสั่งคดีเป็นไปได้ยาก  โดยเฉพาะอย่างยิ่งถ้าเป็นคดีที่มีอัตราโทษสูงหรือมีความซับซ้อน ”
+          “ ถ้าถามความเห็นของผมในมุมมองส่วนตัว
+          การแก้ไขปัญหาบุคลากรขาดแคลนเราอาจจะต้องลดความยากของการออกข้อสอบลง
+          เพื่อให้ได้จำนวนคนตามตำแหน่งที่ว่างอยู่
+          เพราะปัจจุบันอัยการมีตำแหน่งว่าง 180 อัตรา แต่สอบได้เพียง 58
+          คนในสนามใหญ่ และ 22 คนในสนามเล็ก จากที่ต้องการทั้งหมด 90 คน
+          เพราะถ้าเราดูคุณสมบัติอื่นๆ ที่กำหนดไว้ในการจะสมัครสอบได้
+          คุณสมบัติค่อนข้างสูงอยู่แล้ว
+          ดังนั้นสิ่งที่ต้องทำคือเมื่อมีผู้สอบผ่านเข้ามาได้มากขึ้น
+          จะต้องมีการฝึกอบรมเพิ่มเติมอย่างเข้มข้น
+          เพื่อให้ได้บุคลากรที่มีความรู้และความมุ่งมั่นเพียงพอ "
         </blockquote>
-        <p>
-          อีกปัจจัยหนึ่งที่มีส่วนทำให้คดีล่าช้าคือ การรอสอบสวนเพิ่มเติมจากพนักงานสอบสวน เพราะปัญหาเรื่องจำนวนคดีค้างสะสมมากมาย แม้จะมีระเบียบกำหนดให้รายงานสำนวนค้างและมีการนัดสืบพยานอย่างต่อเนื่อง เพื่อเร่งรัดคดีแล้ว แต่ปัญหาความล่าช้าก็ยังคงอยู่ โดยเฉพาะคดีฝากขัง ซึ่งมีกำหนดเวลาสูงสุด 84 วันที่ต้องส่งศาล 
-        </p>
-        <p>
-          แต่ตำรวจมักส่งสำนวนในช่วงใกล้ครบกำหนดเกินไป ทำให้อัยการต้องรีบตัดสินใจภายใต้ความกดดัน
+
+        <h2 class="font-bold text-2xl mt-3">"กลางน้ำ" ที่ลำบากที่สุด</h2>
+        <p class="mt-3">
+          อีกสิ่งที่น่าสนใจจากมุมมองของอัยการ คือ กระบวนการทำงาน การเป็น
+          "กลางน้ำ" ที่ลำบากที่สุดในกระบวนการยุติธรรม
+          เพราะกระบวนการยุติธรรมในไทย มีการแบ่งแยกหน้าที่มากเกินไป
+          ระหว่างชั้นสอบสวน กับชั้นสั่งคดี ทำให้ 'กลางน้ำ' อย่างอัยการ
+          เผชิญสถานการณ์ทำงานที่ยากลำบาก
         </p>
         <blockquote class="quote">
-          " หากมีการปรับการส่งสำนวนคดีฝากขัง ให้ตำรวจส่งสำนวนให้อัยการดูแต่เนิ่น ๆ อย่างน้อย 2 ฝาก (24 วัน) ก่อนครบกำหนด เพื่อให้อัยการมีเวลาเพียงพอในการตรวจสอบและสั่งคดี การแบ่งปันเวลาอย่างเป็นธรรมจะช่วยให้การพิจารณาคดีมีคุณภาพมากขึ้น และลดความเสี่ยงที่จะต้องขยายเวลาฝากขังหรือปล่อยตัวผู้ต้องหาไปโดยไม่มีการดำเนินคดี "
+          “ การแบ่งแยกแบบนี้ ทำให้อัยการไม่เคยเห็นตัวพยานจริง
+          มีแต่เห็นสำนวนกระดาษ นอกจากวันที่ไปขึ้นศาล
+          ต้องเข้าใจว่าการที่อัยการต้องพิจารณาคดีจากเอกสารเพียงอย่างเดียว
+          โดยที่ไม่มีโอกาสได้พบพยานหรือผู้เกี่ยวข้องโดยตรง
+          ทำให้การสั่งคดีเป็นไปได้ยาก
+          โดยเฉพาะอย่างยิ่งถ้าเป็นคดีที่มีอัตราโทษสูงหรือมีความซับซ้อน ”
         </blockquote>
-        <p class="italic">รองอธิบดีอัยการ สำนักงานการสอบสวน สะท้อนให้เห็นถึงปัญหาเชิงระบบ</p>
+        <p class="mt-3">
+          อีกปัจจัยหนึ่งที่มีส่วนทำให้คดีล่าช้าคือ
+          การรอสอบสวนเพิ่มเติมจากพนักงานสอบสวน
+          เพราะปัญหาเรื่องจำนวนคดีค้างสะสมมากมาย
+          แม้จะมีระเบียบกำหนดให้รายงานสำนวนค้างและมีการนัดสืบพยานอย่างต่อเนื่อง
+          เพื่อเร่งรัดคดีแล้ว แต่ปัญหาความล่าช้าก็ยังคงอยู่ โดยเฉพาะคดีฝากขัง
+          ซึ่งมีกำหนดเวลาสูงสุด 84 วันที่ต้องส่งศาล
+        </p>
+        <p class="mt-3">
+          แต่ตำรวจมักส่งสำนวนในช่วงใกล้ครบกำหนดเกินไป
+          ทำให้อัยการต้องรีบตัดสินใจภายใต้ความกดดัน
+        </p>
+        <blockquote class="quote">
+          " หากมีการปรับการส่งสำนวนคดีฝากขัง
+          ให้ตำรวจส่งสำนวนให้อัยการดูแต่เนิ่น ๆ อย่างน้อย 2 ฝาก (24 วัน)
+          ก่อนครบกำหนด เพื่อให้อัยการมีเวลาเพียงพอในการตรวจสอบและสั่งคดี
+          การแบ่งปันเวลาอย่างเป็นธรรมจะช่วยให้การพิจารณาคดีมีคุณภาพมากขึ้น
+          และลดความเสี่ยงที่จะต้องขยายเวลาฝากขังหรือปล่อยตัวผู้ต้องหาไปโดยไม่มีการดำเนินคดี
+          "
+        </blockquote>
+        <p class="italic">
+          รองอธิบดีอัยการ สำนักงานการสอบสวน สะท้อนให้เห็นถึงปัญหาเชิงระบบ
+        </p>
 
         <h2>เหตุแห่ง "ไม่ฟ้อง" และ "เหตุอื่น" การกลั่นกรองคดีในชั้นอัยการ</h2>
         <p>
-          การตัดสินใจของอัยการ นอกจากมีความเห็น “สั่งฟ้อง” แล้ว  ยังมี "สั่งไม่ฟ้อง" 
+          การตัดสินใจของอัยการ นอกจากมีความเห็น “สั่งฟ้อง” แล้ว ยังมี
+          "สั่งไม่ฟ้อง"
         </p>
         <p>
-          นายวัชรินทร์ อธิบายให้ฟังว่าเหตุผลสำคัญที่จะทำให้อัยการสั่งไม่ฟ้อง คือการที่ "พยานหลักฐานที่ไม่เพียงพอ" ที่จะเอาผิดผู้ต้องหาได้ โดยหากอัยการมีคำสั่ง ไม่ฟ้อง(ยกเว้นกรณีคำสั่งของอัยการสูงสุด) จะถูกตรวจสอบจากผู้บังคับบัญชาของพนักงานสอบสวน ซึ่งเป็นระบบการตรวจสอบถ่วงดุลที่ดี  
+          นายวัชรินทร์ อธิบายให้ฟังว่าเหตุผลสำคัญที่จะทำให้อัยการสั่งไม่ฟ้อง
+          คือการที่ "พยานหลักฐานที่ไม่เพียงพอ" ที่จะเอาผิดผู้ต้องหาได้
+          โดยหากอัยการมีคำสั่ง ไม่ฟ้อง(ยกเว้นกรณีคำสั่งของอัยการสูงสุด)
+          จะถูกตรวจสอบจากผู้บังคับบัญชาของพนักงานสอบสวน
+          ซึ่งเป็นระบบการตรวจสอบถ่วงดุลที่ดี
         </p>
         <p>
-          ส่วน "เหตุอื่น" ในการสั่งยุติคดี หมายถึงกรณีที่คดีขาดอายุความ หรือเป็นคดีความผิดต่อส่วนตัวที่ผู้เสียหายยอมความกัน หรือมีการถอนคำร้องทุกข์ ทำให้คดีไม่จำเป็นต้องไปถึงชั้นศาล 
+          ส่วน "เหตุอื่น" ในการสั่งยุติคดี หมายถึงกรณีที่คดีขาดอายุความ
+          หรือเป็นคดีความผิดต่อส่วนตัวที่ผู้เสียหายยอมความกัน
+          หรือมีการถอนคำร้องทุกข์ ทำให้คดีไม่จำเป็นต้องไปถึงชั้นศาล
         </p>
         <p>
-          นอกจากนี้บทบาทของการไกล่เกลี่ยคดีในชั้นอัยการก็มีส่วนสำคัญ โดยเฉพาะในคดีที่ยอมความกันได้ ซึ่งจะช่วยลดปริมาณคดีที่ขึ้นสู่ศาลได้อย่างมีประสิทธิภาพ ยกเว้นคดีอาญาแผ่นดินที่ไม่สามารถไกล่เกลี่ยได้
+          นอกจากนี้บทบาทของการไกล่เกลี่ยคดีในชั้นอัยการก็มีส่วนสำคัญ
+          โดยเฉพาะในคดีที่ยอมความกันได้
+          ซึ่งจะช่วยลดปริมาณคดีที่ขึ้นสู่ศาลได้อย่างมีประสิทธิภาพ
+          ยกเว้นคดีอาญาแผ่นดินที่ไม่สามารถไกล่เกลี่ยได้
         </p>
         <blockquote class="quote">
-          "ถ้าอัยการได้ช่วยให้ประเด็นดังกล่าวไกล่เกลี่ยได้ แล้วเขายอมให้เปรียบเทียบ  มันก็จะเป็นการช่วยลดปริมาณคดีที่จะขึ้นสู่ชั้นศาลได้"
+          "ถ้าอัยการได้ช่วยให้ประเด็นดังกล่าวไกล่เกลี่ยได้
+          แล้วเขายอมให้เปรียบเทียบ
+          มันก็จะเป็นการช่วยลดปริมาณคดีที่จะขึ้นสู่ชั้นศาลได้"
         </blockquote>
         <p class="italic">
           นายวัชรินทร์ ภาณุรัตน์ รองอธิบดีอัยการ สำนักงานการสอบสวน กล่าว
@@ -620,7 +1120,8 @@
       </div>
     </div>
 
-    <section id="section12" class="relative section h-screen flex items-center justify-center bg-[#1A1A1A] text-white text-4xl font-bold bg-transparent">
+    <section id="section12"
+      class="relative section h-screen flex items-center justify-center bg-[#1A1A1A] text-white text-4xl font-bold bg-transparent">
       <a href="#interview-investigation-process-1">
         <div class="absolute left-[520px] bottom-[169px] w-[115px] h-[20px] z-20 bg-red-500 opacity-50"></div>
       </a>
@@ -632,30 +1133,64 @@
     <div id="interview-investigation-process-1" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">เปิดความจริงเบื้องหลังอาชญากรรมไทย 87.7% หายไปจากระบบ</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          เปิดความจริงเบื้องหลังอาชญากรรมไทย 87.7% หายไปจากระบบ
+        </h2>
         <p>
-          จากข้อมูลของตัวเลขคดีอาชญากรรมที่ปรากฏข้างต้นทั้งหมดนี้  แต่แท้จริงแล้วคดีที่เห็นยังไม่ใช่ตัวเลขสุทธิของคดีอาชญากรรมที่เกิดขึ้นในประเทศไทย เพราะมีคดีอีกจำนวนไม่น้อยไม่น้อย ที่ “เหยื่อ” หรือ “ผู้เสียหาย” เลือกที่จะไม่แจ้งความ สถิติตำรวจที่เราเห็น จึงกลายเป็นเพียงเศษเสี้ยวของความจริง
+          จากข้อมูลของตัวเลขคดีอาชญากรรมที่ปรากฏข้างต้นทั้งหมดนี้
+          แต่แท้จริงแล้วคดีที่เห็นยังไม่ใช่ตัวเลขสุทธิของคดีอาชญากรรมที่เกิดขึ้นในประเทศไทย
+          เพราะมีคดีอีกจำนวนไม่น้อยไม่น้อย ที่ “เหยื่อ” หรือ “ผู้เสียหาย”
+          เลือกที่จะไม่แจ้งความ สถิติตำรวจที่เราเห็น
+          จึงกลายเป็นเพียงเศษเสี้ยวของความจริง
         </p>
         <p>
-          จาก รายงานผลสำรวจสถิติอาชญากรรมภาคประชาชน โดยมหาวิทยาลัยธรรมศาสตร์ ร่วมกับสำนักงานกิจการยุติธรรม กระทรวงยุติธรรม  ซึ่งมีการทำ Victim Survey ใช้วิธีการสุ่มตัวอย่าง 30 จังหวัด ได้กลุ่มตัวอย่างประมาณ 1,400 ครัวเรือน หรือกว่าหมื่นคน เพื่อให้ได้ข้อมูลสถานการณ์การตกเป็นเหยื่ออาชญากรรม 
+          จาก รายงานผลสำรวจสถิติอาชญากรรมภาคประชาชน โดยมหาวิทยาลัยธรรมศาสตร์
+          ร่วมกับสำนักงานกิจการยุติธรรม กระทรวงยุติธรรม ซึ่งมีการทำ Victim
+          Survey ใช้วิธีการสุ่มตัวอย่าง 30 จังหวัด ได้กลุ่มตัวอย่างประมาณ
+          1,400 ครัวเรือน หรือกว่าหมื่นคน
+          เพื่อให้ได้ข้อมูลสถานการณ์การตกเป็นเหยื่ออาชญากรรม
         </p>
         <p>
-          ซึ่งผลสำรวจกลับเผยให้เห็นว่า สถานการณ์อาชญากรรมในไทยซับซ้อนกว่าที่เราเคยคิด และชี้ให้เห็นถึงช่องว่างอันใหญ่ระหว่างสิ่งที่เกิดขึ้นจริงกับสิ่งที่หน่วยงานรับรู้
+          ซึ่งผลสำรวจกลับเผยให้เห็นว่า
+          สถานการณ์อาชญากรรมในไทยซับซ้อนกว่าที่เราเคยคิด
+          และชี้ให้เห็นถึงช่องว่างอันใหญ่ระหว่างสิ่งที่เกิดขึ้นจริงกับสิ่งที่หน่วยงานรับรู้
         </p>
-        <div><img src="assets/images/interview-investigation-process-1-01.jpg"></div>
+        <div>
+          <img src="assets/images/interview-investigation-process-1-01.jpg" />
+        </div>
         <p>
-          รศ.พ.ต.ต.ดร.ชวนัสถ์ เจนการ ผู้เชี่ยวชาญด้านสถิติอาชญากรรมจากภาคประชาชน และเป็น 1 ในทีมวิจัยสำรวจสถิติอาชญากรรมภาคประชาชน อธิบายว่าความแตกต่างของข้อมูลอาชญากรรมที่ได้จากการสำรวจประชาชนโดยตรง (Victim Survey) เทียบกับสถิติจากตำรวจว่า ข้อมูลจากตำรวจมักถูกนำไปใช้อ้างอิงเป็นหลัก แต่ความจริงแล้วข้อมูลเหล่านั้นอาจแสดงภาพที่ไม่สมบูรณ์
+          รศ.พ.ต.ต.ดร.ชวนัสถ์ เจนการ
+          ผู้เชี่ยวชาญด้านสถิติอาชญากรรมจากภาคประชาชน และเป็น 1
+          ในทีมวิจัยสำรวจสถิติอาชญากรรมภาคประชาชน
+          อธิบายว่าความแตกต่างของข้อมูลอาชญากรรมที่ได้จากการสำรวจประชาชนโดยตรง
+          (Victim Survey) เทียบกับสถิติจากตำรวจว่า
+          ข้อมูลจากตำรวจมักถูกนำไปใช้อ้างอิงเป็นหลัก
+          แต่ความจริงแล้วข้อมูลเหล่านั้นอาจแสดงภาพที่ไม่สมบูรณ์
         </p>
         <blockquote class="quote">
-          "การทำ Victim Survey ของเราวิธีการเก็บข้อมูลเป็นไปตามมาตรฐานสากล ภายใต้งบประมาณที่น้อยกว่า ในสหรัฐอเมริกาใช้ บริษัท Gallup Poll เก็บข้อมูลเรื่องนี้ทุกรัฐ ใช้งบประมาณหลายร้อยล้านหรือพันล้านบาท โครงการ WJP World Justice Project ก็ใช้งบประมาณหลายสิบล้านบาทต่อ 1 ประเทศ ของประเทศไทยเราใช้งบประมาณแค่ประมาณ 1 ล้านบาทบวกลบ
-          ในต่างประเทศใช้คำว่า 'ภูเขาน้ำแข็ง' คือสิ่งที่เราเห็นในบันทึกของตำรวจ จริงๆแล้วเป็นเพียงแค่ปลายของภูเขาน้ำแข็ง เพราะใต้ภูเขาน้ำแข็ง ตัวเลขที่ยังจมน้ำอยู่ยังมีอีกจำนวนมาก ซึ่งของบ้านเราแนวโน้มอาชญากรรมที่พบเพิ่มสูงขึ้นอย่างชัดเจน คือเรื่องของการหลอกลวงฉ้อโกง เรื่องคดีอาชญากรรมเทคโนโลยี การหลอกลวงทางเทคโนโลยี เพิ่มสูงขึ้นอย่างชัดเจน”
+          "การทำ Victim Survey ของเราวิธีการเก็บข้อมูลเป็นไปตามมาตรฐานสากล
+          ภายใต้งบประมาณที่น้อยกว่า ในสหรัฐอเมริกาใช้ บริษัท Gallup Poll
+          เก็บข้อมูลเรื่องนี้ทุกรัฐ ใช้งบประมาณหลายร้อยล้านหรือพันล้านบาท
+          โครงการ WJP World Justice Project ก็ใช้งบประมาณหลายสิบล้านบาทต่อ 1
+          ประเทศ ของประเทศไทยเราใช้งบประมาณแค่ประมาณ 1 ล้านบาทบวกลบ
+          ในต่างประเทศใช้คำว่า 'ภูเขาน้ำแข็ง'
+          คือสิ่งที่เราเห็นในบันทึกของตำรวจ
+          จริงๆแล้วเป็นเพียงแค่ปลายของภูเขาน้ำแข็ง เพราะใต้ภูเขาน้ำแข็ง
+          ตัวเลขที่ยังจมน้ำอยู่ยังมีอีกจำนวนมาก
+          ซึ่งของบ้านเราแนวโน้มอาชญากรรมที่พบเพิ่มสูงขึ้นอย่างชัดเจน
+          คือเรื่องของการหลอกลวงฉ้อโกง เรื่องคดีอาชญากรรมเทคโนโลยี
+          การหลอกลวงทางเทคโนโลยี เพิ่มสูงขึ้นอย่างชัดเจน”
         </blockquote>
         <p>
-          โดยงานวิจัยสำรวจพบข้อมูลในปี 2563 อาชญากรรมถึง 87.7% ไม่เคยเข้าสู่ระบบความยุติธรรมใดๆเลย จากการสำรวจประชาชน 11,834 คน พบผู้ตกเป็นเหยื่ออาชญากรรม 1,110 คน (9.4%) ซึ่งประสบเหตุการณ์อาชญากรรมรวม 1,237 ครั้ง แต่มีเพียง 152 ครั้งเท่านั้น (12.3%) ที่มีการแจ้งความต่อตำรวจ ส่วนที่เหลือกลายเป็น "Dark Figure of Crime" หรือ "ตัวเลขที่ซ่อนอยู่ของอาชญากรรม" ที่ไม่มีใครรู้
+          โดยงานวิจัยสำรวจพบข้อมูลในปี 2563 อาชญากรรมถึง 87.7%
+          ไม่เคยเข้าสู่ระบบความยุติธรรมใดๆเลย จากการสำรวจประชาชน 11,834 คน
+          พบผู้ตกเป็นเหยื่ออาชญากรรม 1,110 คน (9.4%)
+          ซึ่งประสบเหตุการณ์อาชญากรรมรวม 1,237 ครั้ง แต่มีเพียง 152
+          ครั้งเท่านั้น (12.3%) ที่มีการแจ้งความต่อตำรวจ ส่วนที่เหลือกลายเป็น
+          "Dark Figure of Crime" หรือ "ตัวเลขที่ซ่อนอยู่ของอาชญากรรม"
+          ที่ไม่มีใครรู้
         </p>
-        <p>
-          โดยเฉพาะ เหยื่อของคดี ฉ้อโกงหลอกลวง 
-        </p>
+        <p>โดยเฉพาะ เหยื่อของคดี ฉ้อโกงหลอกลวง</p>
         <ul>
           <li>หลอกขายสินค้าออนไลน์แต่ไม่ส่งของ (27.8%)</li>
           <li>หลอกว่าถูกรางวัลให้เสียค่าดำเนินการ (21.7%)</li>
@@ -664,11 +1199,11 @@
           <li>โรแมนซ์สแกม (5.3%)</li>
         </ul>
         <p>
-          ส่วนใหญ่เป็นการหลอกลวงผ่านช่องทางออนไลน์หรือโทรศัพท์ถึง 62.6%  และยังพบว่าปัญหาสำคัญคือ แม้เหยื่อจะแจ้งความแล้ว ตำรวจมักติดตาม ตรวจสอบ และอายัดบัญชีไม่ทัน
+          ส่วนใหญ่เป็นการหลอกลวงผ่านช่องทางออนไลน์หรือโทรศัพท์ถึง 62.6%
+          และยังพบว่าปัญหาสำคัญคือ แม้เหยื่อจะแจ้งความแล้ว ตำรวจมักติดตาม
+          ตรวจสอบ และอายัดบัญชีไม่ทัน
         </p>
-        <p>
-          สาเหตุหลักที่ประชาชนไม่แจ้งความ
-        </p>
+        <p>สาเหตุหลักที่ประชาชนไม่แจ้งความ</p>
         <ul>
           <li>ไม่เกิดความเสียหาย (44.3%)</li>
           <ll>เห็นว่าเป็นเรื่องเล็กน้อย (33.7%)</ll>
@@ -677,13 +1212,24 @@
           <li>ขาดพยานหลักฐาน (6.8%)</li>
         </ul>
         <p>
-          นอกจากนี้ยังมีเหตุผลอื่นๆ รวมถึง การคิดว่าตำรวจติดตามไม่ได้, ผู้กระทำผิดเป็นเจ้าหน้าที่/ผู้มีอิทธิพล, ไม่เชื่อมั่นประสิทธิภาพเจ้าหน้าที่, กลัวถูกแก้แค้น หรือเป็นเรื่องน่าอับอาย
+          นอกจากนี้ยังมีเหตุผลอื่นๆ รวมถึง การคิดว่าตำรวจติดตามไม่ได้,
+          ผู้กระทำผิดเป็นเจ้าหน้าที่/ผู้มีอิทธิพล,
+          ไม่เชื่อมั่นประสิทธิภาพเจ้าหน้าที่, กลัวถูกแก้แค้น
+          หรือเป็นเรื่องน่าอับอาย
         </p>
         <p>
-          ขณะที่ข้อมูลที่ได้จากงานวิจัยในปี 2565  และปี 2566  แม้ผลสำรวจจะไม่พบว่ามี“ผู้เสียหาย” ที่ไม่เคยเข้าสู่ระบบความยุติธรรมใดๆเลย และตัวเลขของ “ผู้เสียหาย” ที่ไปแจ้งความกับตำรวจเพิ่มสูงขึ้น แต่จุดที่น่าสนใจ คือ ช่องทางอื่นๆ ที่ถูกเลือกในการแจ้งขอความช่วยเหลือเมื่อตกเป็นเหยื่อในคดีอาชญากรรม แทนการไปแจ้งความกับตำรวจ ก็เพิ่มสูงขึ้นเช่นกัน โดยเฉพาะ การเลือกไปแจ้งขอต่อเจ้าหน้าที่รัฐหน่วยงานอื่นๆ
+          ขณะที่ข้อมูลที่ได้จากงานวิจัยในปี 2565 และปี 2566
+          แม้ผลสำรวจจะไม่พบว่ามี“ผู้เสียหาย”
+          ที่ไม่เคยเข้าสู่ระบบความยุติธรรมใดๆเลย และตัวเลขของ “ผู้เสียหาย”
+          ที่ไปแจ้งความกับตำรวจเพิ่มสูงขึ้น แต่จุดที่น่าสนใจ คือ ช่องทางอื่นๆ
+          ที่ถูกเลือกในการแจ้งขอความช่วยเหลือเมื่อตกเป็นเหยื่อในคดีอาชญากรรม
+          แทนการไปแจ้งความกับตำรวจ ก็เพิ่มสูงขึ้นเช่นกัน โดยเฉพาะ
+          การเลือกไปแจ้งขอต่อเจ้าหน้าที่รัฐหน่วยงานอื่นๆ
         </p>
         <p>
-          ขณะที่ผลสำรวจยังพบว่าแม้ประชาชนส่วนใหญ่ (66.9%) จะให้ความเชื่อมั่นต่อกระบวนการยุติธรรม แต่ผู้ที่ไม่เชื่อมั่น ก็ยังคงมี และให้เหตุผลที่น่าคิด
+          ขณะที่ผลสำรวจยังพบว่าแม้ประชาชนส่วนใหญ่ (66.9%)
+          จะให้ความเชื่อมั่นต่อกระบวนการยุติธรรม แต่ผู้ที่ไม่เชื่อมั่น
+          ก็ยังคงมี และให้เหตุผลที่น่าคิด
         </p>
         <ul>
           <li>ความล่าช้า</li>
@@ -694,98 +1240,186 @@
           <li>การแทรกแซงจากผู้มีอำนาจ/การเมือง</li>
         </ul>
         <p>
-          ข้อมูลและตัวเลขเหล่านี้ แม้จะเป็นใต้ฐานภูเขาน้ำแข็ง แต่การที่อาชญากรรมไม่เข้าสู่ระบบความยุติธรรม อาจส่งผลทำให้กระบวนการยุติธรรมล่มสลาย เพราะหากเจ้าหน้าที่ไม่ได้รับรู้สถานการณ์ที่แท้จริง ก็ยากที่จะวางแผนแก้ไขปัญหาได้อย่างเหมาะสม โดยเฉพาะในการวางแผนเชิงนโยบาย
+          ข้อมูลและตัวเลขเหล่านี้ แม้จะเป็นใต้ฐานภูเขาน้ำแข็ง
+          แต่การที่อาชญากรรมไม่เข้าสู่ระบบความยุติธรรม
+          อาจส่งผลทำให้กระบวนการยุติธรรมล่มสลาย
+          เพราะหากเจ้าหน้าที่ไม่ได้รับรู้สถานการณ์ที่แท้จริง
+          ก็ยากที่จะวางแผนแก้ไขปัญหาได้อย่างเหมาะสม
+          โดยเฉพาะในการวางแผนเชิงนโยบาย
         </p>
         <blockquote class="quote">
-          "ถ้าผมวิเคราะห์ตามหลักเศรษฐศาสตร์ เอาจำนวนคดีพื้นฐานจาก Victim Survey ที่ค้นพบให้ตำรวจทำ ผมบอกเลยว่าเพิ่มคนและเพิ่มเงินเท่าไหร่ก็ไม่พอ เพราะหนึ่งในประเด็นสำคัญที่การสำรวจเผยให้เห็น คือปัญหาของระบบงานตำรวจ สิ่งที่เรากำลังจะบอกคือคุณต้องเปลี่ยนระบบ Paperwork อันนี้จำเป็นต้องทำ ถ้าคุณต้องการเอาข้อมูลทุกคดีนำเข้ามาสู่การวิเคราะห์ในเชิงนโยบาย
-	        การที่จะสร้างความเชื่อมั่นของประชาชนให้กลับคืนมา ผมไม่ได้มองว่าควรเพิ่มกำลังคน แต่มันควรเป็นการ ปรับระบบ ปรับลดปริมาณงาน เช่น คดีเล็กๆ น้อยๆ ที่ไม่รู้ตัว หรือยังไม่รู้ตัว ต้องทำสำนวนเต็มรูปแบบเลยไหม รถหายแค่ทำประกาศสืบจับ ใช้เทคโนโลยีมาช่วย เปลี่ยนจากการทำสำนวนรถหาย 1 คันใช้เวลาทั้งวัน เป็นแค่ 20-15 นาที 
-          เพราะหากประชาชน เขาไม่เชื่อว่าการแจ้งความแล้วจะมีขั้นตอนดำเนินการที่ช่วยลดอาชญากรรมได้  ถ้าเป็นแบบนั้นเขาก็จะไม่ไปแจ้งความ...เมื่อคดีไม่เข้าสู่ระบบ ก็ไม่มีข้อมูลที่จะใช้ในการวางแผนต่อไป"
+          "ถ้าผมวิเคราะห์ตามหลักเศรษฐศาสตร์ เอาจำนวนคดีพื้นฐานจาก Victim
+          Survey ที่ค้นพบให้ตำรวจทำ
+          ผมบอกเลยว่าเพิ่มคนและเพิ่มเงินเท่าไหร่ก็ไม่พอ
+          เพราะหนึ่งในประเด็นสำคัญที่การสำรวจเผยให้เห็น
+          คือปัญหาของระบบงานตำรวจ สิ่งที่เรากำลังจะบอกคือคุณต้องเปลี่ยนระบบ
+          Paperwork อันนี้จำเป็นต้องทำ
+          ถ้าคุณต้องการเอาข้อมูลทุกคดีนำเข้ามาสู่การวิเคราะห์ในเชิงนโยบาย
+          การที่จะสร้างความเชื่อมั่นของประชาชนให้กลับคืนมา
+          ผมไม่ได้มองว่าควรเพิ่มกำลังคน แต่มันควรเป็นการ ปรับระบบ
+          ปรับลดปริมาณงาน เช่น คดีเล็กๆ น้อยๆ ที่ไม่รู้ตัว หรือยังไม่รู้ตัว
+          ต้องทำสำนวนเต็มรูปแบบเลยไหม รถหายแค่ทำประกาศสืบจับ
+          ใช้เทคโนโลยีมาช่วย เปลี่ยนจากการทำสำนวนรถหาย 1 คันใช้เวลาทั้งวัน
+          เป็นแค่ 20-15 นาที เพราะหากประชาชน
+          เขาไม่เชื่อว่าการแจ้งความแล้วจะมีขั้นตอนดำเนินการที่ช่วยลดอาชญากรรมได้
+          ถ้าเป็นแบบนั้นเขาก็จะไม่ไปแจ้งความ...เมื่อคดีไม่เข้าสู่ระบบ
+          ก็ไม่มีข้อมูลที่จะใช้ในการวางแผนต่อไป"
         </blockquote>
-        <p class="italic">
-          รศ.พ.ต.ต.ดร.ชวนัสถ์ กล่าว
-        </p>
+        <p class="italic">รศ.พ.ต.ต.ดร.ชวนัสถ์ กล่าว</p>
       </div>
     </div>
 
     <div id="interview-investigation-process-2" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">ช่องว่างระหว่างสถิติกับความจริง เมื่อเหยื่อไม่กล้าเข้าสู่ระบบ</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          ช่องว่างระหว่างสถิติกับความจริง เมื่อเหยื่อไม่กล้าเข้าสู่ระบบ
+        </h2>
         <p>
-          อังคณา นีละไพจิตร สมาชิกวุฒิสภา และอดีตกรรมการสิทธิมนุษยชนแห่งชาติ ให้มุมมองที่น่าสนใจเกี่ยวกับปัญหาเหล่านี้ ผ่านประสบการณ์การทำงานที่ใกล้ชิดกับประชาชนมานานหลายปี
+          อังคณา นีละไพจิตร สมาชิกวุฒิสภา และอดีตกรรมการสิทธิมนุษยชนแห่งชาติ
+          ให้มุมมองที่น่าสนใจเกี่ยวกับปัญหาเหล่านี้
+          ผ่านประสบการณ์การทำงานที่ใกล้ชิดกับประชาชนมานานหลายปี
         </p>
         <blockquote class="quote">
-          "ตัวอย่างง่ายๆ กรณีความรุนแรงต่อผู้หญิง ความรุนแรงในครอบครัว เช่น ผัวตีเมีย แม่ตีลูก พ่อแม่ปู่ย่าตายายตีเด็ก ถ้าเราไปดูสถิติการไปแจ้งความจะน้อยมากเลย แต่ถ้าไปดูสถิติจากโรงพยาบาล ผู้หญิงที่ถูกสามีทำร้าร่างกายแล้วไปรักษาตัว จำนวนตัวเลขสูงกว่าที่มีการแจ้งความหลายเท่า"
+          "ตัวอย่างง่ายๆ กรณีความรุนแรงต่อผู้หญิง ความรุนแรงในครอบครัว เช่น
+          ผัวตีเมีย แม่ตีลูก พ่อแม่ปู่ย่าตายายตีเด็ก
+          ถ้าเราไปดูสถิติการไปแจ้งความจะน้อยมากเลย แต่ถ้าไปดูสถิติจากโรงพยาบาล
+          ผู้หญิงที่ถูกสามีทำร้าร่างกายแล้วไปรักษาตัว
+          จำนวนตัวเลขสูงกว่าที่มีการแจ้งความหลายเท่า"
         </blockquote>
         <p>
-          ข้อมูลนี้เผยให้เห็นว่า กรณีความรุนแรงในครอบครัว ส่วนใหญ่เหยื่อมักไม่ได้ไปแจ้งความ ทำให้โอกาสในการเข้าถึงความยุติธรรมมีน้อย ปัญหานี้ยิ่งทวีความรุนแรงในกรณีการล่วงละเมิดทางเพศ
+          ข้อมูลนี้เผยให้เห็นว่า กรณีความรุนแรงในครอบครัว
+          ส่วนใหญ่เหยื่อมักไม่ได้ไปแจ้งความ
+          ทำให้โอกาสในการเข้าถึงความยุติธรรมมีน้อย
+          ปัญหานี้ยิ่งทวีความรุนแรงในกรณีการล่วงละเมิดทางเพศ
         </p>
 
         <h2 class="text-2xl mt-4">อุปสรรคในการแจ้งความคดีทางเพศ</h2>
         <p>
-          สำหรับคดีการล่วงละเมิดทางเพศ ปัญหามีหลายมิติ ตั้งแต่การขาดแคลนพนักงานสอบสวนหญิง ไปจนถึงการไม่มีห้องส่วนตัวสำหรับแจ้งความในคดีที่อ่อนไหว
+          สำหรับคดีการล่วงละเมิดทางเพศ ปัญหามีหลายมิติ
+          ตั้งแต่การขาดแคลนพนักงานสอบสวนหญิง
+          ไปจนถึงการไม่มีห้องส่วนตัวสำหรับแจ้งความในคดีที่อ่อนไหว
         </p>
         <blockquote class="quote">
-          "โรงพักส่วนมากไม่มีห้องสำหรับแจ้งความคดีที่อ่อนไหวทางเพศ ทำให้เหยื่อถูกมองจากคนทั้งโรงพัก และถูก 'Victim Blaming' หรือการโทษเหยื่อ"
+          "โรงพักส่วนมากไม่มีห้องสำหรับแจ้งความคดีที่อ่อนไหวทางเพศ
+          ทำให้เหยื่อถูกมองจากคนทั้งโรงพัก และถูก 'Victim Blaming'
+          หรือการโทษเหยื่อ"
         </blockquote>
         <p>
-          ปัญหาเหล่านี้ทำให้เรื่องราวในหลายกรณีไม่มีการแจ้งความ และเมื่อไม่มีการแจ้งความก็หมายถึงการไม่มีการดำเนินคดี ผู้กระทำผิดจึงไม่ได้รับการลงโทษตามควร
+          ปัญหาเหล่านี้ทำให้เรื่องราวในหลายกรณีไม่มีการแจ้งความ
+          และเมื่อไม่มีการแจ้งความก็หมายถึงการไม่มีการดำเนินคดี
+          ผู้กระทำผิดจึงไม่ได้รับการลงโทษตามควร
         </p>
 
-        <h2 class="text-2xl mt-4">ปัญหาระบบเยียวยา : เมื่อกฎหมายไม่เท่าทันความเป็นจริง</h2>
+        <h2 class="text-2xl mt-4">
+          ปัญหาระบบเยียวยา : เมื่อกฎหมายไม่เท่าทันความเป็นจริง
+        </h2>
         <p>
-          อังคณา สะท้อนให้ฟังว่าพระราชบัญญัติค่าตอบแทนผู้เสียหายในคดีอาญา แม้จะถูกปรับปรุงใหม่ แต่ปัจจุบันยังคงมีปัญหาที่ทำให้ผู้เสียหายไม่สามารถเข้าถึงการเยียวยาได้
+          อังคณา สะท้อนให้ฟังว่าพระราชบัญญัติค่าตอบแทนผู้เสียหายในคดีอาญา
+          แม้จะถูกปรับปรุงใหม่
+          แต่ปัจจุบันยังคงมีปัญหาที่ทำให้ผู้เสียหายไม่สามารถเข้าถึงการเยียวยาได้
         </p>
         <blockquote class="quote">
-          "พ.ร.บ.ค่าตอบแทนผู้เสียหายในคดีอาญายังคงมีปัญหาอยู่ว่าต้องแจ้งความภายใน 1 ปีหลังเกิดเหตุ หากแจ้งช้ากว่านั้นจะไม่มีสิทธิ์รับการเยียวยา ซึ่งปัญหานี้ยิ่งซับซ้อนเมื่อแม้จะแจ้งความแล้ว กว่าจะพิสูจน์ความจริงและพนักงานสอบสวนจะทำคดีเสร็จส่งศาล บางทีเหยื่อก็เสียสิทธิ์ในการได้รับความช่วยเหลือเยียวยาไปแล้ว"
+          "พ.ร.บ.ค่าตอบแทนผู้เสียหายในคดีอาญายังคงมีปัญหาอยู่ว่าต้องแจ้งความภายใน
+          1 ปีหลังเกิดเหตุ หากแจ้งช้ากว่านั้นจะไม่มีสิทธิ์รับการเยียวยา
+          ซึ่งปัญหานี้ยิ่งซับซ้อนเมื่อแม้จะแจ้งความแล้ว
+          กว่าจะพิสูจน์ความจริงและพนักงานสอบสวนจะทำคดีเสร็จส่งศาล
+          บางทีเหยื่อก็เสียสิทธิ์ในการได้รับความช่วยเหลือเยียวยาไปแล้ว"
         </blockquote>
 
-        <h2 class="text-2xl mt-4">ออกกฎหมายเพื่อช่วย "เหยื่อ" แต่กลับไปไม่ถึง "เหยื่อ"</h2>
+        <h2 class="text-2xl mt-4">
+          ออกกฎหมายเพื่อช่วย "เหยื่อ" แต่กลับไปไม่ถึง "เหยื่อ"
+        </h2>
         <p>
-          แม้ว่า พ.ร.บ. นี้ จะขยายขอบเขตให้ครอบคลุมจำเลยที่ติดคุกฟรีด้วย โดยชดเชยวันละ 400 บาท แต่ก็มีเงื่อนไขที่ทำให้เกือบจะไม่มีใครได้รับประโยชน์
+          แม้ว่า พ.ร.บ. นี้ จะขยายขอบเขตให้ครอบคลุมจำเลยที่ติดคุกฟรีด้วย
+          โดยชดเชยวันละ 400 บาท
+          แต่ก็มีเงื่อนไขที่ทำให้เกือบจะไม่มีใครได้รับประโยชน์
         </p>
         <blockquote class="quote">
-          "เราพบว่าศาลไทยเวลาตัดสินคดี แทบไม่เขียนว่าจำเลยเป็นผู้บริสุทธิ์ ส่วนมากจะเขียนว่า 'ยกประโยชน์แห่งความสงสัยให้จำเลย' ทำให้ผู้ที่ติดคุกฟรีไม่มีสิทธิ์รับการเยียวยาตาม พ.ร.บ.นี้เลย"
+          "เราพบว่าศาลไทยเวลาตัดสินคดี แทบไม่เขียนว่าจำเลยเป็นผู้บริสุทธิ์
+          ส่วนมากจะเขียนว่า 'ยกประโยชน์แห่งความสงสัยให้จำเลย'
+          ทำให้ผู้ที่ติดคุกฟรีไม่มีสิทธิ์รับการเยียวยาตาม พ.ร.บ.นี้เลย"
         </blockquote>
         <p class="italic">อังคณากล่าว</p>
 
-        <h2 class="text-2xl mt-4">การฟ้องแกล้ง : อาวุธใหม่ในการปิดปากเสียงต่อต้าน</h2>
+        <h2 class="text-2xl mt-4">
+          การฟ้องแกล้ง : อาวุธใหม่ในการปิดปากเสียงต่อต้าน
+        </h2>
         <p>
-          อีกปัญหาหนึ่งด้านสิทธิมนุษยชนที่พบและเกิดขึ้นจริง คือ การนำคดีความมาใช้เป็นเครื่องมือในการข่มขู่ ผ่านการฟ้องร้องแบบ SLAPP suits (Strategic Lawsuit Against Public Participation)
+          อีกปัญหาหนึ่งด้านสิทธิมนุษยชนที่พบและเกิดขึ้นจริง คือ
+          การนำคดีความมาใช้เป็นเครื่องมือในการข่มขู่ ผ่านการฟ้องร้องแบบ SLAPP
+          suits (Strategic Lawsuit Against Public Participation)
         </p>
         <blockquote class="quote">
-          "การฟ้องร้องดำเนินคดีแบบฟ้องแกล้งหรือฟ้องปิดปาก ถูกนำมาใช้มาก เช่น บริษัทเอกชนฟ้องนักสิทธิมนุษยชน หรือชาวบ้านที่ต่อต้านการทำเหมือง"
+          "การฟ้องร้องดำเนินคดีแบบฟ้องแกล้งหรือฟ้องปิดปาก ถูกนำมาใช้มาก เช่น
+          บริษัทเอกชนฟ้องนักสิทธิมนุษยชน หรือชาวบ้านที่ต่อต้านการทำเหมือง"
         </blockquote>
         <p>
-          วิธีการนี้มีประสิทธิภาพสูงในการทำให้ชาวบ้านหยุดการเคลื่อนไหว เพราะเมื่อถูกฟ้อง ภาระในการพิสูจน์เป็นของชาวบ้าน และหลายครั้งมีการเลือกฟ้องในจังหวัดห่างไกล ทำให้เป็นภาระอย่างมากในการเดินทางขึ้นศาล
+          วิธีการนี้มีประสิทธิภาพสูงในการทำให้ชาวบ้านหยุดการเคลื่อนไหว
+          เพราะเมื่อถูกฟ้อง ภาระในการพิสูจน์เป็นของชาวบ้าน
+          และหลายครั้งมีการเลือกฟ้องในจังหวัดห่างไกล
+          ทำให้เป็นภาระอย่างมากในการเดินทางขึ้นศาล
         </p>
 
-        <h2 class="text-2xl mt-4">ความล่าช้า : ปัญหาเรื้อรังที่ทำลายความเป็นธรรม</h2>
+        <h2 class="text-2xl mt-4">
+          ความล่าช้า : ปัญหาเรื้อรังที่ทำลายความเป็นธรรม
+        </h2>
         <p>
-          อดีตกรรมการสิทธิมนุษยชน บอกว่าปัญหาความล่าช้าของคดีเป็นอีกหนึ่งปัญหาใหญ่ที่ส่งผลกระทบต่อทุกฝ่าย เพราะเมื่อการพิจารณาในแต่ละคดีใช้เวลาหลายปี คนที่ถูกฟ้องก็ลำบาก แม้แต่จำเลยที่ถูกฟ้อง กว่าศาลจะพิพากษาว่าเขาจะหลุดคดี ระหว่างนี้ก็ทำมาหากินไม่ได้ ไม่มีใครรับสมัครงานหากยังมีคดีอยู่ ซึ่งปัญหานี้ ในมุมมองของนักสิทธิมนุษยชนเห็นว่าเกิดจากหลายสาเหตุ ทั้งการที่ตำรวจทำคดีล่าช้า ขาดแคลนพนักงานสอบสวน โดยเฉพาะพนักงานสอบสวนหญิงสำหรับคดีที่เกี่ยวกับทางเพศ
+          อดีตกรรมการสิทธิมนุษยชน
+          บอกว่าปัญหาความล่าช้าของคดีเป็นอีกหนึ่งปัญหาใหญ่ที่ส่งผลกระทบต่อทุกฝ่าย
+          เพราะเมื่อการพิจารณาในแต่ละคดีใช้เวลาหลายปี คนที่ถูกฟ้องก็ลำบาก
+          แม้แต่จำเลยที่ถูกฟ้อง กว่าศาลจะพิพากษาว่าเขาจะหลุดคดี
+          ระหว่างนี้ก็ทำมาหากินไม่ได้ ไม่มีใครรับสมัครงานหากยังมีคดีอยู่
+          ซึ่งปัญหานี้ ในมุมมองของนักสิทธิมนุษยชนเห็นว่าเกิดจากหลายสาเหตุ
+          ทั้งการที่ตำรวจทำคดีล่าช้า ขาดแคลนพนักงานสอบสวน
+          โดยเฉพาะพนักงานสอบสวนหญิงสำหรับคดีที่เกี่ยวกับทางเพศ
         </p>
 
-        <h2 class="text-2xl mt-4">ความเสี่ยงจากการพิจารณาคดีบนสื่อ ความจำเป็นปฏิรูปเร่งด่วน</h2>
+        <h2 class="text-2xl mt-4">
+          ความเสี่ยงจากการพิจารณาคดีบนสื่อ ความจำเป็นปฏิรูปเร่งด่วน
+        </h2>
         <p>
-          ความล้มเหลวของระบบยุติธรรมดั้งเดิม ทำให้เกิดปรากฏการณ์ที่ประชาชนเลือกพึ่งสื่อหรือเพจดังๆ มากกว่าการเข้าสู่กระบวนการยุติธรรมปกติ
+          ความล้มเหลวของระบบยุติธรรมดั้งเดิม
+          ทำให้เกิดปรากฏการณ์ที่ประชาชนเลือกพึ่งสื่อหรือเพจดังๆ
+          มากกว่าการเข้าสู่กระบวนการยุติธรรมปกติ
         </p>
         <blockquote class="quote">
-          "ถามว่าทำไมวันนี้ทุกคนวิ่งไปหาเพจดังๆ หรือพยายามวิ่งเต้นให้ได้ออกรายการโทรทัศน์ที่สร้างกระแส ตรงนี้สะท้อนว่าชาวบ้านไม่พึ่งกระบวนการยุติธรรมปกติแล้ว แม้ว่าสื่อจะสามารถช่วยสร้างกระแสและทำให้เกิดการแก้ไขปัญหาได้ แต่ก็มีความเสี่ยงในการสร้างดราม่า หรือทำให้ข้อเท็จจริงผิดเพี้ยนไป"
+          "ถามว่าทำไมวันนี้ทุกคนวิ่งไปหาเพจดังๆ
+          หรือพยายามวิ่งเต้นให้ได้ออกรายการโทรทัศน์ที่สร้างกระแส
+          ตรงนี้สะท้อนว่าชาวบ้านไม่พึ่งกระบวนการยุติธรรมปกติแล้ว
+          แม้ว่าสื่อจะสามารถช่วยสร้างกระแสและทำให้เกิดการแก้ไขปัญหาได้
+          แต่ก็มีความเสี่ยงในการสร้างดราม่า หรือทำให้ข้อเท็จจริงผิดเพี้ยนไป"
         </blockquote>
         <p>
-          อังคณาให้มุมมองว่าปรากฏการณ์ที่ประชาชนหันไปพึ่งเพจดังมากกว่าตำรวจ ไม่ใช่แค่การเปลี่ยนแปลงทางสังคมธรรมดา แต่ยังเป็นสัญญาณเตือนที่ส่งข้อความชัดเจนว่า ระบบยุติธรรมไทยกำลังเผชิญกับวิกฤติความเชื่อมั่น ซึ่งการที่สื่อมีบทบาทในการ "พิจารณาคดี" ก่อนศาล สร้างปัญหาที่ขัดต่อหลักการพื้นฐานของความเป็นธรรม
+          อังคณาให้มุมมองว่าปรากฏการณ์ที่ประชาชนหันไปพึ่งเพจดังมากกว่าตำรวจ
+          ไม่ใช่แค่การเปลี่ยนแปลงทางสังคมธรรมดา
+          แต่ยังเป็นสัญญาณเตือนที่ส่งข้อความชัดเจนว่า
+          ระบบยุติธรรมไทยกำลังเผชิญกับวิกฤติความเชื่อมั่น
+          ซึ่งการที่สื่อมีบทบาทในการ "พิจารณาคดี" ก่อนศาล
+          สร้างปัญหาที่ขัดต่อหลักการพื้นฐานของความเป็นธรรม
         </p>
         <blockquote class="quote">
-          "ตามหลักการพื้นฐานของการพิจารณาคดีอย่างเป็นธรรมคือ การสันนิษฐานไว้ก่อนว่าทุกคนคือผู้บริสุทธิ์ จนกว่าศาลจะมีคำพิพากษา แต่บางทีเมื่อไปออกสื่อดังๆ กลายเป็นว่าฟันธงไปเลยว่าคนนี้ผิดแล้ว การเปิดเผยข้อมูลส่วนบุคคลในสื่อ ยังส่งผลกระทบต่อครอบครัวและคนรอบข้างของผู้ถูกกล่าวหา ทำให้เกิดการลงโทษทางสังคมก่อนที่จะมีการพิสูจน์ความจริงในชั้นศาลด้วยซ้ำ"
+          "ตามหลักการพื้นฐานของการพิจารณาคดีอย่างเป็นธรรมคือ
+          การสันนิษฐานไว้ก่อนว่าทุกคนคือผู้บริสุทธิ์ จนกว่าศาลจะมีคำพิพากษา
+          แต่บางทีเมื่อไปออกสื่อดังๆ กลายเป็นว่าฟันธงไปเลยว่าคนนี้ผิดแล้ว
+          การเปิดเผยข้อมูลส่วนบุคคลในสื่อ
+          ยังส่งผลกระทบต่อครอบครัวและคนรอบข้างของผู้ถูกกล่าวหา
+          ทำให้เกิดการลงโทษทางสังคมก่อนที่จะมีการพิสูจน์ความจริงในชั้นศาลด้วยซ้ำ"
         </blockquote>
         <blockquote class="quote">
-          "สิ่งสำคัญที่สุด คือ การเปลี่ยนแปลงทัศนคติของเจ้าหน้าที่ในการให้ความสำคัญกับสิทธิมนุษยชน ทำอย่างไรให้ “เหยื่อ” รู้สึกปลอดภัยเมื่อไปแจ้งความ และทำอย่างไรให้มีพนักงานสอบสวนเพียงพอในการเร่งติดตามคดี ถ้าไม่มีการแก้ไขอย่างจริงจัง ในอนาคตอาจนำไปสู่การสูญเสียความเชื่อมั่นในระบบยุติธรรมไทยอย่างสิ้นเชิง ซึ่งจะเป็นภัยต่อการพัฒนาประเทศอย่างยั่งยืนในระยะยาว"
+          "สิ่งสำคัญที่สุด คือ
+          การเปลี่ยนแปลงทัศนคติของเจ้าหน้าที่ในการให้ความสำคัญกับสิทธิมนุษยชน
+          ทำอย่างไรให้ “เหยื่อ” รู้สึกปลอดภัยเมื่อไปแจ้งความ
+          และทำอย่างไรให้มีพนักงานสอบสวนเพียงพอในการเร่งติดตามคดี
+          ถ้าไม่มีการแก้ไขอย่างจริงจัง
+          ในอนาคตอาจนำไปสู่การสูญเสียความเชื่อมั่นในระบบยุติธรรมไทยอย่างสิ้นเชิง
+          ซึ่งจะเป็นภัยต่อการพัฒนาประเทศอย่างยั่งยืนในระยะยาว"
         </blockquote>
         <p class="italic">อังคณา กล่าวทิ้งท้าย</p>
       </div>
     </div>
 
-    <section id="section13" class="relative section h-[1600px] text-white text-4xl font-bold bg-transparent">
+    <section id="section13" class="relative section h-[2000px] text-white text-4xl font-bold bg-transparent">
       <a href="#painful-1">
         <div class="absolute left-[585px] top-[310px] w-[600px] h-[30px] z-20 bg-red-500 opacity-50"></div>
       </a>
@@ -815,46 +1449,108 @@
     <div id="painful-1" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">ตำรวจภูธรภาค 9 กับภารกิจรับมือความไม่สงบ : ภายใต้พื้นที่ความมั่นคงที่แตกต่าง</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          ตำรวจภูธรภาค 9 กับภารกิจรับมือความไม่สงบ :
+          ภายใต้พื้นที่ความมั่นคงที่แตกต่าง
+        </h2>
         <p>
-          ข้อมูลของสถานการณ์คดีอาญาและคดีความมั่นคงในพื้นที่ 4 จังหวัดภาคใต้ (ยะลา,ปัตตานี,นราธิวาส,และ 4 อำเภอของสงขลา) ระหว่างปี 2564–2567 มีคดีอาญาเกิดขึ้นในพื้นที่ทั้งหมดรวม 77,084 คดี  จับกุมผู้ต้องหาได้จำนวน 81,902 คน  ส่วนคดีที่เกี่ยวกับความมั่นคง มีจำนวนรวมทั้งสิ้น 533 คดี
+          ข้อมูลของสถานการณ์คดีอาญาและคดีความมั่นคงในพื้นที่ 4 จังหวัดภาคใต้
+          (ยะลา,ปัตตานี,นราธิวาส,และ 4 อำเภอของสงขลา) ระหว่างปี 2564–2567
+          มีคดีอาญาเกิดขึ้นในพื้นที่ทั้งหมดรวม 77,084 คดี
+          จับกุมผู้ต้องหาได้จำนวน 81,902 คน ส่วนคดีที่เกี่ยวกับความมั่นคง
+          มีจำนวนรวมทั้งสิ้น 533 คดี
         </p>
         <p>
-          แม้จะเห็นได้อย่างชัดเจนว่าคดีอาญาในพื้นที่ 4 จังหวัดภาคใต้ สูงกว่าจำนวนคดีที่เกี่ยวข้องกับความมั่นคง  แต่ที่น่าสนใจคือ จากปี 2564 จนถึง 2567 ตัวเลขจำนวนคดีอาญาในพื้นที่นี้ ลดลงต่อเนื่อง สวนทางกับจำนวนคดีความมั่นคง ที่มีจำนวนเพิ่มสูงขึ้นทุกปี  ยิ่งสะท้อนถึงบริบทของปัญหาในพื้นที่ว่ามีความซับซ้อนหลายมิติแตกต่างกับพื้นที่ภาคอื่นๆ จนกลายเป็นความท้าทายเชิงปฏิบัติการของบุคลากรโดยเฉพาะตำรวจ ต้องรับมือกับทั้งปัญหาความมั่นคงและอาชญากรรมทั่วไปพร้อมๆกัน
+          แม้จะเห็นได้อย่างชัดเจนว่าคดีอาญาในพื้นที่ 4 จังหวัดภาคใต้
+          สูงกว่าจำนวนคดีที่เกี่ยวข้องกับความมั่นคง แต่ที่น่าสนใจคือ จากปี
+          2564 จนถึง 2567 ตัวเลขจำนวนคดีอาญาในพื้นที่นี้ ลดลงต่อเนื่อง
+          สวนทางกับจำนวนคดีความมั่นคง ที่มีจำนวนเพิ่มสูงขึ้นทุกปี
+          ยิ่งสะท้อนถึงบริบทของปัญหาในพื้นที่ว่ามีความซับซ้อนหลายมิติแตกต่างกับพื้นที่ภาคอื่นๆ
+          จนกลายเป็นความท้าทายเชิงปฏิบัติการของบุคลากรโดยเฉพาะตำรวจ
+          ต้องรับมือกับทั้งปัญหาความมั่นคงและอาชญากรรมทั่วไปพร้อมๆกัน
         </p>
         <blockquote class="quote">
-          "ความแตกต่างเชิงโครงสร้างของพื้นที่ภาค 9 คือ ครอบคลุม 7 จังหวัดตอนล่างของประเทศ โดยเฉพาะพื้นที่ 3 จังหวัดชายแดนใต้ คือ ปัตตานี ยะลา และนราธิวาส รวมถึง 4 อำเภอของจังหวัดสงขลา ที่ต้องเผชิญคดีความมั่นคงที่มีความซับซ้อนสูง และมีลักษณะเฉพาะตัวอย่างชัดเจน"
+          "ความแตกต่างเชิงโครงสร้างของพื้นที่ภาค 9 คือ ครอบคลุม 7
+          จังหวัดตอนล่างของประเทศ โดยเฉพาะพื้นที่ 3 จังหวัดชายแดนใต้ คือ
+          ปัตตานี ยะลา และนราธิวาส รวมถึง 4 อำเภอของจังหวัดสงขลา
+          ที่ต้องเผชิญคดีความมั่นคงที่มีความซับซ้อนสูง
+          และมีลักษณะเฉพาะตัวอย่างชัดเจน"
         </blockquote>
-        <p class="italic">พล.ต.ท. ปิยะวัฒน์ เฉลิมศรี ผู้บัญชาการตำรวจภูธรภาค 9 กล่าว</p>
+        <p class="italic">
+          พล.ต.ท. ปิยะวัฒน์ เฉลิมศรี ผู้บัญชาการตำรวจภูธรภาค 9 กล่าว
+        </p>
 
         <h2 class="text-2xl mt-4">ผลประโยชน์ข้ามชาติ</h2>
         <p>
-          ภูมิประเทศที่มีพรมแดนติดกับประเทศเพื่อนบ้าน ทำให้เป็นเส้นทางที่สะดวกสำหรับการลักลอบขนสิ่งผิดกฎหมายและการหลบหนีของผู้กระทำความผิด  โดยเฉพาะปัญหายาเสพติดที่ไหลทะลัก  แม้ไทยจะไม่ใช่แหล่งผลิต แต่ปี 2568 มีการตรวจยึดยาบ้าสูงถึง 19 ล้านเม็ด กลายเป็นภาระหนักของตำรวจในการสกัดกั้น นอกจากนี้ความแตกต่างของราคาสินค้าระหว่างสองประเทศ ก็นำไปสู่การลักลอบขนของเถื่อน เช่น น้ำมันและสินค้าหลีกเลี่ยงภาษี  ผลประโยชน์มหาศาลของกลุ่มขบวนการผู้กระทำผิด  สร้างภาระงานที่ซับซ้อนให้กับการทำงานของตำรวจในพื้นที่นี้
+          ภูมิประเทศที่มีพรมแดนติดกับประเทศเพื่อนบ้าน
+          ทำให้เป็นเส้นทางที่สะดวกสำหรับการลักลอบขนสิ่งผิดกฎหมายและการหลบหนีของผู้กระทำความผิด
+          โดยเฉพาะปัญหายาเสพติดที่ไหลทะลัก แม้ไทยจะไม่ใช่แหล่งผลิต แต่ปี 2568
+          มีการตรวจยึดยาบ้าสูงถึง 19 ล้านเม็ด
+          กลายเป็นภาระหนักของตำรวจในการสกัดกั้น
+          นอกจากนี้ความแตกต่างของราคาสินค้าระหว่างสองประเทศ
+          ก็นำไปสู่การลักลอบขนของเถื่อน เช่น น้ำมันและสินค้าหลีกเลี่ยงภาษี
+          ผลประโยชน์มหาศาลของกลุ่มขบวนการผู้กระทำผิด
+          สร้างภาระงานที่ซับซ้อนให้กับการทำงานของตำรวจในพื้นที่นี้
         </p>
 
-        <h2 class="text-2xl mt-4">"คดีความมั่นคง" งานที่ซ่อนอยู่ใต้เงาองค์กรใต้ดิน</h2>
+        <h2 class="text-2xl mt-4">
+          "คดีความมั่นคง" งานที่ซ่อนอยู่ใต้เงาองค์กรใต้ดิน
+        </h2>
         <p>
-          "คดีความมั่นคงในพื้นที่ มันไม่ใช่อาชญากรรมทั่วไป" พล.ต.ท.ปิยะวัฒน์ พยายามชี้ให้เห็นถึงลักษณะเฉพาะของคดีความมั่นคง ว่ากลุ่มผู้ก่อเหตุไม่ได้กระทำเพื่อผลประโยชน์ส่วนตัว หากแต่มีวัตถุประสงค์ทางการเมืองที่ซับซ้อน เช่น การแสดงศักยภาพขององค์กรในเวทีโลก และการสถาปนารัฐปัตตานีผ่านการใช้ประวัติศาสตร์ ศาสนา และวัฒนธรรมเป็นเงื่อนไข 
+          "คดีความมั่นคงในพื้นที่ มันไม่ใช่อาชญากรรมทั่วไป" พล.ต.ท.ปิยะวัฒน์
+          พยายามชี้ให้เห็นถึงลักษณะเฉพาะของคดีความมั่นคง
+          ว่ากลุ่มผู้ก่อเหตุไม่ได้กระทำเพื่อผลประโยชน์ส่วนตัว
+          หากแต่มีวัตถุประสงค์ทางการเมืองที่ซับซ้อน เช่น
+          การแสดงศักยภาพขององค์กรในเวทีโลก
+          และการสถาปนารัฐปัตตานีผ่านการใช้ประวัติศาสตร์ ศาสนา
+          และวัฒนธรรมเป็นเงื่อนไข
         </p>
         <p>
-          กลุ่มผู้ก่อเหตุ โดยเฉพาะ กลุ่ม BRN ถูกระบุว่าเป็นโครงสร้างองค์กรใต้ดินที่มีระบบสั่งการ แบ่งหน้าที่ชัดเจน และใช้วิธีการที่ปกปิดซ่อนเร้น จึงทำให้การดำเนินคดีความมั่นคงต้องอาศัยฐานข้อมูลที่ละเอียดรอบด้าน ทั้ง ก่อน–ขณะ–หลังเกิดเหตุ
+          กลุ่มผู้ก่อเหตุ โดยเฉพาะ กลุ่ม BRN
+          ถูกระบุว่าเป็นโครงสร้างองค์กรใต้ดินที่มีระบบสั่งการ
+          แบ่งหน้าที่ชัดเจน และใช้วิธีการที่ปกปิดซ่อนเร้น
+          จึงทำให้การดำเนินคดีความมั่นคงต้องอาศัยฐานข้อมูลที่ละเอียดรอบด้าน
+          ทั้ง ก่อน–ขณะ–หลังเกิดเหตุ
         </p>
 
         <h2 class="text-2xl mt-4">การสอบสวนที่ต้อง "เหนือกว่าปกติ"</h2>
         <p>
-          ตำรวจภูธรภาค 9 ได้ปรับกระบวนการสอบสวนให้ต่างจากคดีทั่วไป โดยใช้คณะพนักงานสอบสวนที่มีประสบการณ์สูง ตั้งแต่ระดับสารวัตรถึงผู้กำกับ รวมถึงการใช้เทคโนโลยีทางนิติวิทยาศาสตร์และหน่วยเก็บกู้วัตถุระเบิด (EOD) ที่มีความเชี่ยวชาญสูงในพื้นที่
+          ตำรวจภูธรภาค 9 ได้ปรับกระบวนการสอบสวนให้ต่างจากคดีทั่วไป
+          โดยใช้คณะพนักงานสอบสวนที่มีประสบการณ์สูง
+          ตั้งแต่ระดับสารวัตรถึงผู้กำกับ
+          รวมถึงการใช้เทคโนโลยีทางนิติวิทยาศาสตร์และหน่วยเก็บกู้วัตถุระเบิด
+          (EOD) ที่มีความเชี่ยวชาญสูงในพื้นที่
         </p>
         <blockquote class="quote">
-          "เรามองว่าในที่เกิดเหตุ ต้องมีเครื่องมือเก็บพยานหลักฐานที่มีประสิทธิภาพสูงสุด เพราะพยานบุคคลไม่กล้าออกมา เนื่องจากอิทธิพลของกลุ่มผู้ก่อความไม่สงบ ตรงนี้จึงเป็นสิ่งที่สำคัญ ทำให้เราต้องใช้การพึ่งพาวิธีการสอบสวนเชิงวิทยาศาสตร์ แทนคำให้การของประชาชน"
+          "เรามองว่าในที่เกิดเหตุ
+          ต้องมีเครื่องมือเก็บพยานหลักฐานที่มีประสิทธิภาพสูงสุด
+          เพราะพยานบุคคลไม่กล้าออกมา เนื่องจากอิทธิพลของกลุ่มผู้ก่อความไม่สงบ
+          ตรงนี้จึงเป็นสิ่งที่สำคัญ
+          ทำให้เราต้องใช้การพึ่งพาวิธีการสอบสวนเชิงวิทยาศาสตร์
+          แทนคำให้การของประชาชน"
         </blockquote>
-        <p class="italic">พล.ต.ท.ปิยะวัฒน์ ฉายภาพให้เห็นถึงการทำงานของพนักงานสอบสวนในพื้นที่ภาค 9</p>
+        <p class="italic">
+          พล.ต.ท.ปิยะวัฒน์
+          ฉายภาพให้เห็นถึงการทำงานของพนักงานสอบสวนในพื้นที่ภาค 9
+        </p>
 
-        <h2 class="text-2xl mt-4">ใช้กฎหมายพิเศษ "เพื่อยุติเหตุร้ายรายวัน"</h2>
+        <h2 class="text-2xl mt-4">
+          ใช้กฎหมายพิเศษ "เพื่อยุติเหตุร้ายรายวัน"
+        </h2>
         <p>
-          อีกหนึ่งกลไกสำคัญ คือการใช้ พระราชกำหนดการบริหารราชการในสถานการณ์ฉุกเฉิน หรือ พ.ร.ก.ฉุกเฉิน เพื่อเปิดทางสู่การซักถามผู้ต้องสงสัยและขยายผลไปยังเครือข่ายผู้เกี่ยวข้อง ตั้งแต่ผู้สั่งการ ผู้ประสานงาน คนดูต้นทาง ไปจนถึงผู้ให้ที่พักพิง โดยยึดหลักว่าคดีความมั่นคง ต้อง “ดำเนินการทั้งระบบ” ไม่ใช่เพียงตัวผู้ลงมือ
+          อีกหนึ่งกลไกสำคัญ คือการใช้
+          พระราชกำหนดการบริหารราชการในสถานการณ์ฉุกเฉิน หรือ พ.ร.ก.ฉุกเฉิน
+          เพื่อเปิดทางสู่การซักถามผู้ต้องสงสัยและขยายผลไปยังเครือข่ายผู้เกี่ยวข้อง
+          ตั้งแต่ผู้สั่งการ ผู้ประสานงาน คนดูต้นทาง ไปจนถึงผู้ให้ที่พักพิง
+          โดยยึดหลักว่าคดีความมั่นคง ต้อง “ดำเนินการทั้งระบบ”
+          ไม่ใช่เพียงตัวผู้ลงมือ
         </p>
         <blockquote class="quote">
-          "การแก้ไขปัญหาไม่ใช่แค่เรื่องของกฎหมายหรือความมั่นคงเพียงมิติเดียว แต่ต้องมองไปถึงการสร้างความเข้าใจร่วมกันของทุกภาคส่วนในสังคมพหุวัฒนธรรม แม้จะต้องรับมือกับภัยคุกคามที่ซับซ้อนและรุนแรง เพราะเป้าหมายในการทำงานของเราไม่ใช่แค่หยุดเหตุร้าย แต่เราต้องทำให้สังคมกลับมาสงบสุขอย่างยั่งยืนด้วย"
+          "การแก้ไขปัญหาไม่ใช่แค่เรื่องของกฎหมายหรือความมั่นคงเพียงมิติเดียว
+          แต่ต้องมองไปถึงการสร้างความเข้าใจร่วมกันของทุกภาคส่วนในสังคมพหุวัฒนธรรม
+          แม้จะต้องรับมือกับภัยคุกคามที่ซับซ้อนและรุนแรง
+          เพราะเป้าหมายในการทำงานของเราไม่ใช่แค่หยุดเหตุร้าย
+          แต่เราต้องทำให้สังคมกลับมาสงบสุขอย่างยั่งยืนด้วย"
         </blockquote>
         <p class="italic">พล.ต.ท. ปิยะวัฒน์ กล่าวทิ้งท้าย</p>
       </div>
@@ -863,24 +1559,43 @@
     <div id="painful-2" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">ตำรวจไม่รับฟัง = รัฐไม่รับรู้ "One Stop NO Service"</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          ตำรวจไม่รับฟัง = รัฐไม่รับรู้ "One Stop NO Service"
+        </h2>
         <blockquote class="quote">
-          “เขาตีฉันอีกแล้ว…แต่ตำรวจบอกว่าเป็นเรื่องในครอบครัว และความรุนแรงในครอบครัว…ถือเป็นเรื่องส่วนตัว”
+          “เขาตีฉันอีกแล้ว…แต่ตำรวจบอกว่าเป็นเรื่องในครอบครัว
+          และความรุนแรงในครอบครัว…ถือเป็นเรื่องส่วนตัว”
         </blockquote>
         <p>
-          นายจะเด็จ เชาวน์วิไล ผู้อำนวยการมูลนิธิหญิงชายก้าวไกล พูดชัดว่า ไม่ใช่แค่ความรุนแรงรายบุคคล ปัญหาที่ตำรวจไม่รับแจ้งความในคดีต่าง ๆ เกิดจาก “ปัญหาเชิงโครงสร้าง” ที่ซ่อนอยู่ใต้พื้นผิวของสังคมไทยมายาวนาน ปัญหาโครงสร้าง เช่น ความเหลื่อมล้ำทางเศรษฐกิจ อำนาจรัฐที่สูงเกินไปหลังรัฐประหาร ระบบราชการที่เข้าถึงยาก โดยเฉพาะโครงสร้างที่ออกแบบมาไม่ให้คนตัวเล็กยืนอยู่ได้ เคสผู้หญิงถูกทำร้ายจำนวนมากที่เข้ามาหามูลนิธิฯ ไม่สามารถออกจากวงจรความรุนแรงได้ เพราะ “ไม่มีเงิน” ไม่มีรายได้ ไม่มีที่ไป และไม่มีระบบใดคอยรองรับ หากเธอเลือกจะลุกขึ้นยืนด้วยตัวเองอีกครั้ง
+          นายจะเด็จ เชาวน์วิไล ผู้อำนวยการมูลนิธิหญิงชายก้าวไกล พูดชัดว่า
+          ไม่ใช่แค่ความรุนแรงรายบุคคล ปัญหาที่ตำรวจไม่รับแจ้งความในคดีต่าง ๆ
+          เกิดจาก “ปัญหาเชิงโครงสร้าง”
+          ที่ซ่อนอยู่ใต้พื้นผิวของสังคมไทยมายาวนาน ปัญหาโครงสร้าง เช่น
+          ความเหลื่อมล้ำทางเศรษฐกิจ อำนาจรัฐที่สูงเกินไปหลังรัฐประหาร
+          ระบบราชการที่เข้าถึงยาก
+          โดยเฉพาะโครงสร้างที่ออกแบบมาไม่ให้คนตัวเล็กยืนอยู่ได้
+          เคสผู้หญิงถูกทำร้ายจำนวนมากที่เข้ามาหามูลนิธิฯ
+          ไม่สามารถออกจากวงจรความรุนแรงได้ เพราะ “ไม่มีเงิน” ไม่มีรายได้
+          ไม่มีที่ไป และไม่มีระบบใดคอยรองรับ
+          หากเธอเลือกจะลุกขึ้นยืนด้วยตัวเองอีกครั้ง
         </p>
         <blockquote class="quote">
-          “บางคนอยากออกจากบ้าน แต่ไม่มีแม้แต่ค่ารถ ไม่รู้จะเอานมที่ไหนให้ลูกกิน ไม่มีงาน ไม่มีญาติพึ่งพา พวกเขาจะอยู่รอดยังไง”
+          “บางคนอยากออกจากบ้าน แต่ไม่มีแม้แต่ค่ารถ
+          ไม่รู้จะเอานมที่ไหนให้ลูกกิน ไม่มีงาน ไม่มีญาติพึ่งพา
+          พวกเขาจะอยู่รอดยังไง”
         </blockquote>
         <p class="italic">จะเด็จเล่า</p>
         <p>
-          ระบบราชการที่ควรจะเป็นที่พึ่ง กลับกลายเป็นป่าดงดิบของเอกสาร ขั้นตอน และความเฉยชา
+          ระบบราชการที่ควรจะเป็นที่พึ่ง กลับกลายเป็นป่าดงดิบของเอกสาร ขั้นตอน
+          และความเฉยชา
         </p>
 
         <h2 class="text-2xl mt-4">ตำรวจไม่รับฟัง = รัฐไม่รับรู้</h2>
         <p>
-          ตัวอย่างที่ชัดที่สุดคือกระบวนการแจ้งความ โดยเฉพาะคดีความรุนแรงในครอบครัวหรือคดีทางเพศ ผู้เสียหายจำนวนมากเล่าคล้ายคลึงกันว่า เมื่อตัดสินใจเดินเข้าโรงพัก พวกเธอมักได้ยินคำพูด:
+          ตัวอย่างที่ชัดที่สุดคือกระบวนการแจ้งความ
+          โดยเฉพาะคดีความรุนแรงในครอบครัวหรือคดีทางเพศ
+          ผู้เสียหายจำนวนมากเล่าคล้ายคลึงกันว่า เมื่อตัดสินใจเดินเข้าโรงพัก
+          พวกเธอมักได้ยินคำพูด:
         </p>
         <blockquote class="quote">
           “เป็นเรื่องผัวเมีย ไปเคลียร์กันเอง”
@@ -889,41 +1604,83 @@
           “ถ้าจะเอาผิดจริง ต้องหาหลักฐานมาให้ชัดก่อน”
         </blockquote>
         <p>
-          คำพูดเหล่านี้ไม่เพียงแค่ผลักผู้เสียหายกลับไปสู่ความเงียบงันเท่านั้น แต่ยังบอกอย่างชัดเจนว่า “ระบบ” ไม่ได้ออกแบบมาเพื่อรองรับพวกเขาเลย 
+          คำพูดเหล่านี้ไม่เพียงแค่ผลักผู้เสียหายกลับไปสู่ความเงียบงันเท่านั้น
+          แต่ยังบอกอย่างชัดเจนว่า “ระบบ” ไม่ได้ออกแบบมาเพื่อรองรับพวกเขาเลย
         </p>
         <p>
-          ความเงียบจากรัฐ ความจน ความกลัว และการชี้ว่า “นี่คือเรื่องส่วนตัว” ล้วนเป็นเชื้อเพลิงที่ทำให้วงจรความรุนแรงดำรงอยู่ต่อไป
+          ความเงียบจากรัฐ ความจน ความกลัว และการชี้ว่า “นี่คือเรื่องส่วนตัว”
+          ล้วนเป็นเชื้อเพลิงที่ทำให้วงจรความรุนแรงดำรงอยู่ต่อไป
         </p>
         <p>
-          เด็กที่เติบโตในบ้านที่พ่อแม่ทำร้ายกัน จะซึมซับความรุนแรงเป็นเรื่องปกติ ผู้หญิงที่ทนอยู่กับผู้ชายที่ทำร้ายเพราะไม่มีทางเลือก จะเชื่อว่าชีวิตของเธอไม่มีคุณค่า ชายที่ใช้ความรุนแรงแล้วไม่เคยถูกลงโทษ จะเรียนรู้ว่าเขาสามารถทำต่อไปได้
+          เด็กที่เติบโตในบ้านที่พ่อแม่ทำร้ายกัน
+          จะซึมซับความรุนแรงเป็นเรื่องปกติ
+          ผู้หญิงที่ทนอยู่กับผู้ชายที่ทำร้ายเพราะไม่มีทางเลือก
+          จะเชื่อว่าชีวิตของเธอไม่มีคุณค่า
+          ชายที่ใช้ความรุนแรงแล้วไม่เคยถูกลงโทษ
+          จะเรียนรู้ว่าเขาสามารถทำต่อไปได้
         </p>
         <p>
-          ทั้งหมดนี้ ไม่ใช่เรื่องของคนคนเดียว หรือครอบครัวใดครอบครัวหนึ่ง แต่คือ “ปัญหาเชิงโครงสร้าง” ที่ไม่ควรถูกมองข้ามอีกต่อไป
-        </p>
-
-        <h2 class="text-2xl mt-4">“ความรุนแรงที่บ้าน ไม่ใช่เรื่องภายในอีกต่อไป”</h2>
-        <p>
-          ขณะที่โลกภายนอกดูจะพัฒนาไม่หยุด ทั้งเทคโนโลยี เมือง และโอกาส แต่ในบ้านของใครหลายคนกลับยังมีเสียงที่ไม่มีใครได้ยิน เสียงสะอื้น เสียงโกรธ เสียงกลัว และเสียงของผู้ถูกกระทำซ้ำซากจากคนที่เรียกว่า "ครอบครัว"
-        </p>
-        <p>
-          ในช่วงหลายปีที่ผ่านมา มูลนิธิหญิงชายก้าวไกล กลายเป็นชื่อที่ผู้ประสบความรุนแรงจำนวนมากเลือกพึ่งพา แม้จะไม่ใช่หน่วยงานรัฐ ไม่ใช่โรงพัก หรือกระทรวง พวกเขากลับเป็น “ที่พึ่งสุดท้าย” ของผู้หญิง เด็ก และแม้แต่ผู้ชายที่ไม่รู้จะหนีไปไหนจากความรุนแรงที่เกิดขึ้นในบ้านของตนเอง
-        </p>
-        <p>
-          ผู้อำนวยการมูลนิธิหญิงชายก้าวไกล เปิดเผยว่า ตัวเลขกว่า 80% ของเคสที่มูลนิธิรับมาคือความรุนแรงในครอบครัว อีก 20% เป็นความรุนแรงทางเพศและปัญหาอื่น ๆ เช่น ความยากจน สุขภาพ หรือการว่างงาน โดยเฉพาะช่วงหลังโควิด ที่เคสพุ่งสูงขึ้นจนน่าเป็นห่วง ช่องทางติดต่อ เช่น inbox ของเพจ และโทรศัพท์สายตรง ถูกใช้งานแทบไม่หยุด บางเคสมาจากแรงกระเพื่อมของสื่อ 
-        </p>
-        <p>
-          จะเห็นได้ว่า กลไกรัฐล่าช้า ความช่วยเหลือไม่ถึงมือ สิ่งที่น่ากังวลไม่ใช่แค่จำนวนเคส แต่คือ "ความคาดหวัง" ที่ผู้คนมีต่อมูลนิธิ ซึ่งเดิมทีเน้นเฉพาะการช่วยเหลือด้านความรุนแรงในครอบครัว กลับต้องแบกรับปัญหาหลากหลาย ทั้งที่อยู่อาศัย ค่าใช้จ่าย ไปจนถึงภาวะซึมเศร้า สะท้อนช่องว่างของกลไกรัฐที่ตอบสนองไม่ทัน หรือไม่สามารถดูแลประชาชนได้อย่างครอบคลุมในยามวิกฤต
+          ทั้งหมดนี้ ไม่ใช่เรื่องของคนคนเดียว หรือครอบครัวใดครอบครัวหนึ่ง
+          แต่คือ “ปัญหาเชิงโครงสร้าง” ที่ไม่ควรถูกมองข้ามอีกต่อไป
         </p>
 
-        <h2 class="text-2xl mt-4">ความรุนแรงในครอบครัว ปัญหาที่ฝังลึกและ “เงียบงัน”</h2>
+        <h2 class="text-2xl mt-4">
+          “ความรุนแรงที่บ้าน ไม่ใช่เรื่องภายในอีกต่อไป”
+        </h2>
         <p>
-          ในบ้านหลายหลัง ความรุนแรงไม่ใช่เหตุการณ์ครั้งเดียว แต่คือวงจรที่เกิดซ้ำ จากอคติ ค่านิยมชายเป็นใหญ่ และการขาดพื้นที่ปลอดภัยทางกฎหมายหรือจิตใจ หลายคนเลือกเงียบเพราะกลัว เสียหน้า หรือเพราะเชื่อว่านั่นคือ “เรื่องของครอบครัว” และนั่นทำให้ปัญหานี้ยิ่งซับซ้อน
+          ขณะที่โลกภายนอกดูจะพัฒนาไม่หยุด ทั้งเทคโนโลยี เมือง และโอกาส
+          แต่ในบ้านของใครหลายคนกลับยังมีเสียงที่ไม่มีใครได้ยิน เสียงสะอื้น
+          เสียงโกรธ เสียงกลัว และเสียงของผู้ถูกกระทำซ้ำซากจากคนที่เรียกว่า
+          "ครอบครัว"
         </p>
         <p>
-          องค์กรเล็ก ภารกิจใหญ่: 14 ปีที่ไม่เคยหยุดยั้งของมูลนิธิหญิงชายก้าวไกล แม้จะเผชิญข้อจำกัดเรื่องบุคลากร งบประมาณ และแรงเสียดทานทางวัฒนธรรม แต่มูลนิธิหญิงชายก้าวไกลยังคงเดินหน้า ทั้งในด้านการให้ความช่วยเหลือ การรณรงค์สร้างความตระหนัก และผลักดันเชิงนโยบายอย่างต่อเนื่อง ด้วยจุดยืนสำคัญที่ว่า ทุกคนควรมีชีวิตที่ปลอดภัยไม่ว่าจะอยู่ที่ใด 
+          ในช่วงหลายปีที่ผ่านมา มูลนิธิหญิงชายก้าวไกล
+          กลายเป็นชื่อที่ผู้ประสบความรุนแรงจำนวนมากเลือกพึ่งพา
+          แม้จะไม่ใช่หน่วยงานรัฐ ไม่ใช่โรงพัก หรือกระทรวง พวกเขากลับเป็น
+          “ที่พึ่งสุดท้าย” ของผู้หญิง เด็ก
+          และแม้แต่ผู้ชายที่ไม่รู้จะหนีไปไหนจากความรุนแรงที่เกิดขึ้นในบ้านของตนเอง
         </p>
         <p>
-          จากที่กล่าวมาข้างต้น เมื่อบ้านไม่ใช่พื้นที่ปลอดภัย แล้วสังคมจะปลอดภัยได้อย่างไร... จะถึงเวลาหรือยังที่ความรุนแรงในครอบครัวจะไม่ถูกซุกไว้ใต้พรม แต่ถูกรื้อออกมาทบทวนในฐานะปัญหาเชิงระบบที่รัฐและสังคมต้องรับผิดชอบร่วมกัน
+          ผู้อำนวยการมูลนิธิหญิงชายก้าวไกล เปิดเผยว่า ตัวเลขกว่า 80%
+          ของเคสที่มูลนิธิรับมาคือความรุนแรงในครอบครัว อีก 20%
+          เป็นความรุนแรงทางเพศและปัญหาอื่น ๆ เช่น ความยากจน สุขภาพ
+          หรือการว่างงาน โดยเฉพาะช่วงหลังโควิด ที่เคสพุ่งสูงขึ้นจนน่าเป็นห่วง
+          ช่องทางติดต่อ เช่น inbox ของเพจ และโทรศัพท์สายตรง
+          ถูกใช้งานแทบไม่หยุด บางเคสมาจากแรงกระเพื่อมของสื่อ
+        </p>
+        <p>
+          จะเห็นได้ว่า กลไกรัฐล่าช้า ความช่วยเหลือไม่ถึงมือ
+          สิ่งที่น่ากังวลไม่ใช่แค่จำนวนเคส แต่คือ "ความคาดหวัง"
+          ที่ผู้คนมีต่อมูลนิธิ
+          ซึ่งเดิมทีเน้นเฉพาะการช่วยเหลือด้านความรุนแรงในครอบครัว
+          กลับต้องแบกรับปัญหาหลากหลาย ทั้งที่อยู่อาศัย ค่าใช้จ่าย
+          ไปจนถึงภาวะซึมเศร้า สะท้อนช่องว่างของกลไกรัฐที่ตอบสนองไม่ทัน
+          หรือไม่สามารถดูแลประชาชนได้อย่างครอบคลุมในยามวิกฤต
+        </p>
+
+        <h2 class="text-2xl mt-4">
+          ความรุนแรงในครอบครัว ปัญหาที่ฝังลึกและ “เงียบงัน”
+        </h2>
+        <p>
+          ในบ้านหลายหลัง ความรุนแรงไม่ใช่เหตุการณ์ครั้งเดียว
+          แต่คือวงจรที่เกิดซ้ำ จากอคติ ค่านิยมชายเป็นใหญ่
+          และการขาดพื้นที่ปลอดภัยทางกฎหมายหรือจิตใจ หลายคนเลือกเงียบเพราะกลัว
+          เสียหน้า หรือเพราะเชื่อว่านั่นคือ “เรื่องของครอบครัว”
+          และนั่นทำให้ปัญหานี้ยิ่งซับซ้อน
+        </p>
+        <p>
+          องค์กรเล็ก ภารกิจใหญ่: 14
+          ปีที่ไม่เคยหยุดยั้งของมูลนิธิหญิงชายก้าวไกล
+          แม้จะเผชิญข้อจำกัดเรื่องบุคลากร งบประมาณ และแรงเสียดทานทางวัฒนธรรม
+          แต่มูลนิธิหญิงชายก้าวไกลยังคงเดินหน้า ทั้งในด้านการให้ความช่วยเหลือ
+          การรณรงค์สร้างความตระหนัก และผลักดันเชิงนโยบายอย่างต่อเนื่อง
+          ด้วยจุดยืนสำคัญที่ว่า ทุกคนควรมีชีวิตที่ปลอดภัยไม่ว่าจะอยู่ที่ใด
+        </p>
+        <p>
+          จากที่กล่าวมาข้างต้น เมื่อบ้านไม่ใช่พื้นที่ปลอดภัย
+          แล้วสังคมจะปลอดภัยได้อย่างไร...
+          จะถึงเวลาหรือยังที่ความรุนแรงในครอบครัวจะไม่ถูกซุกไว้ใต้พรม
+          แต่ถูกรื้อออกมาทบทวนในฐานะปัญหาเชิงระบบที่รัฐและสังคมต้องรับผิดชอบร่วมกัน
         </p>
       </div>
     </div>
@@ -931,34 +1688,87 @@
     <div id="painful-3" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">"ยะลาทูเดย์" กระบอกเสียงคนในพื้นที่ จากความมุ่งมั่นรายงานข่าวท้องถิ่น : สู่สะพานเชื่อมรัฐกับประชาชน</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          "ยะลาทูเดย์" กระบอกเสียงคนในพื้นที่
+          จากความมุ่งมั่นรายงานข่าวท้องถิ่น : สู่สะพานเชื่อมรัฐกับประชาชน
+        </h2>
         <p>
-          “จุดเริ่มของการทำเพจนี้ มาจากการที่ผมเป็นนักข่าวท้องถิ่นอยู่แล้ว สังกัดสำนักข่าวช่องหนึ่ง บางครั้งข่าวที่เราไปลงพื้นที่ทำมา มีประเด็นที่น่าสนใจ แต่ไม่ถูกเลือกออกอากาศ  ผมเลยคิดว่าถ้าเรามีเพจของตัวเองก็น่าจะเป็นช่องทางหนึ่งในการกระจายข่าวสารที่เกิดขึ้นในพื้นที่ของเราให้คนในชุมชนหรือจังหวัดใกล้เคียงได้รู้บ้าง เป็นเหมือนสื่อกลางที่ช่วยให้คนรับรู้เรื่องราวใกล้ตัวที่บางครั้งถูกมองข้ามไป” ผู้ดูแลเพจยะลาทูเดย์ สะท้อนให้ฟังถึงความมุ่งมั่นที่ทำให้เขาเริ่มต้นทำเพจ ยะลาทูเดย์ เพจเฟซบุ๊กที่ทำหน้าที่เป็นสื่อกลางและกระบอกเสียงของคนในพื้นที่จังหวัดยะลา โดยเฉพาะการเป็นพื้นที่ให้ความช่วยเหลือกับผู้ที่ได้รับความเดือดร้อนในเรื่องต่างๆ  ในยุคที่ข้อมูลข่าวสารไหลบ่า การเข้าถึงเรื่องราวใกล้ตัวที่บางครั้งสื่อหลักอาจมองข้ามไป กลับกลายเป็นสิ่งสำคัญ ที่ทำให้ “ยะลาทูเดย์” วันนี้มียอดผู้ติดตามเพจนี้กว่า 2.8 แสนคน
+          “จุดเริ่มของการทำเพจนี้ มาจากการที่ผมเป็นนักข่าวท้องถิ่นอยู่แล้ว
+          สังกัดสำนักข่าวช่องหนึ่ง บางครั้งข่าวที่เราไปลงพื้นที่ทำมา
+          มีประเด็นที่น่าสนใจ แต่ไม่ถูกเลือกออกอากาศ
+          ผมเลยคิดว่าถ้าเรามีเพจของตัวเองก็น่าจะเป็นช่องทางหนึ่งในการกระจายข่าวสารที่เกิดขึ้นในพื้นที่ของเราให้คนในชุมชนหรือจังหวัดใกล้เคียงได้รู้บ้าง
+          เป็นเหมือนสื่อกลางที่ช่วยให้คนรับรู้เรื่องราวใกล้ตัวที่บางครั้งถูกมองข้ามไป”
+          ผู้ดูแลเพจยะลาทูเดย์
+          สะท้อนให้ฟังถึงความมุ่งมั่นที่ทำให้เขาเริ่มต้นทำเพจ ยะลาทูเดย์
+          เพจเฟซบุ๊กที่ทำหน้าที่เป็นสื่อกลางและกระบอกเสียงของคนในพื้นที่จังหวัดยะลา
+          โดยเฉพาะการเป็นพื้นที่ให้ความช่วยเหลือกับผู้ที่ได้รับความเดือดร้อนในเรื่องต่างๆ
+          ในยุคที่ข้อมูลข่าวสารไหลบ่า
+          การเข้าถึงเรื่องราวใกล้ตัวที่บางครั้งสื่อหลักอาจมองข้ามไป
+          กลับกลายเป็นสิ่งสำคัญ ที่ทำให้ “ยะลาทูเดย์”
+          วันนี้มียอดผู้ติดตามเพจนี้กว่า 2.8 แสนคน
         </p>
 
-        <h2 class="text-2xl mt-4">"สะพานเชื่อม" ความเดือดร้อนสู่การช่วยเหลือ</h2>
+        <h2 class="text-2xl mt-4">
+          "สะพานเชื่อม" ความเดือดร้อนสู่การช่วยเหลือ
+        </h2>
         <p>
-          หัวใจหลักของการทำงานเพจยะลาทูเดย์ คือการเป็น “สะพานเชื่อม” ระหว่างประชาชนผู้เดือดร้อนกับหน่วยงานที่เกี่ยวข้อง “สิ่งที่ผมเห็นจากการทำเพจคือ การสื่อสารกับประชาชนมันง่ายมากขึ้น คนที่เดือดร้อนหรืออยากร้องเรียนอะไรก็แค่ส่งข้อความมาทางแชท” ผู้ดูแลเพจกล่าวพร้อมรอยยิ้ม “เราอ่านแล้วก็พิจารณาเป็นเรื่อง ๆ ไป บางเรื่องอาจดูเล็กน้อย แต่สำหรับคนที่ได้รับผลกระทบ มันเป็นเรื่องใหญ่ของเขา เราเลยพยายามเป็นเหมือนสะพานเชื่อมต่อใช้ความช่วยเหลือเข้าไปถึงเขาได้” 
+          หัวใจหลักของการทำงานเพจยะลาทูเดย์ คือการเป็น “สะพานเชื่อม”
+          ระหว่างประชาชนผู้เดือดร้อนกับหน่วยงานที่เกี่ยวข้อง
+          “สิ่งที่ผมเห็นจากการทำเพจคือ การสื่อสารกับประชาชนมันง่ายมากขึ้น
+          คนที่เดือดร้อนหรืออยากร้องเรียนอะไรก็แค่ส่งข้อความมาทางแชท”
+          ผู้ดูแลเพจกล่าวพร้อมรอยยิ้ม “เราอ่านแล้วก็พิจารณาเป็นเรื่อง ๆ ไป
+          บางเรื่องอาจดูเล็กน้อย แต่สำหรับคนที่ได้รับผลกระทบ
+          มันเป็นเรื่องใหญ่ของเขา
+          เราเลยพยายามเป็นเหมือนสะพานเชื่อมต่อใช้ความช่วยเหลือเข้าไปถึงเขาได้”
         </p>
         <p>
-          เขาเสริมว่า แม้บางครั้งหน่วยงานจะสามารถเข้าช่วยเหลือได้ทันทีหรือไม่ก็ตาม แต่สิ่งสำคัญคือประชาชนได้มี “ที่พึ่ง” เพราะคนเรามีความเดือดร้อนที่แตกต่างกัน
+          เขาเสริมว่า
+          แม้บางครั้งหน่วยงานจะสามารถเข้าช่วยเหลือได้ทันทีหรือไม่ก็ตาม
+          แต่สิ่งสำคัญคือประชาชนได้มี “ที่พึ่ง”
+          เพราะคนเรามีความเดือดร้อนที่แตกต่างกัน
         </p>
         <blockquote class="quote">
-          “ ที่ผ่านมา เพจยะลาทูเดย์ให้ความช่วยเหลือในหลากหลายรูปแบบ ไล่ไปตั้งแต่เรื่องเล็กไปจนถึงเรื่องใหญ่ เช่น คนหาย สัตว์เลี้ยงหาย ของหาย หรือบางรายไม่ได้มีเรื่องร้องเรียน แต่อยากขอคำปรึกษา เช่น จะทำอย่างไรดีในเรื่องกฎหมายหรือปัญหาชีวิตเล็ก ๆ น้อย ๆ เพจก็ให้คำแนะนำตามที่รู้ บางครั้งถ้าเรื่องมันเกินกำลัง เราก็ช่วยประสานหรือแนะนำให้เขาไปติดต่อหน่วยงานที่เหมาะสมกับปัญหานั้นๆ”
+          “ ที่ผ่านมา เพจยะลาทูเดย์ให้ความช่วยเหลือในหลากหลายรูปแบบ
+          ไล่ไปตั้งแต่เรื่องเล็กไปจนถึงเรื่องใหญ่ เช่น คนหาย สัตว์เลี้ยงหาย
+          ของหาย หรือบางรายไม่ได้มีเรื่องร้องเรียน แต่อยากขอคำปรึกษา เช่น
+          จะทำอย่างไรดีในเรื่องกฎหมายหรือปัญหาชีวิตเล็ก ๆ น้อย ๆ
+          เพจก็ให้คำแนะนำตามที่รู้ บางครั้งถ้าเรื่องมันเกินกำลัง
+          เราก็ช่วยประสานหรือแนะนำให้เขาไปติดต่อหน่วยงานที่เหมาะสมกับปัญหานั้นๆ”
         </blockquote>
-        
-        <h2 class="text-2xl mt-4">สองเคสประทับใจ : ไกล่เกลี่ยข้อพิพาทและภัยพิบัติน้ำท่วม</h2>
+
+        <h2 class="text-2xl mt-4">
+          สองเคสประทับใจ : ไกล่เกลี่ยข้อพิพาทและภัยพิบัติน้ำท่วม
+        </h2>
         <p>
-          ผู้ดูแลเพจยะลาทูเดย์เล่าถึง 2 เคสที่สร้างความประทับใจและเป็นเครื่องยืนยันถึงความสำคัญของเพจในการช่วยเหลือสังคม 
+          ผู้ดูแลเพจยะลาทูเดย์เล่าถึง 2
+          เคสที่สร้างความประทับใจและเป็นเครื่องยืนยันถึงความสำคัญของเพจในการช่วยเหลือสังคม
         </p>
         <p>
-          เคสแรก เกี่ยวกับข้อพิพาทเรื่องที่ดินในอำเภอเบตง มีการเช่าที่จากรัฐ แล้วเกิดความเข้าใจผิดระหว่างผู้เช่ากับผู้ให้เช่า จนเรื่องไปถึงศาล  “เราช่วยลงข่าวไป คนที่เกี่ยวข้องเห็นข่าวแล้วติดต่อมา อธิบายเรื่องราวทั้งหมด สุดท้ายก็สามารถไกล่เกลี่ยกันได้ในชั้นศาล ทำให้ทั้งสองฝ่ายเข้าใจกันและตกลงกันได้ลงตัว ก็รู้สึกดีครับที่เราได้เป็นส่วนหนึ่งในการช่วยให้เรื่องจบลงด้วยดี” 
+          เคสแรก เกี่ยวกับข้อพิพาทเรื่องที่ดินในอำเภอเบตง มีการเช่าที่จากรัฐ
+          แล้วเกิดความเข้าใจผิดระหว่างผู้เช่ากับผู้ให้เช่า จนเรื่องไปถึงศาล
+          “เราช่วยลงข่าวไป คนที่เกี่ยวข้องเห็นข่าวแล้วติดต่อมา
+          อธิบายเรื่องราวทั้งหมด สุดท้ายก็สามารถไกล่เกลี่ยกันได้ในชั้นศาล
+          ทำให้ทั้งสองฝ่ายเข้าใจกันและตกลงกันได้ลงตัว
+          ก็รู้สึกดีครับที่เราได้เป็นส่วนหนึ่งในการช่วยให้เรื่องจบลงด้วยดี”
         </p>
         <p>
-          อีกเคสที่เจอเป็นประจำ คือสถานการณ์น้ำท่วม “เวลาน้ำท่วม ชาวบ้านจะส่งข้อมูลเข้ามาเลยว่า ตอนนี้น้ำสูงเท่าไหร่ อยู่ตรงไหน ช่วยรายงานให้หน่อย บางคนออกจากบ้านไม่ได้ ไม่มีอาหาร น้ำดื่ม เราก็ช่วยเป็นกระบอกเสียงให้ และหลายครั้งเจ้าหน้าที่ก็เข้าไปช่วยเหลือได้เร็วขึ้น เพราะข้อมูลที่ชาวบ้านส่งมาให้เราแบบทันทีทันใด” 
+          อีกเคสที่เจอเป็นประจำ คือสถานการณ์น้ำท่วม “เวลาน้ำท่วม
+          ชาวบ้านจะส่งข้อมูลเข้ามาเลยว่า ตอนนี้น้ำสูงเท่าไหร่ อยู่ตรงไหน
+          ช่วยรายงานให้หน่อย บางคนออกจากบ้านไม่ได้ ไม่มีอาหาร น้ำดื่ม
+          เราก็ช่วยเป็นกระบอกเสียงให้
+          และหลายครั้งเจ้าหน้าที่ก็เข้าไปช่วยเหลือได้เร็วขึ้น
+          เพราะข้อมูลที่ชาวบ้านส่งมาให้เราแบบทันทีทันใด”
         </p>
         <p>
-          ผู้ดูแลเพจยะลาทูเดย์ เน้นย้ำถึงความสำคัญของการปรับปรุงระบบการสื่อสารของหน่วยงานภาครัฐให้เข้ากับยุคปัจจุบัน  “ผมคิดว่าหน่วยงานภาครัฐควรปรับปรุงระบบการสื่อสารให้เข้ากับยุคปัจจุบันมากขึ้น ใช้โซเชียลมีเดียให้มากขึ้นเพื่อทำให้ประชาชนเข้าถึงง่าย ให้ข้อมูลที่ชัดเจนว่าต้องทำอะไรบ้างในแต่ละขั้นตอน จะได้ไม่สับสน และเจ้าหน้าที่เองก็ทำงานง่ายขึ้นด้วย ถ้าทุกฝ่ายสื่อสารกันดี เข้าใจกันมากขึ้น ผมเชื่อว่าความเดือดร้อนของประชาชนจะได้รับการช่วยเหลือได้เร็วและตรงจุดครับ” เขากล่าวสรุปด้วยความหวัง
+          ผู้ดูแลเพจยะลาทูเดย์
+          เน้นย้ำถึงความสำคัญของการปรับปรุงระบบการสื่อสารของหน่วยงานภาครัฐให้เข้ากับยุคปัจจุบัน
+          “ผมคิดว่าหน่วยงานภาครัฐควรปรับปรุงระบบการสื่อสารให้เข้ากับยุคปัจจุบันมากขึ้น
+          ใช้โซเชียลมีเดียให้มากขึ้นเพื่อทำให้ประชาชนเข้าถึงง่าย
+          ให้ข้อมูลที่ชัดเจนว่าต้องทำอะไรบ้างในแต่ละขั้นตอน จะได้ไม่สับสน
+          และเจ้าหน้าที่เองก็ทำงานง่ายขึ้นด้วย ถ้าทุกฝ่ายสื่อสารกันดี
+          เข้าใจกันมากขึ้น
+          ผมเชื่อว่าความเดือดร้อนของประชาชนจะได้รับการช่วยเหลือได้เร็วและตรงจุดครับ”
+          เขากล่าวสรุปด้วยความหวัง
         </p>
       </div>
     </div>
@@ -966,90 +1776,191 @@
     <div id="painful-4" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">"โหนกระแส" เมื่อสื่อกลายเป็นที่พึ่ง นำทางสู่ "ความยุติธรรม" และสะท้อนปัญหาการทำงานของรัฐ</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          "โหนกระแส" เมื่อสื่อกลายเป็นที่พึ่ง นำทางสู่ "ความยุติธรรม"
+          และสะท้อนปัญหาการทำงานของรัฐ
+        </h2>
         <p>
-          1 ในปรากฏการณ์ทางสังคมที่สำคัญยุคนี้ คือการที่ “สื่อดั้งเดิม” และ “สื่อใหม่” ไม่ว่าจะรายการโทรทัศน์ เพจฮีโร่ หรือ อินฟลูเอนเซอร์ กลายเป็น "ที่พึ่ง" ของประชาชนในการเสาะหาความยุติธรรม 
+          1 ในปรากฏการณ์ทางสังคมที่สำคัญยุคนี้ คือการที่ “สื่อดั้งเดิม” และ
+          “สื่อใหม่” ไม่ว่าจะรายการโทรทัศน์ เพจฮีโร่ หรือ อินฟลูเอนเซอร์
+          กลายเป็น "ที่พึ่ง" ของประชาชนในการเสาะหาความยุติธรรม
         </p>
         <p>
-          รายการ "โหนกระแส" ภายใต้การนำของ หนุ่ม กรรชัย ในฐานะพิธีกรและโปรดิวเซอร์ใหญ่ได้รับความไว้วางใจจากประชาชน จนหลายคนยกว่าเป็นรายการ "ที่พึ่ง" อันดับ 1 ของคนไทยในยุคนี้
+          รายการ "โหนกระแส" ภายใต้การนำของ หนุ่ม กรรชัย
+          ในฐานะพิธีกรและโปรดิวเซอร์ใหญ่ได้รับความไว้วางใจจากประชาชน
+          จนหลายคนยกว่าเป็นรายการ "ที่พึ่ง" อันดับ 1 ของคนไทยในยุคนี้
         </p>
         <p>
-          อัมพร แววบุตร - บก.ข่าวรายการ เที่ยงวันทันเหตุการณ์ ช่อง 3 และหนึ่งในทีมงานรายการโหนกระแส ที่เพื่อนๆในวงการข่าวหรือหลายๆคนรู้จักและเรียกเธอว่า "โรส-โหนกระแส" ให้มุมมองที่น่าสนใจถึงบทบาทและการทำงานของรายการที่หลายคนมองว่าช่วยให้ "คดี" มีความคืบหน้าเร็วกว่าการพึ่งพาหน่วยงานรัฐตามปกติ
+          อัมพร แววบุตร - บก.ข่าวรายการ เที่ยงวันทันเหตุการณ์ ช่อง 3
+          และหนึ่งในทีมงานรายการโหนกระแส
+          ที่เพื่อนๆในวงการข่าวหรือหลายๆคนรู้จักและเรียกเธอว่า "โรส-โหนกระแส"
+          ให้มุมมองที่น่าสนใจถึงบทบาทและการทำงานของรายการที่หลายคนมองว่าช่วยให้
+          "คดี" มีความคืบหน้าเร็วกว่าการพึ่งพาหน่วยงานรัฐตามปกติ
         </p>
 
-        <h2 class="text-2xl mt-4">เมื่อหน่วยงานรัฐไม่ใช่ที่แรก : "โหนกระแส" ในฐานะทางออกสุดท้าย</h2>
+        <h2 class="text-2xl mt-4">
+          เมื่อหน่วยงานรัฐไม่ใช่ที่แรก : "โหนกระแส" ในฐานะทางออกสุดท้าย
+        </h2>
         <p>
-          อัมพร บอกว่า จุดเด่นของรายการโหนกระแส คือการ "ช่วยชาวบ้าน" ส่วนใหญ่แล้วคนที่มาออกรายการ มักจบลงได้ดี และตกลงกันได้
+          อัมพร บอกว่า จุดเด่นของรายการโหนกระแส คือการ "ช่วยชาวบ้าน"
+          ส่วนใหญ่แล้วคนที่มาออกรายการ มักจบลงได้ดี และตกลงกันได้
         </p>
         <blockquote class="quote">
-          "แต่ละเคสที่มาขอความช่วยเหลือและมาออกในรายการ ส่วนใหญ่แล้วจะจบลงด้วยดี ตกลงกันได้ มันเลยทำให้คนรู้สึกว่ามารายการแล้ว 'ได้รับความเป็นธรรม' การที่คนเลือกมาออกรายการนี้ มักมาจากประสบการณ์ที่เขาเคยไปแจ้งความหรือเคยไปขอความช่วยเหลือจากหน่วยงานรัฐมาก่อน แต่เขารู้สึกว่าไม่ได้รับความเป็นธรรม โดยเฉพาะกรณีที่มีผู้มีอิทธิพลเข้ามาเกี่ยวข้อง เช่น เคสที่สามีเป็นตำรวจ ภรรยาไปแจ้งความ แล้วคดีไม่ไปถึงไหนเลย สถานการณ์เช่นนี้มันสะท้อนปัญหาหรือการทำงานของเจ้าหน้าที่แล้วนะ"
+          "แต่ละเคสที่มาขอความช่วยเหลือและมาออกในรายการ
+          ส่วนใหญ่แล้วจะจบลงด้วยดี ตกลงกันได้
+          มันเลยทำให้คนรู้สึกว่ามารายการแล้ว 'ได้รับความเป็นธรรม'
+          การที่คนเลือกมาออกรายการนี้
+          มักมาจากประสบการณ์ที่เขาเคยไปแจ้งความหรือเคยไปขอความช่วยเหลือจากหน่วยงานรัฐมาก่อน
+          แต่เขารู้สึกว่าไม่ได้รับความเป็นธรรม
+          โดยเฉพาะกรณีที่มีผู้มีอิทธิพลเข้ามาเกี่ยวข้อง เช่น
+          เคสที่สามีเป็นตำรวจ ภรรยาไปแจ้งความ แล้วคดีไม่ไปถึงไหนเลย
+          สถานการณ์เช่นนี้มันสะท้อนปัญหาหรือการทำงานของเจ้าหน้าที่แล้วนะ"
         </blockquote>
         <p>
-          สิ่งที่ชาวบ้านมองคือ หากเรื่องไม่ถึงมือ "สื่อ" ก็อาจจะไม่ได้รับความยุติธรรม
+          สิ่งที่ชาวบ้านมองคือ หากเรื่องไม่ถึงมือ "สื่อ"
+          ก็อาจจะไม่ได้รับความยุติธรรม
         </p>
         <blockquote class="quote">
-          "หากเรื่องไม่ถึงสื่อก็อาจไม่ได้รับความยุติธรรม นี่คือสิ่งที่ชาวบ้านสะท้อนบอกเรา และทำให้เขาต้องมาพึ่งสื่อ เพราะเขาเชื่อว่าสื่อเป็นกระบอกเสียงให้เขาได้ การที่คดีไม่คืบหน้าเลย 5-6 เดือน โดยไม่มีคำอธิบาย ทำให้ประชาชนต้องหาทางออกด้วยการโพสต์ลงโซเชียลมีเดียหรือร้องเรียนผ่านเพจต่างๆ จนเป็นกระแส และมันก็มาถึงรายการในที่สุด”
+          "หากเรื่องไม่ถึงสื่อก็อาจไม่ได้รับความยุติธรรม
+          นี่คือสิ่งที่ชาวบ้านสะท้อนบอกเรา และทำให้เขาต้องมาพึ่งสื่อ
+          เพราะเขาเชื่อว่าสื่อเป็นกระบอกเสียงให้เขาได้ การที่คดีไม่คืบหน้าเลย
+          5-6 เดือน โดยไม่มีคำอธิบาย
+          ทำให้ประชาชนต้องหาทางออกด้วยการโพสต์ลงโซเชียลมีเดียหรือร้องเรียนผ่านเพจต่างๆ
+          จนเป็นกระแส และมันก็มาถึงรายการในที่สุด”
         </blockquote>
 
-        <h2 class="text-2xl mt-4">ไม่ใช่แค่ "ดราม่าผัวเมีย" แต่คือปัญหาทางสังคมและกฎหมายที่ซับซ้อน</h2>
+        <h2 class="text-2xl mt-4">
+          ไม่ใช่แค่ "ดราม่าผัวเมีย" แต่คือปัญหาทางสังคมและกฎหมายที่ซับซ้อน
+        </h2>
         <p>
-          แม้หลายคนจะมองว่ารายการมักนำเสนอแต่ "ดราม่าผัวเมีย" อัมพรขยายมุมมองว่า แท้ที่จริงแล้ว เคสผัวเมียไม่ใช่ "แค่" เรื่องผัวเมีย แต่สะท้อนถึงปัญหาสังคมและข้อกฎหมายที่ซับซ้อนและหลายคนไม่รู้
+          แม้หลายคนจะมองว่ารายการมักนำเสนอแต่ "ดราม่าผัวเมีย"
+          อัมพรขยายมุมมองว่า แท้ที่จริงแล้ว เคสผัวเมียไม่ใช่ "แค่"
+          เรื่องผัวเมีย
+          แต่สะท้อนถึงปัญหาสังคมและข้อกฎหมายที่ซับซ้อนและหลายคนไม่รู้
         </p>
         <blockquote class="italic">
-          "มันก็เข้าใจได้ที่คนจะมองแบบนั้น แต่ถ้ามองให้ลึกและเปิดใจ มันไม่ใช่แค่เรื่องผัวเมีย แต่มันเป็นเรื่องของข้อกฎหมาย เช่น การฟ้องร้องเรื่องสินสมรส, การฟ้องชู้, หรือค่าดูแลบุตร ซึ่งมันสะท้อนว่าคนไทยหลายคน ยังไม่ค่อยรู้กฎหมายเกี่ยวกับเรื่องเหล่านี้"
+          "มันก็เข้าใจได้ที่คนจะมองแบบนั้น แต่ถ้ามองให้ลึกและเปิดใจ
+          มันไม่ใช่แค่เรื่องผัวเมีย แต่มันเป็นเรื่องของข้อกฎหมาย เช่น
+          การฟ้องร้องเรื่องสินสมรส, การฟ้องชู้, หรือค่าดูแลบุตร
+          ซึ่งมันสะท้อนว่าคนไทยหลายคน
+          ยังไม่ค่อยรู้กฎหมายเกี่ยวกับเรื่องเหล่านี้"
         </blockquote>
         <h2>ปัญหาที่หลากหลายกว่าที่คิด</h2>
         <p>
-          อัมพร เล่าว่า เนื้อหาในรายการที่ผ่านมาครอบคลุมปัญหาต่างๆ ที่เป็นความเดือดร้อนของชาวบ้านและมีความเชื่อมโยงทางกฎหมาย
+          อัมพร เล่าว่า เนื้อหาในรายการที่ผ่านมาครอบคลุมปัญหาต่างๆ
+          ที่เป็นความเดือดร้อนของชาวบ้านและมีความเชื่อมโยงทางกฎหมาย
         </p>
         <ul>
-          <li>ข้อพิพาทเพื่อนบ้าน เช่น เรื่องเสียงดัง, กลิ่น, การจอดรถขวางหน้าบ้าน</li>
+          <li>
+            ข้อพิพาทเพื่อนบ้าน เช่น เรื่องเสียงดัง, กลิ่น,
+            การจอดรถขวางหน้าบ้าน
+          </li>
           <li>เรื่องการฉ้อโกง ที่นำไปสู่การดำเนินคดีกับผู้กระทำผิด</li>
-          <li>เคสเกี่ยวกับคดีรถชน ที่ผู้เสียหายไม่ได้รับความเป็นธรรมหรือค่าเยียวยา</li>
-          <li>เคสปัญหาที่ดินและมรดก ซึ่งเป็นประเด็นสำคัญและมีผู้ร้องเรียนเข้ามาเป็นจำนวนมาก โดยเฉพาะกรณีที่ดินตาบอดหรือความขัดแย้งในหมู่ญาติพี่น้อง</li>
+          <li>
+            เคสเกี่ยวกับคดีรถชน
+            ที่ผู้เสียหายไม่ได้รับความเป็นธรรมหรือค่าเยียวยา
+          </li>
+          <li>
+            เคสปัญหาที่ดินและมรดก
+            ซึ่งเป็นประเด็นสำคัญและมีผู้ร้องเรียนเข้ามาเป็นจำนวนมาก
+            โดยเฉพาะกรณีที่ดินตาบอดหรือความขัดแย้งในหมู่ญาติพี่น้อง
+          </li>
         </ul>
         <blockquote class="italic">
-          "ที่ดินที่เคยให้ผ่านได้สมัยพ่อแม่ พอมารุ่นลูก ไม่ยอม ก็มีปัญหาฟ้องร้องกัน ทุกครั้งรายการจะให้ความสำคัญกับการให้ความรู้ทางกฎหมาย โดยจะมี "ทนายความ" มาร่วมในรายการตลอด เพื่อให้ความรู้ทั้งกับผู้ร่วมรายการและผู้ชม”
+          "ที่ดินที่เคยให้ผ่านได้สมัยพ่อแม่ พอมารุ่นลูก ไม่ยอม
+          ก็มีปัญหาฟ้องร้องกัน
+          ทุกครั้งรายการจะให้ความสำคัญกับการให้ความรู้ทางกฎหมาย โดยจะมี
+          "ทนายความ" มาร่วมในรายการตลอด
+          เพื่อให้ความรู้ทั้งกับผู้ร่วมรายการและผู้ชม”
         </blockquote>
 
-        <h2 class="text-2xl mt-4">บทบาทของ "โหนกระแส" : จากเวทีเจรจาสู่การไกล่เกลี่ย</h2>
+        <h2 class="text-2xl mt-4">
+          บทบาทของ "โหนกระแส" : จากเวทีเจรจาสู่การไกล่เกลี่ย
+        </h2>
         <p>
-          สิ่งที่ทำให้หลายคดีจบลงได้ดี คือการเน้น "การพูดคุย-ทำความเข้าใจ" เป็นหลัก ทำให้เรื่องราวตกลงจบลงได้โดยไม่ต้องขึ้นศาล
+          สิ่งที่ทำให้หลายคดีจบลงได้ดี คือการเน้น "การพูดคุย-ทำความเข้าใจ"
+          เป็นหลัก ทำให้เรื่องราวตกลงจบลงได้โดยไม่ต้องขึ้นศาล
         </p>
         <p>
-          อัมพร บอกว่า ต้องยอมรับว่าบทบาทสำคัญของ "หนุ่ม - กรรชัย กำเนิดพลอย" เป็นมากกว่าพิธีกร เพราะเปรียบเสมือนเป็นนักเจรจา ที่ช่วยหาทางออกและไกล่เกลี่ยให้คู่กรณีได้ “ถอยคนละก้าว”
+          อัมพร บอกว่า ต้องยอมรับว่าบทบาทสำคัญของ "หนุ่ม - กรรชัย กำเนิดพลอย"
+          เป็นมากกว่าพิธีกร เพราะเปรียบเสมือนเป็นนักเจรจา
+          ที่ช่วยหาทางออกและไกล่เกลี่ยให้คู่กรณีได้ “ถอยคนละก้าว”
         </p>
 
         <h2 class="text-2xl mt-4">กระบวนการคัดเลือกเคส</h2>
         <p>
-          เมื่อถามถึงวิธีการเลือกเคสที่จะมาออกในรายการ อัมพรอธิบายให้ฟังว่า ทั้งทีมงานและ "หนุ่ม-กรรชัย" ที่นอกจากจะเป็นพิธีกรแล้ว ยังเป็นโปรดิวเซอร์ใหญ่ของรายการ จะช่วยกันคิดหาเคสประเด็นและแขก
+          เมื่อถามถึงวิธีการเลือกเคสที่จะมาออกในรายการ อัมพรอธิบายให้ฟังว่า
+          ทั้งทีมงานและ "หนุ่ม-กรรชัย" ที่นอกจากจะเป็นพิธีกรแล้ว
+          ยังเป็นโปรดิวเซอร์ใหญ่ของรายการ จะช่วยกันคิดหาเคสประเด็นและแขก
         </p>
         <blockquote class="italic">
-          "จริงๆแล้วคนที่เดือดร้อนและติดต่อมาขอความช่วยเหลือกับรายการมีจำนวนมาก แต่เราไม่สามารถนำมาออกได้ทุกเคส เพราะต้องดูที่ประเด็นด้วย นอกจากเคสที่มาออกในรายการแล้ว ยังมีคนที่โทรเข้ามาเพื่อขอคำปรึกษาจากปัญหาของตัวเอง ทางทีมงานก็ให้คำแนะนำ บางครั้งช่วยประสานกับหน่วยงานที่เกี่ยวข้องให้รับเรื่องต่อ ถึงแม้เขาจะไม่ได้เป็นแขกในรายการก็ตาม”
+          "จริงๆแล้วคนที่เดือดร้อนและติดต่อมาขอความช่วยเหลือกับรายการมีจำนวนมาก
+          แต่เราไม่สามารถนำมาออกได้ทุกเคส เพราะต้องดูที่ประเด็นด้วย
+          นอกจากเคสที่มาออกในรายการแล้ว
+          ยังมีคนที่โทรเข้ามาเพื่อขอคำปรึกษาจากปัญหาของตัวเอง
+          ทางทีมงานก็ให้คำแนะนำ
+          บางครั้งช่วยประสานกับหน่วยงานที่เกี่ยวข้องให้รับเรื่องต่อ
+          ถึงแม้เขาจะไม่ได้เป็นแขกในรายการก็ตาม”
         </blockquote>
 
-        <h2 class="text-2xl mt-4">เมื่อเลือกพึ่ง "สื่อ" : ก็ต้องพร้อมรับ "การตรวจสอบ"</h2>
+        <h2 class="text-2xl mt-4">
+          เมื่อเลือกพึ่ง "สื่อ" : ก็ต้องพร้อมรับ "การตรวจสอบ"
+        </h2>
         <h2>กระบวนการตรวจสอบข้อมูล</h2>
         <p>
-          ก่อนนำเสนอแต่ละเคส ทีมงานของรายการจะต้องตรวจสอบก่อนว่าเคสนี้เดือดร้อนจริงหรือไม่ ด้วยการสอบถามข้อมูลอย่างละเอียดจากทั้งสองฝ่าย และต้องขอดูหลักฐานต่างๆ ด้วย เพราะจะมาออกรายการเพื่อกล่าวหาคนอื่นลอยๆ ไม่ได้
+          ก่อนนำเสนอแต่ละเคส
+          ทีมงานของรายการจะต้องตรวจสอบก่อนว่าเคสนี้เดือดร้อนจริงหรือไม่
+          ด้วยการสอบถามข้อมูลอย่างละเอียดจากทั้งสองฝ่าย
+          และต้องขอดูหลักฐานต่างๆ ด้วย
+          เพราะจะมาออกรายการเพื่อกล่าวหาคนอื่นลอยๆ ไม่ได้
         </p>
         <blockquote class="italic">
-          "การมาออกในรายการโหนกระแส อย่างที่หลายๆคนได้เห็น คือ ถ้าใครโกหก หรือให้ข้อมูลบิดเบือน ก็มีโอกาส 'โป๊ะ' กลางรายการได้เลย ทั้งจากการซักถามอย่างเข้มข้นของพิธีกร และจากหลักฐานที่นำมาแสดง รวมถึงพลังของ "นักสืบโซเชียล" ที่จะส่งข้อมูลเข้ามาสนับสนุน
-          "การออกสื่อจะทำให้เรื่องราวของคุณเป็นสาธารณะทันที แล้วสิ่งที่คุณปิดบังไว้ หรือคุณพูดแต่ในมุมของตัวเอง หรืออะไรก็แล้วแต่ มันก็จะมีฟีดแบ็คหรือมีการตรวจสอบผ่านสาธารณะไปโดยปริยาย ดังนั้นคนที่จะมาออกรายการก็ต้องมั่นใจว่าหลักฐานคุณแน่นพอ"
+          "การมาออกในรายการโหนกระแส อย่างที่หลายๆคนได้เห็น คือ ถ้าใครโกหก
+          หรือให้ข้อมูลบิดเบือน ก็มีโอกาส 'โป๊ะ' กลางรายการได้เลย
+          ทั้งจากการซักถามอย่างเข้มข้นของพิธีกร และจากหลักฐานที่นำมาแสดง
+          รวมถึงพลังของ "นักสืบโซเชียล" ที่จะส่งข้อมูลเข้ามาสนับสนุน
+          "การออกสื่อจะทำให้เรื่องราวของคุณเป็นสาธารณะทันที
+          แล้วสิ่งที่คุณปิดบังไว้ หรือคุณพูดแต่ในมุมของตัวเอง
+          หรืออะไรก็แล้วแต่
+          มันก็จะมีฟีดแบ็คหรือมีการตรวจสอบผ่านสาธารณะไปโดยปริยาย
+          ดังนั้นคนที่จะมาออกรายการก็ต้องมั่นใจว่าหลักฐานคุณแน่นพอ"
         </blockquote>
 
         <h2 class="text-2xl mt-4">หัวใจสำคัญ : ความยุติธรรมในการนำเสนอ"</h2>
         <p>
-          อัมพรเล่าว่าในการช่วยเหลือเคสที่มาออกรายการ ทุกเคสจะมีการติดตามผล บางเคสจบรายการแล้วแต่ปัญหายังไม่จบ รายการก็ยังมีการให้ความช่วยเหลือต่อ โดยประสานงานกับหน่วยงานรัฐที่เกี่ยวข้อง เช่น กองปราบ กระทรวงสาธารณสุข หรือกรมคุ้มครองสิทธิ เพราะบางครั้งบางปัญหาไม่สามารถแก้ให้จบแบบทันทีทันใดได้
+          อัมพรเล่าว่าในการช่วยเหลือเคสที่มาออกรายการ ทุกเคสจะมีการติดตามผล
+          บางเคสจบรายการแล้วแต่ปัญหายังไม่จบ
+          รายการก็ยังมีการให้ความช่วยเหลือต่อ
+          โดยประสานงานกับหน่วยงานรัฐที่เกี่ยวข้อง เช่น กองปราบ
+          กระทรวงสาธารณสุข หรือกรมคุ้มครองสิทธิ
+          เพราะบางครั้งบางปัญหาไม่สามารถแก้ให้จบแบบทันทีทันใดได้
         </p>
         <blockquote class="italic">
-          "สิ่งที่สำคัญที่เรายึดถือเป็นหลักในการทำรายการ คือการให้ความยุติธรรมในการนำเสนอกับทุกฝ่าย ในทุกๆเคสที่มาออกรายการเราจะต้องให้พื้นที่กับทั้งสองฝ่าย หากคู่กรณีไม่สามารถมานั่งในรายการได้ ก็ต้องมีพื้นที่ทางใดทางหนึ่งให้เขาได้ชี้แจงหรือให้โอกาสเขาพูดในมุมของฝั่งคู่กรณี เช่น โฟนอิน หรือไปสัมภาษณ์เพิ่มเติมมา เพราะทุกฝ่ายต่างก็ต้องการความยุติธรรมเหมือนกัน" 
+          "สิ่งที่สำคัญที่เรายึดถือเป็นหลักในการทำรายการ
+          คือการให้ความยุติธรรมในการนำเสนอกับทุกฝ่าย
+          ในทุกๆเคสที่มาออกรายการเราจะต้องให้พื้นที่กับทั้งสองฝ่าย
+          หากคู่กรณีไม่สามารถมานั่งในรายการได้
+          ก็ต้องมีพื้นที่ทางใดทางหนึ่งให้เขาได้ชี้แจงหรือให้โอกาสเขาพูดในมุมของฝั่งคู่กรณี
+          เช่น โฟนอิน หรือไปสัมภาษณ์เพิ่มเติมมา
+          เพราะทุกฝ่ายต่างก็ต้องการความยุติธรรมเหมือนกัน"
         </blockquote>
 
         <h2 class="text-2xl mt-4">ลบภาพจำ ต้องเป็นคนดัง ตำรวจถึงจะทำคดี</h2>
         <blockquote class="italic">
-          “ ถ้ามองจากมุมของผู้ผลิตรายการที่ช่วยเหลือประชาชน เราอยากเห็นหน่วยงานของรัฐทุกภาคส่วนมีบทบาท “เชิงรุก” มากขึ้น  เข้าไปช่วยเหลือประชาชน ก่อนที่เขาจะต้องไปพึ่งพาสื่อหรือรายการโทรทัศน์ รวมถึงการเข้าถึงพื้นที่และปัญหาได้อย่างทันท่วงที เพื่อให้ประชาชนไม่รู้สึกว่า ต้องมาออกรายการก่อน ต้องเป็นคดีดัง หรือเป็นคนดัง ตำรวจถึงจะสนใจทำคดี ถึงจะทำให้ได้รับความยุติธรรม
-          และถ้ากรณีใดที่ยังไม่สามารถดำเนินการได้ หรือคดียังไม่คืบหน้า หน่วยงานที่รับผิดชอบก็ควรที่จะมีการสื่อสาร อธิบายเหตุผลกับชาวบ้านอย่างตรงไปตรงมา เพื่อสร้างความเข้าใจ และไม่ให้เกิดภาพจำว่า "ข้าราชการ” หรือ “หน่วยงานรัฐ” ไม่ช่วยเหลือประชาชน เพราะในทางกลับกันหน่วยงานเหล่านี้ ควรเป็นด่านหน้าในการเข้าถึงและให้ความช่วยเหลือในเบื้องต้นอย่างจริงจังกับผู้ที่ได้รับความเดือดร้อนไม่ว่าจะจากปัญหาเรื่องใดก็ตาม ” 
+          “ ถ้ามองจากมุมของผู้ผลิตรายการที่ช่วยเหลือประชาชน
+          เราอยากเห็นหน่วยงานของรัฐทุกภาคส่วนมีบทบาท “เชิงรุก” มากขึ้น
+          เข้าไปช่วยเหลือประชาชน
+          ก่อนที่เขาจะต้องไปพึ่งพาสื่อหรือรายการโทรทัศน์
+          รวมถึงการเข้าถึงพื้นที่และปัญหาได้อย่างทันท่วงที
+          เพื่อให้ประชาชนไม่รู้สึกว่า ต้องมาออกรายการก่อน ต้องเป็นคดีดัง
+          หรือเป็นคนดัง ตำรวจถึงจะสนใจทำคดี ถึงจะทำให้ได้รับความยุติธรรม
+          และถ้ากรณีใดที่ยังไม่สามารถดำเนินการได้ หรือคดียังไม่คืบหน้า
+          หน่วยงานที่รับผิดชอบก็ควรที่จะมีการสื่อสาร
+          อธิบายเหตุผลกับชาวบ้านอย่างตรงไปตรงมา เพื่อสร้างความเข้าใจ
+          และไม่ให้เกิดภาพจำว่า "ข้าราชการ” หรือ “หน่วยงานรัฐ”
+          ไม่ช่วยเหลือประชาชน เพราะในทางกลับกันหน่วยงานเหล่านี้
+          ควรเป็นด่านหน้าในการเข้าถึงและให้ความช่วยเหลือในเบื้องต้นอย่างจริงจังกับผู้ที่ได้รับความเดือดร้อนไม่ว่าจะจากปัญหาเรื่องใดก็ตาม
+          ”
         </blockquote>
         <p class="italic">อัมพร กล่าวทิ้งท้าย</p>
       </div>
@@ -1058,151 +1969,312 @@
     <div id="painful-5" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">"กฎบ้าน” นำ “กฎหมาย" หลักการแก้ไขปัญหาความเดือดร้อนในชุมชน</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          "กฎบ้าน” นำ “กฎหมาย" หลักการแก้ไขปัญหาความเดือดร้อนในชุมชน
+        </h2>
         <p>
-          บทบาทของผู้บริหารท้องถิ่นและผู้นำชุมชนมีความสำคัญอย่างยิ่งในการแก้ไขปัญหาความขัดแย้งและอาชญากรรมในพื้นที่ ก่อนที่เรื่องราวจะบานปลายไปสู่กระบวนการยุติธรรมและกลายเป็นภาระของตำรวจและศาล แนวคิดในการนำหลัก "รัฐศาสตร์" หรือการปกครองด้วยคุณธรรมและความเข้าใจ มาใช้แก้ไขปัญหา แทนที่จะใช้ "กฎหมาย" บังคับอย่างเคร่งครัดในทุกกรณี 
+          บทบาทของผู้บริหารท้องถิ่นและผู้นำชุมชนมีความสำคัญอย่างยิ่งในการแก้ไขปัญหาความขัดแย้งและอาชญากรรมในพื้นที่
+          ก่อนที่เรื่องราวจะบานปลายไปสู่กระบวนการยุติธรรมและกลายเป็นภาระของตำรวจและศาล
+          แนวคิดในการนำหลัก "รัฐศาสตร์" หรือการปกครองด้วยคุณธรรมและความเข้าใจ
+          มาใช้แก้ไขปัญหา แทนที่จะใช้ "กฎหมาย" บังคับอย่างเคร่งครัดในทุกกรณี
         </p>
         <p>
-          นายบุญชอบ ลีลานุช ประธานชมรมกำนัน ผู้ใหญ่บ้าน อำเภอนามน จังหวัดกาฬสินธุ์ และ กำนันเจ้าของ "รางวัลกำนันแหนบทอง" ประจำปี 2555 ให้มุมมองที่น่าสนใจเกี่ยวกับกลไกการแก้ไขปัญหาในระดับชุมชน
+          นายบุญชอบ ลีลานุช ประธานชมรมกำนัน ผู้ใหญ่บ้าน อำเภอนามน
+          จังหวัดกาฬสินธุ์ และ กำนันเจ้าของ "รางวัลกำนันแหนบทอง" ประจำปี 2555
+          ให้มุมมองที่น่าสนใจเกี่ยวกับกลไกการแก้ไขปัญหาในระดับชุมชน
         </p>
         <p>
-          ปัญหาหลากหลาย และครอบครัวคือด่านแรก กำนันบุญชอบ ชี้ให้เห็นว่าปัญหาในชุมชนนั้นมีอยู่หลากหลาย ตั้งแต่ปัญหาเล็กไปจนถึงปัญหาใหญ่ แต่สำหรับเขาแล้ว มองว่า “ปัญหาทุกอย่าง มีทางออก มีทางแก้" 
+          ปัญหาหลากหลาย และครอบครัวคือด่านแรก กำนันบุญชอบ
+          ชี้ให้เห็นว่าปัญหาในชุมชนนั้นมีอยู่หลากหลาย
+          ตั้งแต่ปัญหาเล็กไปจนถึงปัญหาใหญ่ แต่สำหรับเขาแล้ว มองว่า
+          “ปัญหาทุกอย่าง มีทางออก มีทางแก้"
         </p>
         <p>
-          เขายกตัวอย่างถึงหนึ่งในปัญหาสำคัญที่พบมากในปัจจุบันและเป็นปัญหาใหญ่ในทุกชุมชนทั่วโลก คือ ปัญหายาเสพติด ซึ่งลำพังผู้นำชุมชนเพียงอย่างเดียวก็ยากที่จะรับมือได้ และต้องพึ่งพาหน่วยงานปกครองและเจ้าหน้าที่ตำรวจ เพราะแม้กำนันและผู้ใหญ่บ้านสามารถพูดคุยและไกล่เกลี่ยได้ในส่วนที่เกี่ยวกับการเสพ โดยจะนำไปเข้าสู่กระบวนการบำบัด และส่งเสริมอาชีพหลังบำบัดแล้ว แต่หากเป็นเรื่องของการค้าและขายยาเสพติดนั้น ถือเป็นคดีอาญา จะต้องเข้าสู่กระบวนการดำเนินคดีตามกฎหมายอย่างไม่มียกเว้น
+          เขายกตัวอย่างถึงหนึ่งในปัญหาสำคัญที่พบมากในปัจจุบันและเป็นปัญหาใหญ่ในทุกชุมชนทั่วโลก
+          คือ ปัญหายาเสพติด
+          ซึ่งลำพังผู้นำชุมชนเพียงอย่างเดียวก็ยากที่จะรับมือได้
+          และต้องพึ่งพาหน่วยงานปกครองและเจ้าหน้าที่ตำรวจ
+          เพราะแม้กำนันและผู้ใหญ่บ้านสามารถพูดคุยและไกล่เกลี่ยได้ในส่วนที่เกี่ยวกับการเสพ
+          โดยจะนำไปเข้าสู่กระบวนการบำบัด และส่งเสริมอาชีพหลังบำบัดแล้ว
+          แต่หากเป็นเรื่องของการค้าและขายยาเสพติดนั้น ถือเป็นคดีอาญา
+          จะต้องเข้าสู่กระบวนการดำเนินคดีตามกฎหมายอย่างไม่มียกเว้น
         </p>
 
-        <h2 class="text-2xl mt-4">หัวใจสำคัญการแก้ไขปัญหาในชุมชน คือใช้ "ครอบครัวเป็นหลัก"</h2>
+        <h2 class="text-2xl mt-4">
+          หัวใจสำคัญการแก้ไขปัญหาในชุมชน คือใช้ "ครอบครัวเป็นหลัก"
+        </h2>
         <blockquote class="quote">
-          "ผมมองว่าจุดแรกที่จะต้องแก้ในชุมชนก็คือครอบครัว หากสมาชิกในครอบครัวช่วยกันดูแล เมื่อพบเจอสิ่งที่ไม่ถูกต้อง ครอบครัวจะต้องเป็นผู้แจ้งให้กำนันหรือผู้ใหญ่บ้านรับทราบ เพื่อที่ผู้นำจะได้เข้าไปสอดส่องดูแล เมื่อผู้นำรับทราบก็จะเข้าไปบอก ไปพูด ไปสอน ไปเตือน ในสิ่งที่ผิด และแนะนำสิ่งที่ถูกต้องตามระเบียบหรือกฎหมาย"
+          "ผมมองว่าจุดแรกที่จะต้องแก้ในชุมชนก็คือครอบครัว
+          หากสมาชิกในครอบครัวช่วยกันดูแล เมื่อพบเจอสิ่งที่ไม่ถูกต้อง
+          ครอบครัวจะต้องเป็นผู้แจ้งให้กำนันหรือผู้ใหญ่บ้านรับทราบ
+          เพื่อที่ผู้นำจะได้เข้าไปสอดส่องดูแล เมื่อผู้นำรับทราบก็จะเข้าไปบอก
+          ไปพูด ไปสอน ไปเตือน ในสิ่งที่ผิด
+          และแนะนำสิ่งที่ถูกต้องตามระเบียบหรือกฎหมาย"
         </blockquote>
 
         <h2>ไกล่เกลี่ยด้วย "คุณธรรม" คือทางออกที่ยั่งยืน</h2>
         <p>
-          กำนันบุญชอบ สะท้อนให้ฟังว่ากลุ่มวัยรุ่นหรือเด็กในปัจจุบัน  พ่อแม่พูดบางครั้งเด็กอาจจะไม่ค่อยเชื่อฟัง แต่หาก “ผู้นำ” พูด เขาจะเชื่อฟัง และก็ยังให้ความเคารพอยู่ ซึ่งหากการพูดคุยยังไม่สามารถแก้ไขปัญหาได้ ก็จะใช้ "กระบวนการไกล่เกลี่ย"
+          กำนันบุญชอบ สะท้อนให้ฟังว่ากลุ่มวัยรุ่นหรือเด็กในปัจจุบัน
+          พ่อแม่พูดบางครั้งเด็กอาจจะไม่ค่อยเชื่อฟัง แต่หาก “ผู้นำ” พูด
+          เขาจะเชื่อฟัง และก็ยังให้ความเคารพอยู่
+          ซึ่งหากการพูดคุยยังไม่สามารถแก้ไขปัญหาได้ ก็จะใช้
+          "กระบวนการไกล่เกลี่ย"
         </p>
         <blockquote class="quote">
-          “ในกระบวนการไกล่เกลี่ย เราจะไม่เน้นที่การ "ผิดถูก" แต่จะเน้นที่ "คุณธรรม" เป็นหลัก เราจะเอาหลักคุณธรรมเข้ามาพูด เพราะถ้าเน้นเรื่องความผิดถูก มันจะทำให้เกิดปัญหาตามมา ก็คือความไม่พอใจ"
+          “ในกระบวนการไกล่เกลี่ย เราจะไม่เน้นที่การ "ผิดถูก" แต่จะเน้นที่
+          "คุณธรรม" เป็นหลัก เราจะเอาหลักคุณธรรมเข้ามาพูด
+          เพราะถ้าเน้นเรื่องความผิดถูก มันจะทำให้เกิดปัญหาตามมา
+          ก็คือความไม่พอใจ"
         </blockquote>
         <p class="italic">กำนันอธิบาย</p>
         <p>
-          การเน้นความเป็นพี่เป็นน้อง เพราะเป็นคนในชุมชนเดียวกัน มาเป็นหลักคุณธรรมที่ใช้ในการไกล่เกลี่ยเจรจา จะช่วยลดความรุนแรงและข้อโต้เถียง เพื่อให้ท้ายที่สุดแล้วสามารถ "ขอโทษกัน" และ "ชดใช้ค่าเสียหายให้กัน"  เว้นแต่กรณีทำร้ายร่างกายรุนแรงถึงขั้นบาดเจ็บมาก ที่ต้องมีการพูดคุยเรื่องค่าเสียหายและการดูแลรักษา แต่ก็ยังคงต้องเน้นการยึดหลักคุณธรรมและความสามัคคีในชุมชน
+          การเน้นความเป็นพี่เป็นน้อง เพราะเป็นคนในชุมชนเดียวกัน
+          มาเป็นหลักคุณธรรมที่ใช้ในการไกล่เกลี่ยเจรจา
+          จะช่วยลดความรุนแรงและข้อโต้เถียง เพื่อให้ท้ายที่สุดแล้วสามารถ
+          "ขอโทษกัน" และ "ชดใช้ค่าเสียหายให้กัน"
+          เว้นแต่กรณีทำร้ายร่างกายรุนแรงถึงขั้นบาดเจ็บมาก
+          ที่ต้องมีการพูดคุยเรื่องค่าเสียหายและการดูแลรักษา
+          แต่ก็ยังคงต้องเน้นการยึดหลักคุณธรรมและความสามัคคีในชุมชน
         </p>
 
         <h2 class="text-2xl mt-4">"ศูนย์ดำรงธรรมชุมชน" กลไกสำคัญ “ลด” คดี</h2>
         <p>ทำให้ปัญหาไม่จำเป็นต้องไปถึงชั้นศาล</p>
-        <p>กำนันแหนบทอง บอกว่า ในชุมชนชาวบ้านจะมีสิ่งที่เรียกว่า "กฎหมายหมู่บ้าน" หรือ "กฎเหล็ก" บางที่ก็เรียกว่า "รัฐธรรมนูญหมู่บ้าน" ซึ่งจะนำมาใช้ในการแก้ไขปัญหา</p>
+        <p>
+          กำนันแหนบทอง บอกว่า ในชุมชนชาวบ้านจะมีสิ่งที่เรียกว่า
+          "กฎหมายหมู่บ้าน" หรือ "กฎเหล็ก" บางที่ก็เรียกว่า
+          "รัฐธรรมนูญหมู่บ้าน" ซึ่งจะนำมาใช้ในการแก้ไขปัญหา
+        </p>
         <blockquote class="quote">
-          "ศูนย์ดำรงธรรมชุมชน ถือว่าเป็นกลไกสำคัญในการดูแลและไกล่เกลี่ยปัญหาในชุมชน ปกติในแต่ละชุมชนจะมีศูนย์ดำรงธรรมชุมชน ตั้งอยู่ที่ทำการของกำนันหรือผู้ใหญ่บ้าน ศูนย์นี้ทำหน้าที่เป็นที่พึ่งของประชาชนที่มีปัญหาเดือดร้อน โดยเฉพาะปัญหาที่ไม่ใช่คดีอาญา ซึ่งต้องยอมรับว่า "ศูนย์ดำรงธรรมชุมชน” สามารถที่จะช่วยเคลียร์ แล้วก็ลดขั้นตอน ก่อนที่จะไปถึงโรงถึงศาลได้เยอะ  เพราะจะมีคณะกรรมการหมู่บ้าน ซึ่งประกอบด้วยผู้ทรงคุณวุฒิ ผู้เฒ่าผู้แก่ และผู้นำชุมชน จะเข้ามามีส่วนร่วมในการไกล่เกลี่ย”
+          "ศูนย์ดำรงธรรมชุมชน
+          ถือว่าเป็นกลไกสำคัญในการดูแลและไกล่เกลี่ยปัญหาในชุมชน
+          ปกติในแต่ละชุมชนจะมีศูนย์ดำรงธรรมชุมชน
+          ตั้งอยู่ที่ทำการของกำนันหรือผู้ใหญ่บ้าน
+          ศูนย์นี้ทำหน้าที่เป็นที่พึ่งของประชาชนที่มีปัญหาเดือดร้อน
+          โดยเฉพาะปัญหาที่ไม่ใช่คดีอาญา ซึ่งต้องยอมรับว่า "ศูนย์ดำรงธรรมชุมชน”
+          สามารถที่จะช่วยเคลียร์ แล้วก็ลดขั้นตอน
+          ก่อนที่จะไปถึงโรงถึงศาลได้เยอะ เพราะจะมีคณะกรรมการหมู่บ้าน
+          ซึ่งประกอบด้วยผู้ทรงคุณวุฒิ ผู้เฒ่าผู้แก่ และผู้นำชุมชน
+          จะเข้ามามีส่วนร่วมในการไกล่เกลี่ย”
         </blockquote>
         <p>
-          "ความเป็นวัฒนธรรม ความเป็นชุมชน ความเป็นหลักอาวุโส" ที่ถูกนำมาใช้ในการดูแลกันเองในชุมชนนี้ ยังคงมีคุณค่าและมีความสำคัญอย่างยิ่งในปัจจุบัน กำนันเชื่อว่า ผู้ที่กระทำความผิด แม้บางครั้งอาจไม่ยอมรับ 100% แต่ก็จะให้ความเคารพต่อผู้ปกครอง หรือผู้ที่เกี่ยวข้อง ซึ่งเป็นองค์ประกอบสำคัญที่ช่วยให้การไกล่เกลี่ยหาทางออกร่วมกันได้
+          "ความเป็นวัฒนธรรม ความเป็นชุมชน ความเป็นหลักอาวุโส"
+          ที่ถูกนำมาใช้ในการดูแลกันเองในชุมชนนี้
+          ยังคงมีคุณค่าและมีความสำคัญอย่างยิ่งในปัจจุบัน กำนันเชื่อว่า
+          ผู้ที่กระทำความผิด แม้บางครั้งอาจไม่ยอมรับ 100%
+          แต่ก็จะให้ความเคารพต่อผู้ปกครอง หรือผู้ที่เกี่ยวข้อง
+          ซึ่งเป็นองค์ประกอบสำคัญที่ช่วยให้การไกล่เกลี่ยหาทางออกร่วมกันได้
         </p>
         <p>
-          ซึ่งโดยเฉลี่ยแล้ว ในชุมชนหนึ่ง ๆ จะมีการไกล่เกลี่ยไม่น้อยกว่า 2-3 เรื่องต่อเดือน ครอบคลุมปัญหาหลากหลาย ทั้งปัญหาที่ดิน หนี้สิน ทะเลาะวิวาท ยาเสพติด และการพนัน แสดงให้เห็นถึงบทบาทสำคัญและปริมาณงานที่ผู้นำชุมชนจัดการในแต่ละวัน แต่สามารถช่วยแบ่งเบาภาระของกระบวนการยุติธรรมได้อย่างมหาศาล ไม่ต้องเสียเวลาและค่าใช้จ่ายจำนวนมาก หากต้องไปถึงชั้นศาล รวมทั้งยังสามารถช่วยลดรอยร้าว ทำให้อยู่ร่วมกันในชุมชนต่อไปได้ 
+          ซึ่งโดยเฉลี่ยแล้ว ในชุมชนหนึ่ง ๆ จะมีการไกล่เกลี่ยไม่น้อยกว่า 2-3
+          เรื่องต่อเดือน ครอบคลุมปัญหาหลากหลาย ทั้งปัญหาที่ดิน หนี้สิน
+          ทะเลาะวิวาท ยาเสพติด และการพนัน
+          แสดงให้เห็นถึงบทบาทสำคัญและปริมาณงานที่ผู้นำชุมชนจัดการในแต่ละวัน
+          แต่สามารถช่วยแบ่งเบาภาระของกระบวนการยุติธรรมได้อย่างมหาศาล
+          ไม่ต้องเสียเวลาและค่าใช้จ่ายจำนวนมาก หากต้องไปถึงชั้นศาล
+          รวมทั้งยังสามารถช่วยลดรอยร้าว ทำให้อยู่ร่วมกันในชุมชนต่อไปได้
         </p>
         <blockquote class="quote">
-          "ผมเชื่อว่าถ้าทุกชุมชนในประเทศไทยใช้หลักการดูแลกันเองในชุมชน โดยมีผู้นำชุมชนที่เข้มแข็ง จะสามารถช่วยลดคดีอาชญากรรมในภาพรวมของประเทศได้อย่างมาก ก่อนที่คดีเหล่านั้นจะกลายเป็นตัวเลขทางสถิติคดีความ เหตุผลสำคัญคือ ปัญหาทุกอย่างที่เกิดขึ้นในชุมชน อย่างน้อยญาติหรือผู้ปกครองของคู่กรณี เขาจะเข้ามาคุยแล้วมาเคลียร์...เขายังไม่อยากถึงโรงถึงศาล เพราะเขาก็รู้ว่าการไปถึงขั้นนั้น คือถึงตำรวจ มันเป็นเรื่องลำบาก มันเป็นเรื่องยุ่งยากสำหรับเขา"
+          "ผมเชื่อว่าถ้าทุกชุมชนในประเทศไทยใช้หลักการดูแลกันเองในชุมชน
+          โดยมีผู้นำชุมชนที่เข้มแข็ง
+          จะสามารถช่วยลดคดีอาชญากรรมในภาพรวมของประเทศได้อย่างมาก
+          ก่อนที่คดีเหล่านั้นจะกลายเป็นตัวเลขทางสถิติคดีความ เหตุผลสำคัญคือ
+          ปัญหาทุกอย่างที่เกิดขึ้นในชุมชน อย่างน้อยญาติหรือผู้ปกครองของคู่กรณี
+          เขาจะเข้ามาคุยแล้วมาเคลียร์...เขายังไม่อยากถึงโรงถึงศาล
+          เพราะเขาก็รู้ว่าการไปถึงขั้นนั้น คือถึงตำรวจ มันเป็นเรื่องลำบาก
+          มันเป็นเรื่องยุ่งยากสำหรับเขา"
         </blockquote>
         <p class="italic">กำนันบุญชอบ กล่าวทิ้งท้าย</p>
       </div>
     </div>
-    
+
     <div id="painful-7" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">เมื่อการหาความยุติธรรม...ยากกว่าการถูกหลอก</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          เมื่อการหาความยุติธรรม...ยากกว่าการถูกหลอก
+        </h2>
         <p>
-          เมื่อการแจ้งความที่ผู้เสียหายต้องตระเวนเดินทางหลายที่ เมื่อต้องเป็นนักกฎหมายเบื้องต้นให้ตัวเอง เมื่อต้องเป็นนักสืบเพื่อหาหลักฐาน และเมื่อไม่มีใครบอกว่า “คดี” ไปถึงไหนแล้ว
+          เมื่อการแจ้งความที่ผู้เสียหายต้องตระเวนเดินทางหลายที่
+          เมื่อต้องเป็นนักกฎหมายเบื้องต้นให้ตัวเอง
+          เมื่อต้องเป็นนักสืบเพื่อหาหลักฐาน และเมื่อไม่มีใครบอกว่า “คดี”
+          ไปถึงไหนแล้ว
         </p>
         <p>
-          คำถามคือ...ใครจะเป็นคนแก้ปัญหาตรงนี้ ให้ "ความยุติธรรม" ไม่ใช่เพียงแค่คำพูดสวยหรู แต่กลายเป็นสิ่งที่ประชาชนธรรมดาเข้าถึงได้จริง
+          คำถามคือ...ใครจะเป็นคนแก้ปัญหาตรงนี้ ให้ "ความยุติธรรม"
+          ไม่ใช่เพียงแค่คำพูดสวยหรู
+          แต่กลายเป็นสิ่งที่ประชาชนธรรมดาเข้าถึงได้จริง
         </p>
-        <blockquote class="quote">
-          "แค่การแจ้งความก็ยังดูยากเลย"
-        </blockquote>
+        <blockquote class="quote">"แค่การแจ้งความก็ยังดูยากเลย"</blockquote>
 
         <h2 class="text-2xl mt-4">กับดักโมเดลลิ่งปลอม เหยื่อเป็นร้อย</h2>
         <p>
-          "ประสบการณ์ที่เจอกับตัว...คือตอนไปถ่ายงานแล้วก็โดนโกงค่าจ้างครับ โดนกันหลายคนเลย เคสนี้เคยเป็นข่าวมาแล้ว"   'พีซ'  ช่างภาพหนุ่ม บอกกับเราเมื่อถูกถามถึงประสบการณ์ที่เคยเจอและเจ็บเกี่ยวกับเรื่องของความยุติธรรม 
+          "ประสบการณ์ที่เจอกับตัว...คือตอนไปถ่ายงานแล้วก็โดนโกงค่าจ้างครับ
+          โดนกันหลายคนเลย เคสนี้เคยเป็นข่าวมาแล้ว" 'พีซ' ช่างภาพหนุ่ม
+          บอกกับเราเมื่อถูกถามถึงประสบการณ์ที่เคยเจอและเจ็บเกี่ยวกับเรื่องของความยุติธรรม
         </p>
         <p>
-          พีซ เล่าว่าเคสของเขามีผู้เสียหายที่ตกเป็นเหยื่อนับร้อยคน ด้วยรูปแบบการฉ้อโกงของมิจฉาชีพที่มีการวางแผนว่าเป็นขั้นตอน
-        </p>
-        <blockquote class="quote">
-          “เขาอ้างตัวเป็นบริษัทโมเดลลิ่งไปลงโพสต์ประกาศหาคนทำงานในกลุ่มต่างๆบนเฟซบุ๊ก ว่าต้องการหานายแบบนางแบบโดยเฉพาะเด็กๆ นักแสดง ช่างแต่งหน้า ช่างภาพ โดยกระจายประกาศไป ไม่ได้ลงในตัวเดียวกัน ทำให้ทุกคนที่เป็นเหยื่อไม่รู้ว่าตัวเองถูกหลอก”
-        </blockquote>
-        <p>
-          พีซบอกว่าปกติแล้วตนเองจะเก็บเงินมัดจำก่อนเริ่มงาน แต่เคสนี้ มิจฉาชีพเร่งรัด อ้างว่างานด่วน โดยมีการสร้าง “คนประสานงาน” ขึ้นมาคนหนึ่ง เป็นคนกลางที่คุยกับเหยื่อ และคอยถ่ายรูปส่งให้เขา เหมือนรายงานอัปเดตว่าคนนี้มาถ่ายจริง โดยที่ตลอดเวลาที่ทำงานตัวมิจฉาชีพไม่เคยโผล่หน้ามาเลย ที่สำคัญจะไม่รับเงินเข้าบัญชีตัวเอง แต่ให้เหยื่อโอนเข้าบัญชีของ "คนประสานงาน" แล้วมิจฉาชีพจะไปถอนเงินออกแบบไม่ใช้บัตร โดยให้คนประสานงานบอกรหัสผ่านทางโทรศัพท์ให้ เพื่อเขาจะได้ถอนเงินออกมา
-        </p>
-        <p>
-          หลังทำงานไปแล้วเริ่มเอะใจ จึงไม่ส่งรูปให้ เพราะให้โอนเงินที่ค้างจ่าย ก็ได้รับการบ่ายเบี่ยง ซึ่งเป็นจังหวะเดียวกับที่ทีมงานที่ไปทำงานรอบเดียวกัน ทักมาถามเรื่องเงินค่าจ้างที่เขาก็ยังไม่ได้เช่นกัน รวมถึงผู้ปกครองที่พาลูกไปถ่ายก็มาทวงรูป เพราะติดต่อโมเดลลิ่งไม่ได้
+          พีซ เล่าว่าเคสของเขามีผู้เสียหายที่ตกเป็นเหยื่อนับร้อยคน
+          ด้วยรูปแบบการฉ้อโกงของมิจฉาชีพที่มีการวางแผนว่าเป็นขั้นตอน
         </p>
         <blockquote class="quote">
-          “ เขาจะเอาข้อมูลต่างๆที่ได้นำไปหลอกคนอื่นต่อ เช่น รูปเบื้องหลังการทำงานต่างๆ นอกจากจะหลอกให้คนไปทำงาน "ฟรี" เขาจะหาเงินจากผู้ปกครองที่พาลูกมาแคสติ้ง บอกว่า "ลูกน่าสนใจ มีรูป portfolio มั้ย? ถ่ายไม่สวยเลย เดี๋ยวถ่ายให้ใหม่" แล้วก็เก็บค่าเสื้อผ้า ค่าแต่งหน้า ซึ่งทุกอย่างที่เขาใช้ในการติดต่อกับเหยื่อ คือข้อมูลปลอมขึ้นมาทั้งหมด ส่วนตัวคนประสานงาน ก็ยืนยันว่าเขาเองถูกหลอกมาทำงานเหมือนกัน ”
+          “เขาอ้างตัวเป็นบริษัทโมเดลลิ่งไปลงโพสต์ประกาศหาคนทำงานในกลุ่มต่างๆบนเฟซบุ๊ก
+          ว่าต้องการหานายแบบนางแบบโดยเฉพาะเด็กๆ นักแสดง ช่างแต่งหน้า ช่างภาพ
+          โดยกระจายประกาศไป ไม่ได้ลงในตัวเดียวกัน
+          ทำให้ทุกคนที่เป็นเหยื่อไม่รู้ว่าตัวเองถูกหลอก”
         </blockquote>
         <p>
-          หลังรู้ตัวว่าถูกหลอก และทราบภายหลังว่าคนร้ายก่อเหตุกับเหยื่อมาแล้วหลายราย จึงหารือกับผู้เสียหายรายอื่นๆ และนัดกันไปแจ้งความ
+          พีซบอกว่าปกติแล้วตนเองจะเก็บเงินมัดจำก่อนเริ่มงาน แต่เคสนี้
+          มิจฉาชีพเร่งรัด อ้างว่างานด่วน โดยมีการสร้าง “คนประสานงาน”
+          ขึ้นมาคนหนึ่ง เป็นคนกลางที่คุยกับเหยื่อ และคอยถ่ายรูปส่งให้เขา
+          เหมือนรายงานอัปเดตว่าคนนี้มาถ่ายจริง
+          โดยที่ตลอดเวลาที่ทำงานตัวมิจฉาชีพไม่เคยโผล่หน้ามาเลย
+          ที่สำคัญจะไม่รับเงินเข้าบัญชีตัวเอง แต่ให้เหยื่อโอนเข้าบัญชีของ
+          "คนประสานงาน" แล้วมิจฉาชีพจะไปถอนเงินออกแบบไม่ใช้บัตร
+          โดยให้คนประสานงานบอกรหัสผ่านทางโทรศัพท์ให้ เพื่อเขาจะได้ถอนเงินออกมา
+        </p>
+        <p>
+          หลังทำงานไปแล้วเริ่มเอะใจ จึงไม่ส่งรูปให้ เพราะให้โอนเงินที่ค้างจ่าย
+          ก็ได้รับการบ่ายเบี่ยง
+          ซึ่งเป็นจังหวะเดียวกับที่ทีมงานที่ไปทำงานรอบเดียวกัน
+          ทักมาถามเรื่องเงินค่าจ้างที่เขาก็ยังไม่ได้เช่นกัน
+          รวมถึงผู้ปกครองที่พาลูกไปถ่ายก็มาทวงรูป เพราะติดต่อโมเดลลิ่งไม่ได้
+        </p>
+        <blockquote class="quote">
+          “ เขาจะเอาข้อมูลต่างๆที่ได้นำไปหลอกคนอื่นต่อ เช่น
+          รูปเบื้องหลังการทำงานต่างๆ นอกจากจะหลอกให้คนไปทำงาน "ฟรี"
+          เขาจะหาเงินจากผู้ปกครองที่พาลูกมาแคสติ้ง บอกว่า "ลูกน่าสนใจ มีรูป
+          portfolio มั้ย? ถ่ายไม่สวยเลย เดี๋ยวถ่ายให้ใหม่"
+          แล้วก็เก็บค่าเสื้อผ้า ค่าแต่งหน้า
+          ซึ่งทุกอย่างที่เขาใช้ในการติดต่อกับเหยื่อ คือข้อมูลปลอมขึ้นมาทั้งหมด
+          ส่วนตัวคนประสานงาน ก็ยืนยันว่าเขาเองถูกหลอกมาทำงานเหมือนกัน ”
+        </blockquote>
+        <p>
+          หลังรู้ตัวว่าถูกหลอก
+          และทราบภายหลังว่าคนร้ายก่อเหตุกับเหยื่อมาแล้วหลายราย
+          จึงหารือกับผู้เสียหายรายอื่นๆ และนัดกันไปแจ้งความ
         </p>
 
         <h2 class="text-2xl mt-4">กำแพงด่านแรกที่เจอ</h2>
         <p>
-          คือการไม่รู้พื้นที่แบ่งงานความรับผิดชอบของตำรวจ ที่แม้แต่ตำรวจเองก็ยังไม่รู้ชัดเจนพื้นที่ของตัวเอง 
+          คือการไม่รู้พื้นที่แบ่งงานความรับผิดชอบของตำรวจ
+          ที่แม้แต่ตำรวจเองก็ยังไม่รู้ชัดเจนพื้นที่ของตัวเอง
         </p>
         <p>
-          เขาเล่าว่าครั้งแรก เขาและผู้เสียหายนัดรวมตัวกันไปแจ้งความ ที่ สน.ทองหล่อ เพราะเหยื่อส่วนใหญ่อยู่ใกล้ จึงมองว่าสะดวก แต่เมื่อไปถึงตำรวจแจ้งว่าไม่สามารถรับแจ้งความได้ ต้องไปที่ สน.ท้องที่เกิดเหตุที่ไปถ่ายแบบ 
+          เขาเล่าว่าครั้งแรก เขาและผู้เสียหายนัดรวมตัวกันไปแจ้งความ ที่
+          สน.ทองหล่อ เพราะเหยื่อส่วนใหญ่อยู่ใกล้ จึงมองว่าสะดวก
+          แต่เมื่อไปถึงตำรวจแจ้งว่าไม่สามารถรับแจ้งความได้ ต้องไปที่
+          สน.ท้องที่เกิดเหตุที่ไปถ่ายแบบ
         </p>
         <p>
-          เขาและผู้เสียหายทราบว่า เคยมีผู้เสียหายรวมตัวกันไปแจ้งความโมเดลลิ่งปลอมนี้ที่กองบังคับการปราบปราม จึงตัดสินใจนัดกันไปที่กองปราบฯ เพื่อไปร้องเพิ่มจากกลุ่มแรก แต่พอไปถึง ตำรวจบอกว่าคดีไม่เข้าเงื่อนไขการรับแจ้งความของกองปราบ เพราะมูลค่าความเสียหายไม่ถึง 5 ล้านบาท และตำรวจได้แนะนำให้ไป สน.พญาไท เพราะเป็นท้องที่เกิดเหตุ
+          เขาและผู้เสียหายทราบว่า
+          เคยมีผู้เสียหายรวมตัวกันไปแจ้งความโมเดลลิ่งปลอมนี้ที่กองบังคับการปราบปราม
+          จึงตัดสินใจนัดกันไปที่กองปราบฯ เพื่อไปร้องเพิ่มจากกลุ่มแรก
+          แต่พอไปถึง ตำรวจบอกว่าคดีไม่เข้าเงื่อนไขการรับแจ้งความของกองปราบ
+          เพราะมูลค่าความเสียหายไม่ถึง 5 ล้านบาท และตำรวจได้แนะนำให้ไป
+          สน.พญาไท เพราะเป็นท้องที่เกิดเหตุ
         </p>
         <blockquote class="quote">
-          “วันแรกเราไปถึงทองหล่อ ตำรวจก็ไม่รับเรื่อง เพราะไม่ใช่ท้องที่เกิดเหตุ จากนั้นเราก็นัดรวมตัวกันใหม่ไปกองปราบ แต่พอไปถึงก็ได้คำตอบที่ผิดหวัง เขาพาเราเข้าไปคุยในห้อง แล้วก็บอกว่าค่าความเสียหายมันไม่ถึงนะ รับแจ้งความไม่ได้ แล้วก็บอกให้เราไป สน.พญาไท” 
+          “วันแรกเราไปถึงทองหล่อ ตำรวจก็ไม่รับเรื่อง
+          เพราะไม่ใช่ท้องที่เกิดเหตุ จากนั้นเราก็นัดรวมตัวกันใหม่ไปกองปราบ
+          แต่พอไปถึงก็ได้คำตอบที่ผิดหวัง เขาพาเราเข้าไปคุยในห้อง
+          แล้วก็บอกว่าค่าความเสียหายมันไม่ถึงนะ รับแจ้งความไม่ได้
+          แล้วก็บอกให้เราไป สน.พญาไท”
         </blockquote>
         <p>
-          เมื่อไปถึงที่ สน.พญาไท พนักงานสอบสวนบอกปัด แจ้งว่า สน.พญาไท ก็ไม่ใช่ท้องที่เกิดเหตุของคดีนี้ โดยให้ไปแจ้งความที่ สน.บางซื่อ และบอกว่าคดีนี้หากรับแจ้งความ ก็รับได้แค่เป็นคดีแพ่ง
+          เมื่อไปถึงที่ สน.พญาไท พนักงานสอบสวนบอกปัด แจ้งว่า สน.พญาไท
+          ก็ไม่ใช่ท้องที่เกิดเหตุของคดีนี้ โดยให้ไปแจ้งความที่ สน.บางซื่อ
+          และบอกว่าคดีนี้หากรับแจ้งความ ก็รับได้แค่เป็นคดีแพ่ง
         </p>
-      
-        <h2 class="text-2xl mt-4">กำแพงด่านสอง การตีความกฎหมาย คดีแพ่ง vs คดีอาญา...ใครจะมาช่วยแยกให้</h2>
-        <p>
-          เมื่อคดีฉ้อโกง ถูกตำรวจตีความว่าเป็น "คดีแพ่ง"
-        </p>
+
+        <h2 class="text-2xl mt-4">
+          กำแพงด่านสอง การตีความกฎหมาย คดีแพ่ง vs คดีอาญา...ใครจะมาช่วยแยกให้
+        </h2>
+        <p>เมื่อคดีฉ้อโกง ถูกตำรวจตีความว่าเป็น "คดีแพ่ง"</p>
         <blockquote class="quote">
-          “ พอเราไปถึง สน.พญาไท ตามที่ตำรวจแนะนำ แต่กลายเป็นว่าไปถึงไม่ใช่พื้นที่รับผิดชอบของเขา ตำรวจบอกเราว่าเป็นพื้นที่ของ สน. บางซื่อ ต้องไปอีก สน.หนึ่ง เพราะพื้นที่มันคาบเกี่ยวกันตรงขอบๆ 
-          และเขาบอกว่าถ้าจะให้รับแจ้งความเคสนี้ ก็ต้องเป็นคดีแพ่ง เพราะเป็นแค่การผิดสัญญาจ้าง  แต่เราต้องการดำเนินคดีอาญา อยากให้มีการออกหมายเรียก เพื่อจะได้ออกหมายจับ  ไม่อยากให้เขาไปทำแบบนี้กับใครอีก "
+          “ พอเราไปถึง สน.พญาไท ตามที่ตำรวจแนะนำ
+          แต่กลายเป็นว่าไปถึงไม่ใช่พื้นที่รับผิดชอบของเขา
+          ตำรวจบอกเราว่าเป็นพื้นที่ของ สน. บางซื่อ ต้องไปอีก สน.หนึ่ง
+          เพราะพื้นที่มันคาบเกี่ยวกันตรงขอบๆ
+          และเขาบอกว่าถ้าจะให้รับแจ้งความเคสนี้ ก็ต้องเป็นคดีแพ่ง
+          เพราะเป็นแค่การผิดสัญญาจ้าง แต่เราต้องการดำเนินคดีอาญา
+          อยากให้มีการออกหมายเรียก เพื่อจะได้ออกหมายจับ
+          ไม่อยากให้เขาไปทำแบบนี้กับใครอีก "
         </blockquote>
         <p class="italic">พีซ เล่าด้วยความเหนื่อยล้า</p>
         <p>
-          เขาบอกว่าหลังรู้ว่าตำรวจจะไม่รับแจ้งคดีอาญา ตอนนั้นในมุมของคนที่เป็นผู้เสียหาย พวกเขาทั้งรู้สึกล้าและเหนื่อย เพราะผ่านไปครึ่งวันแล้ว แต่ยังไม่ได้อะไรคืบหน้าเลย
+          เขาบอกว่าหลังรู้ว่าตำรวจจะไม่รับแจ้งคดีอาญา
+          ตอนนั้นในมุมของคนที่เป็นผู้เสียหาย พวกเขาทั้งรู้สึกล้าและเหนื่อย
+          เพราะผ่านไปครึ่งวันแล้ว แต่ยังไม่ได้อะไรคืบหน้าเลย
         </p>
         <blockquote class="quote">
-          " ไม่มีคำแนะนำอะไรครับ เขาบอกว่า 'อย่างนี้ต้องไปฟ้องเอง' แต่มันฟ้องไม่ได้อยู่แล้วไงครับ มูลค่ามันไม่ได้เยอะขนาดที่จะต้องทำอย่างนั้น อย่างของผมเสียหายไป 8,000 บาท คือค่าจ้างที่ไม่ได้ ส่วนรายอื่นๆก็แตกต่างกันไป มันเลยเป็นเหตุผลหนึ่งที่ทำให้หลายคนถอดใจ เราแค่อยากให้เจ้าตัวมิจฉาชีพมาพบตำรวจ อย่างน้อยก็ออกหมายเรียก ไม่ต้องถึงกับหมายจับก็ได้ ให้เจ้าตัวมา เพราะเขาไม่เคยโผล่มารับผิดชอบเลย "
+          " ไม่มีคำแนะนำอะไรครับ เขาบอกว่า 'อย่างนี้ต้องไปฟ้องเอง'
+          แต่มันฟ้องไม่ได้อยู่แล้วไงครับ
+          มูลค่ามันไม่ได้เยอะขนาดที่จะต้องทำอย่างนั้น อย่างของผมเสียหายไป
+          8,000 บาท คือค่าจ้างที่ไม่ได้ ส่วนรายอื่นๆก็แตกต่างกันไป
+          มันเลยเป็นเหตุผลหนึ่งที่ทำให้หลายคนถอดใจ
+          เราแค่อยากให้เจ้าตัวมิจฉาชีพมาพบตำรวจ อย่างน้อยก็ออกหมายเรียก
+          ไม่ต้องถึงกับหมายจับก็ได้ ให้เจ้าตัวมา
+          เพราะเขาไม่เคยโผล่มารับผิดชอบเลย "
         </blockquote>
 
-        <h2 class="text-2xl mt-4">เมื่อผู้เสียหาย วิ่งหาความยุติธรรมให้ตัวเอง</h2>
+        <h2 class="text-2xl mt-4">
+          เมื่อผู้เสียหาย วิ่งหาความยุติธรรมให้ตัวเอง
+        </h2>
         <p>
-          พีซ เล่าว่า ก่อนที่จะมาแจ้งความ เขาและผู้เสียหายคนอื่นช่วยกันแกะรอยสืบหาตัวตนของมิจฉาชีพ แม้จะมีความยากคือข้อมูลทุกอย่างที่มีเป็นข้อมูลปลอมทั้งหมด แต่สุดท้ายก็สามารถได้ข้อมูลรูปบัตรประชาชน มา  เมื่อรู้ตัวตนของมิจฉาชีพแล้ว ความพยายามต่อมาคือจะทำอย่างไรให้สามารถเอาผิดในคดีอาญาได้
+          พีซ เล่าว่า ก่อนที่จะมาแจ้งความ
+          เขาและผู้เสียหายคนอื่นช่วยกันแกะรอยสืบหาตัวตนของมิจฉาชีพ
+          แม้จะมีความยากคือข้อมูลทุกอย่างที่มีเป็นข้อมูลปลอมทั้งหมด
+          แต่สุดท้ายก็สามารถได้ข้อมูลรูปบัตรประชาชน มา
+          เมื่อรู้ตัวตนของมิจฉาชีพแล้ว
+          ความพยายามต่อมาคือจะทำอย่างไรให้สามารถเอาผิดในคดีอาญาได้
         </p>
         <blockquote class="quote">
-          " เราก็ไปหาข้อมูลเอง ว่ามีพฤติการณ์ไหนที่เข้าข่ายคดีอาญาได้บ้าง จะได้แจ้งความเป็นคดีอาญา แล้วให้ตำรวจออกหมายเรียกตัว ผมเห็นว่าเขามีการเอารูปที่เราถ่าย รวมถึงรูปเบื้องหลังตอนทำงาน เอาไปโพสต์หลอกคนอื่นต่อ ซึ่งในรูปนั้นติดภาพตัวผมกับเด็กที่มาถ่ายแคสต์งานด้วย ผมก็บอกตำรวจว่า 'อันนี้มันเข้าข่าย พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) นะพี่' แล้วก็ 'ผิด พ.ร.บ. คอมพิวเตอร์' ด้วย สุดท้ายตำรวจเขาก็ยอมรับแจ้งความคดีอาญาครับ จากตอนแรกที่เขาบอกว่าทำได้แค่คดีแพ่ง "
+          " เราก็ไปหาข้อมูลเอง ว่ามีพฤติการณ์ไหนที่เข้าข่ายคดีอาญาได้บ้าง
+          จะได้แจ้งความเป็นคดีอาญา แล้วให้ตำรวจออกหมายเรียกตัว
+          ผมเห็นว่าเขามีการเอารูปที่เราถ่าย รวมถึงรูปเบื้องหลังตอนทำงาน
+          เอาไปโพสต์หลอกคนอื่นต่อ
+          ซึ่งในรูปนั้นติดภาพตัวผมกับเด็กที่มาถ่ายแคสต์งานด้วย ผมก็บอกตำรวจว่า
+          'อันนี้มันเข้าข่าย พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA) นะพี่'
+          แล้วก็ 'ผิด พ.ร.บ. คอมพิวเตอร์' ด้วย
+          สุดท้ายตำรวจเขาก็ยอมรับแจ้งความคดีอาญาครับ
+          จากตอนแรกที่เขาบอกว่าทำได้แค่คดีแพ่ง "
         </blockquote>
 
-        <h2 class="text-2xl mt-4">หมายเรียกออกแล้ว...แต่ความยุติธรรมยังไกล</h2>
+        <h2 class="text-2xl mt-4">
+          หมายเรียกออกแล้ว...แต่ความยุติธรรมยังไกล
+        </h2>
         <p>
-          เขายอมรับว่า เคสของเขาผู้เสียหายหลายคน รวมถึงตัวเขาเอง ท้อและถอดใจ ไม่ใช่เพราะเงินที่สูญไป แต่เพราะกระบวนการที่มันซับซ้อน และยุ่งยาก ผู้เสียหายส่วนใหญ่เป็นผู้ปกครองที่คาดหวังว่าลูกจะได้แคสงาน มีรายได้ แต่ต้องเสียเงิน เสียเวลามาคอยตามเรื่องของตัวเอง ทั้งๆที่บางคนก็มีฐานะไม่ค่อยดี
+          เขายอมรับว่า เคสของเขาผู้เสียหายหลายคน รวมถึงตัวเขาเอง ท้อและถอดใจ
+          ไม่ใช่เพราะเงินที่สูญไป แต่เพราะกระบวนการที่มันซับซ้อน และยุ่งยาก
+          ผู้เสียหายส่วนใหญ่เป็นผู้ปกครองที่คาดหวังว่าลูกจะได้แคสงาน มีรายได้
+          แต่ต้องเสียเงิน เสียเวลามาคอยตามเรื่องของตัวเอง
+          ทั้งๆที่บางคนก็มีฐานะไม่ค่อยดี
         </p>
         <blockquote class="quote">
-          “ ถึงเราจะพยายามจนได้หมายเรียกออกมาแล้ว แต่คดีเงียบไปเลยครับ ผ่านไปแล้วเป็นปี ไม่มีความคืบหน้าอะไรเลย กระบวนการมันควรจะง่ายกว่านี้ครับ  มันกลับเหมือนเราเข้าถึงเขายากมากเลย  แค่การเข้าถึงกระบวนการยุติธรรมยากมาก และพอเข้าถึงแล้ว ทุกอย่างก็ยังดูเงียบหาย ทั้งที่เราพยายามไปหาข้อมูลของคนทำผิดมาให้ตำรวจแล้ว "
+          “ ถึงเราจะพยายามจนได้หมายเรียกออกมาแล้ว แต่คดีเงียบไปเลยครับ
+          ผ่านไปแล้วเป็นปี ไม่มีความคืบหน้าอะไรเลย
+          กระบวนการมันควรจะง่ายกว่านี้ครับ มันกลับเหมือนเราเข้าถึงเขายากมากเลย
+          แค่การเข้าถึงกระบวนการยุติธรรมยากมาก และพอเข้าถึงแล้ว
+          ทุกอย่างก็ยังดูเงียบหาย
+          ทั้งที่เราพยายามไปหาข้อมูลของคนทำผิดมาให้ตำรวจแล้ว "
         </blockquote>
 
         <h2 class="text-2xl mt-4">ทางออก...ที่เกินเอื้อม...?</h2>
         <blockquote class="quote">
-          "ถ้าจากประสบการณ์ตรงที่เจอกับตัว ผมว่าระบบกระบวนการยุติธรรมบ้านเรามันควรจะสามารถแจ้งความที่ไหนก็ได้เป็นพื้นฐาน ควรทำให้ข้อมูลมันเชื่อมถึงกันได้" และควรมี "One Stop Service" ที่ประชาชนไม่ต้องเดินทางไปหลายที่ มันเป็นยุคที่ระบบมันออนไลน์กันหมดแล้ว ฐานข้อมูลตำรวจก็ออนไลน์แล้ว แต่การทำงานทำไมไม่ทำให้ระบบมันเชื่อมโยงกันเลย"
+          "ถ้าจากประสบการณ์ตรงที่เจอกับตัว
+          ผมว่าระบบกระบวนการยุติธรรมบ้านเรามันควรจะสามารถแจ้งความที่ไหนก็ได้เป็นพื้นฐาน
+          ควรทำให้ข้อมูลมันเชื่อมถึงกันได้" และควรมี "One Stop Service"
+          ที่ประชาชนไม่ต้องเดินทางไปหลายที่
+          มันเป็นยุคที่ระบบมันออนไลน์กันหมดแล้ว ฐานข้อมูลตำรวจก็ออนไลน์แล้ว
+          แต่การทำงานทำไมไม่ทำให้ระบบมันเชื่อมโยงกันเลย"
         </blockquote>
         <p>
-          และที่สำคัญ คือควรมี "ระบบตรวจสอบ ติดตาม หรือแท็กคดีได้" เพื่อให้ผู้เสียหายทราบความคืบหน้า แบบเช็คได้ ตรวจสอบได้
+          และที่สำคัญ คือควรมี "ระบบตรวจสอบ ติดตาม หรือแท็กคดีได้"
+          เพื่อให้ผู้เสียหายทราบความคืบหน้า แบบเช็คได้ ตรวจสอบได้
         </p>
         <blockquote class="quote">
-          "เราจะได้มีความหวังหน่อย เพราะเราไม่รู้อะไรเลย เหมือนแจ้งความเสร็จแล้วก็โดนทิ้งเลย"
+          "เราจะได้มีความหวังหน่อย เพราะเราไม่รู้อะไรเลย
+          เหมือนแจ้งความเสร็จแล้วก็โดนทิ้งเลย"
         </blockquote>
         <p class="italic">เขากล่าวด้วยน้ำเสียงสิ้นหวัง</p>
       </div>
@@ -1211,88 +2283,190 @@
     <div id="painful-8" class="modal">
       <div class="modal-content">
         <a href="#" class="close">&times;</a>
-        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">เมื่อ สน.ภาคประชาชน กลายเป็น "ทางเลือกใหม่" ในการเข้าถึงความยุติธรรม</h2>
+        <h2 class="font-[ChakraPetch-SemiBold] text-[30px]">
+          เมื่อ สน.ภาคประชาชน กลายเป็น "ทางเลือกใหม่" ในการเข้าถึงความยุติธรรม
+        </h2>
         <blockquote class="quote">
-          " ปัญหาสังคมทุกวันนี้มันเยอะมาก ต่อให้เป็น 100 ปวีณาทำ ก็ไม่ทัน ชื่นชมทุกคนที่เข้ามาช่วยสังคม แต่สิ่งสำคัญที่สุดคือต้อง “จริงใจ” และไม่มีผลประโยชน์ แอบแฝง "
+          " ปัญหาสังคมทุกวันนี้มันเยอะมาก ต่อให้เป็น 100 ปวีณาทำ ก็ไม่ทัน
+          ชื่นชมทุกคนที่เข้ามาช่วยสังคม แต่สิ่งสำคัญที่สุดคือต้อง “จริงใจ”
+          และไม่มีผลประโยชน์ แอบแฝง "
         </blockquote>
         <p>
-          หากเอ่ยถึงชื่อของ มูลนิธิปวีณาหงสกุลเพื่อเด็กและสตรี หลายคนคงรู้จักกันดี เพราะถือเป็นผู้บุกเบิกการช่วยเหลือประชาชนที่ไม่ใช่หน่วยงานภาครัฐ และก่อตั้งมายาวนานกว่า 26 ปี 
+          หากเอ่ยถึงชื่อของ มูลนิธิปวีณาหงสกุลเพื่อเด็กและสตรี
+          หลายคนคงรู้จักกันดี
+          เพราะถือเป็นผู้บุกเบิกการช่วยเหลือประชาชนที่ไม่ใช่หน่วยงานภาครัฐ
+          และก่อตั้งมายาวนานกว่า 26 ปี
         </p>
         <p>
-          ปวีณา หงสกุล ประธานมูลนิธิปวีณาหงสกุลเพื่อเด็กและสตรี เปิดใจและถ่ายทอดมุมมองการทำงาน จุดเริ่มต้น และความคิดเห็น ต่อกระบวนการยุติธรรมไทย
+          ปวีณา หงสกุล ประธานมูลนิธิปวีณาหงสกุลเพื่อเด็กและสตรี
+          เปิดใจและถ่ายทอดมุมมองการทำงาน จุดเริ่มต้น และความคิดเห็น
+          ต่อกระบวนการยุติธรรมไทย
         </p>
 
-        <h2 class="text-2xl mt-4">จุดเริ่มต้นที่เปลี่ยนทุกอย่าง : เด็กหญิงวัย 11 ขวบ</h2>
+        <h2 class="text-2xl mt-4">
+          จุดเริ่มต้นที่เปลี่ยนทุกอย่าง : เด็กหญิงวัย 11 ขวบ
+        </h2>
         <p>
-          ตอนปี 2531 ช่วงที่ดำรงตำแหน่งสมาชิกสภาผู้แทนราษฎรสมัยแรก ลงพื้นที่ไปเยี่ยม "บ้านเกร็ดตระการ" ซึ่งเป็นบ้านพักสำหรับผู้หญิงที่ถูกค้าประเวณี พบเด็กผู้หญิงคนหนึ่ง จึงเข้าไปพูดคุยด้วย เพราะคิดว่าเป็นลูกของเจ้าหน้าที่ แต่คำตอบที่ได้รับ คือ เด็กหญิงอายุเพียงแค่ 11 ขวบ ถูกพ่อเลี้ยงพาไปขายซ่อง แล้วตำรวจพามาอยู่ที่นั่น
+          ตอนปี 2531 ช่วงที่ดำรงตำแหน่งสมาชิกสภาผู้แทนราษฎรสมัยแรก
+          ลงพื้นที่ไปเยี่ยม "บ้านเกร็ดตระการ"
+          ซึ่งเป็นบ้านพักสำหรับผู้หญิงที่ถูกค้าประเวณี พบเด็กผู้หญิงคนหนึ่ง
+          จึงเข้าไปพูดคุยด้วย เพราะคิดว่าเป็นลูกของเจ้าหน้าที่
+          แต่คำตอบที่ได้รับ คือ เด็กหญิงอายุเพียงแค่ 11 ขวบ
+          ถูกพ่อเลี้ยงพาไปขายซ่อง แล้วตำรวจพามาอยู่ที่นั่น
         </p>
         <blockquote class="quote">
-          "ตอนนั้นช็อกค่ะ ตกใจ คือในชีวิตของเราอยู่กับพ่อแม่ที่อบอุ่น ลูกเราก็ 7 ขวบ เรายังดูแลป้อนข้าวป้อนน้ำ แต่เด็กที่อยู่ตรงหน้าเราแค่ 11 ขวบแล้วเขาเจออะไรแบบนี้ เราไม่เคยรู้เลยว่ามันจะมีเด็กอายุแค่ 11 ขวบ ต้องโดนไปขายซ่องแบบนี้ มันสะเทือนใจมาก ก็เดินไปแล้วก็น้ำตาไหล นั่นคือสิ่งที่ทำให้เราตั้งปณิธานเลยว่า อยากจะทำงานในเรื่องสังคม ช่วยเหลือเพื่อนมนุษย์ตลอดไป"
+          "ตอนนั้นช็อกค่ะ ตกใจ คือในชีวิตของเราอยู่กับพ่อแม่ที่อบอุ่น ลูกเราก็
+          7 ขวบ เรายังดูแลป้อนข้าวป้อนน้ำ แต่เด็กที่อยู่ตรงหน้าเราแค่ 11
+          ขวบแล้วเขาเจออะไรแบบนี้ เราไม่เคยรู้เลยว่ามันจะมีเด็กอายุแค่ 11 ขวบ
+          ต้องโดนไปขายซ่องแบบนี้ มันสะเทือนใจมาก ก็เดินไปแล้วก็น้ำตาไหล
+          นั่นคือสิ่งที่ทำให้เราตั้งปณิธานเลยว่า อยากจะทำงานในเรื่องสังคม
+          ช่วยเหลือเพื่อนมนุษย์ตลอดไป"
         </blockquote>
         <p>
-          จากช่วงแรกที่ทำงานด้านสังคม ก่อนที่จะก่อตั้งเป็นมูลนิธิปวีณาหงสกุลเพื่อเด็กและสตรี อย่างเป็นทางการในปี 2542 เพราะไม่ต้องการให้งานช่วยเหลือสังคม ต้องอิงกับการเมือง เนื่องจากมองว่า ปัญหาสังคม ควรจะต้องทำต่อเนื่อง ไม่ว่าใครจะเป็นรัฐบาล
+          จากช่วงแรกที่ทำงานด้านสังคม
+          ก่อนที่จะก่อตั้งเป็นมูลนิธิปวีณาหงสกุลเพื่อเด็กและสตรี
+          อย่างเป็นทางการในปี 2542 เพราะไม่ต้องการให้งานช่วยเหลือสังคม
+          ต้องอิงกับการเมือง เนื่องจากมองว่า ปัญหาสังคม ควรจะต้องทำต่อเนื่อง
+          ไม่ว่าใครจะเป็นรัฐบาล
         </p>
 
         <h2 class="text-2xl mt-4">26 ปี ช่วยเหลือคน กว่า 2 แสนเรื่อง</h2>
         <p>
-          แม้ชื่อมูลนิธิจะระบุว่า 'เพื่อเด็กและสตรี' แต่ในทางปฏิบัติ มูลนิธิฯ รับเรื่องร้องทุกข์ทุกประเภทที่เกี่ยวข้องกับผู้ไม่ได้รับความเป็นธรรมในสังคม ตั้งแต่ปัญหาสุขภาพ หนี้สิน การศึกษา สุขภาพจิต ไปจนถึงคดีอาชญากรรมร้ายแรง และปัญหาแรงงานทั้งในและต่างประเทศ
+          แม้ชื่อมูลนิธิจะระบุว่า 'เพื่อเด็กและสตรี' แต่ในทางปฏิบัติ มูลนิธิฯ
+          รับเรื่องร้องทุกข์ทุกประเภทที่เกี่ยวข้องกับผู้ไม่ได้รับความเป็นธรรมในสังคม
+          ตั้งแต่ปัญหาสุขภาพ หนี้สิน การศึกษา สุขภาพจิต
+          ไปจนถึงคดีอาชญากรรมร้ายแรง และปัญหาแรงงานทั้งในและต่างประเทศ
         </p>
         <p>
-          เรารับทุกเรื่อง ไม่ใช่เฉพาะแค่ด้านเด็กและสตรี  เพราะว่าถ้าเราไม่รับ มันไม่ได้ค่ะ ทุกปัญหามันมีความส่งผลเกี่ยวโยงกันหมด โดยเฉพาะเรื่องที่กระทบกับครอบครัว  ถ้ารวมๆแล้วเฉลี่ยเดือนนึงเรารับเรื่องร้องทุกข์ และขอความช่วยเหลือต่างๆ ประมาณ 500 กว่าเรื่อง
+          เรารับทุกเรื่อง ไม่ใช่เฉพาะแค่ด้านเด็กและสตรี เพราะว่าถ้าเราไม่รับ
+          มันไม่ได้ค่ะ ทุกปัญหามันมีความส่งผลเกี่ยวโยงกันหมด
+          โดยเฉพาะเรื่องที่กระทบกับครอบครัว
+          ถ้ารวมๆแล้วเฉลี่ยเดือนนึงเรารับเรื่องร้องทุกข์
+          และขอความช่วยเหลือต่างๆ ประมาณ 500 กว่าเรื่อง
         </p>
         <p>
-          ประธานมูลนิธิปวีณาฯ เผยถึงข้อมูลสถิติการทำงานช่วยเหลือคนว่า นับตั้งแต่ปี 2542  มูลนิธิได้รับเรื่องร้องทุกข์มาแล้วกว่า 200,000 เรื่อง โดย ปัญหาการข่มขืน ยังคงเป็นอันดับหนึ่ง ที่น่าตกใจคือ เด็กที่ถูกข่มขืนมีอายุน้อยลงเรื่อยๆ จากเดิมที่เฉลี่ย 13-14 ปี แต่ปัจจุบันมีอายุเฉลี่ยเพียงแค่ 5-8 ปี ส่วนอาชญากรรมออนไลน์และยาเสพติด เป็นกลุ่มคดีมีตัวเลขการร้องทุกข์เข้ามาสูงขึ้นทุกปี
+          ประธานมูลนิธิปวีณาฯ เผยถึงข้อมูลสถิติการทำงานช่วยเหลือคนว่า
+          นับตั้งแต่ปี 2542 มูลนิธิได้รับเรื่องร้องทุกข์มาแล้วกว่า 200,000
+          เรื่อง โดย ปัญหาการข่มขืน ยังคงเป็นอันดับหนึ่ง ที่น่าตกใจคือ
+          เด็กที่ถูกข่มขืนมีอายุน้อยลงเรื่อยๆ จากเดิมที่เฉลี่ย 13-14 ปี
+          แต่ปัจจุบันมีอายุเฉลี่ยเพียงแค่ 5-8 ปี
+          ส่วนอาชญากรรมออนไลน์และยาเสพติด
+          เป็นกลุ่มคดีมีตัวเลขการร้องทุกข์เข้ามาสูงขึ้นทุกปี
         </p>
         <p>
-          เหตุใดผู้เดือดร้อนจำนวนมากจึงเลือกที่จะมาร้องเรียนที่มูลนิธิฯ ก่อนที่จะไปแจ้งความกับตำรวจโดยตรง ปวีณาให้มุมมองในเรื่องนี้ว่า เพราะนี่คือ "ทางเลือก" สำหรับประชาชน ที่เลือกจะมาขอคำปรึกษาและให้ช่วยติดตามคดี เพราะ ความกลัวและไม่มั่นใจในการทำงานของเจ้าหน้าที่
+          เหตุใดผู้เดือดร้อนจำนวนมากจึงเลือกที่จะมาร้องเรียนที่มูลนิธิฯ
+          ก่อนที่จะไปแจ้งความกับตำรวจโดยตรง ปวีณาให้มุมมองในเรื่องนี้ว่า
+          เพราะนี่คือ "ทางเลือก" สำหรับประชาชน
+          ที่เลือกจะมาขอคำปรึกษาและให้ช่วยติดตามคดี เพราะ
+          ความกลัวและไม่มั่นใจในการทำงานของเจ้าหน้าที่
         </p>
         <blockquote class="quote">
-          "ประชาชนจำนวนมากนะคะที่เขามีความกังวล เวลาที่ต้องเข้าหาหน่วยงานราชการ หรือกลัวว่าการเปิดเผยตัวตนจะนำมาซึ่งปัญหา โดยเฉพาะอย่างยิ่งในคดีที่เกี่ยวข้องกับคนใกล้ชิดหรือเพื่อนบ้าน  แต่เขามองว่า มูลนิธิฯ จะเป็นที่พึ่งที่จะช่วยปกปิดข้อมูลของผู้แจ้ง เขาไม่ต้องการที่จะเอาตัวเข้าไปเกี่ยวข้อง แต่ขณะเดียวกันเขาก็ต้องการความช่วยเหลือ หรือแม้แต่การเป็นพลเมืองดี "อย่าบอกว่าเขาเป็นคนบอกนะ" ประโยคนี้ที่เรามักจะได้ยินคำร้องขอจากคนที่มาหาเราเสมอๆ"
+          "ประชาชนจำนวนมากนะคะที่เขามีความกังวล
+          เวลาที่ต้องเข้าหาหน่วยงานราชการ
+          หรือกลัวว่าการเปิดเผยตัวตนจะนำมาซึ่งปัญหา
+          โดยเฉพาะอย่างยิ่งในคดีที่เกี่ยวข้องกับคนใกล้ชิดหรือเพื่อนบ้าน
+          แต่เขามองว่า มูลนิธิฯ จะเป็นที่พึ่งที่จะช่วยปกปิดข้อมูลของผู้แจ้ง
+          เขาไม่ต้องการที่จะเอาตัวเข้าไปเกี่ยวข้อง
+          แต่ขณะเดียวกันเขาก็ต้องการความช่วยเหลือ หรือแม้แต่การเป็นพลเมืองดี
+          "อย่าบอกว่าเขาเป็นคนบอกนะ"
+          ประโยคนี้ที่เรามักจะได้ยินคำร้องขอจากคนที่มาหาเราเสมอๆ"
         </blockquote>
         <blockquote class="quote">
-          "ขณะที่บางคนอาจ "คิดไม่ออก" ว่าควรทำอย่างไรเวลาที่ลูกหลานถูกทำร้าย หรือถึงเขาจะไปแจ้งความกับตำรวจแล้ว แต่ก็มาที่มูลนิธิฯอีกทางหนึ่งด้วย เพราะอยากที่จะให้ช่วยติดตามเรื่องให้ มันสะท้อนถึงความต้องการ "ที่พึ่ง" และความ “เชื่อมั่น” ว่ามูลนิธิฯ จะช่วยผลักดันให้กระบวนการยุติธรรมเป็นไปอย่างมีประสิทธิภาพ"
+          "ขณะที่บางคนอาจ "คิดไม่ออก" ว่าควรทำอย่างไรเวลาที่ลูกหลานถูกทำร้าย
+          หรือถึงเขาจะไปแจ้งความกับตำรวจแล้ว แต่ก็มาที่มูลนิธิฯอีกทางหนึ่งด้วย
+          เพราะอยากที่จะให้ช่วยติดตามเรื่องให้ มันสะท้อนถึงความต้องการ
+          "ที่พึ่ง" และความ “เชื่อมั่น” ว่ามูลนิธิฯ
+          จะช่วยผลักดันให้กระบวนการยุติธรรมเป็นไปอย่างมีประสิทธิภาพ"
         </blockquote>
 
-        <h2 class="text-2xl mt-4">ผู้ประสานงาน : ไม่ใช่ผู้มีอำนาจ แต่เป็นสะพานเชื่อม</h2>
+        <h2 class="text-2xl mt-4">
+          ผู้ประสานงาน : ไม่ใช่ผู้มีอำนาจ แต่เป็นสะพานเชื่อม
+        </h2>
         <p>
-          ประธานมูลนิธิปวีณาฯ เน้นย้ำว่าตนเองไม่ใช่ผู้มีอำนาจในการจับกุมหรือดำเนินคดี แต่เป็น "ผู้ประสานงาน การติดตามงานเท่านั้น" การทำงานของมูลนิธิฯ ประสบความสำเร็จได้เพราะการบูรณาการร่วมกับหน่วยงานภาครัฐ ภาคเอกชน ประชาชน และสื่อมวลชน เมื่อได้รับแจ้งเหตุ มูลนิธิฯ จะประสานงานอย่างใกล้ชิดกับตำรวจและกระทรวงการพัฒนาสังคม
+          ประธานมูลนิธิปวีณาฯ
+          เน้นย้ำว่าตนเองไม่ใช่ผู้มีอำนาจในการจับกุมหรือดำเนินคดี แต่เป็น
+          "ผู้ประสานงาน การติดตามงานเท่านั้น" การทำงานของมูลนิธิฯ
+          ประสบความสำเร็จได้เพราะการบูรณาการร่วมกับหน่วยงานภาครัฐ ภาคเอกชน
+          ประชาชน และสื่อมวลชน เมื่อได้รับแจ้งเหตุ มูลนิธิฯ
+          จะประสานงานอย่างใกล้ชิดกับตำรวจและกระทรวงการพัฒนาสังคม
         </p>
         <blockquote class="quote">
-          "ต้องเข้าใจว่ามูลนิธิไม่มีอำนาจหน้าที่ที่จะไปจับกุมใคร หรือไปดำเนินคดีอะไรต่าง ๆ ตรงนั้นเป็นหน้าที่ของตำรวจ ถ้าเป็นสมัยก่อนตำรวจบางคนก็ไม่เข้าใจ ทำไมต้องไปแจ้งปวีณา เราก็อธิบายว่าเขามาแจ้ง เพื่อให้เราช่วยติดตามงาน แต่มายุคหลังๆนี้ก็เข้าใจหมดแล้วล่ะ การทำงานของเราคือการเป็นผู้ช่วย เป็นผู้ช่วยของประชาชน"
+          "ต้องเข้าใจว่ามูลนิธิไม่มีอำนาจหน้าที่ที่จะไปจับกุมใคร
+          หรือไปดำเนินคดีอะไรต่าง ๆ ตรงนั้นเป็นหน้าที่ของตำรวจ
+          ถ้าเป็นสมัยก่อนตำรวจบางคนก็ไม่เข้าใจ ทำไมต้องไปแจ้งปวีณา
+          เราก็อธิบายว่าเขามาแจ้ง เพื่อให้เราช่วยติดตามงาน
+          แต่มายุคหลังๆนี้ก็เข้าใจหมดแล้วล่ะ การทำงานของเราคือการเป็นผู้ช่วย
+          เป็นผู้ช่วยของประชาชน"
         </blockquote>
         <p>
-          อย่างไรก็ตาม จุดยืนของมูลนิธิฯ จะไม่เข้าไปยุ่งเกี่ยวหากผู้เสียหายต้องการเรียกเงินค่าเสียหายจากผู้กระทำผิด โดยจะมุ่งเน้นเรื่องการดำเนินคดีตามกฎหมาย เพื่อให้ผู้กระทำผิดได้รับโทษอย่างแท้จริง
+          อย่างไรก็ตาม จุดยืนของมูลนิธิฯ
+          จะไม่เข้าไปยุ่งเกี่ยวหากผู้เสียหายต้องการเรียกเงินค่าเสียหายจากผู้กระทำผิด
+          โดยจะมุ่งเน้นเรื่องการดำเนินคดีตามกฎหมาย
+          เพื่อให้ผู้กระทำผิดได้รับโทษอย่างแท้จริง
         </p>
 
         <h2 class="text-2xl mt-4">ความยุติธรรมถ้าล่าช้า = ความไม่ยุติธรรม</h2>
         <blockquote class="quote">
-          "ต้องยอมรับว่าตำรวจเขาจะทำงานแบบมี “ขั้นตอน” แบบ “ราชการ” ทุกอย่างต้องมีสเต็ป มันเลยทำให้กระบวนการต่างๆ ล่าช้า สาเหตุหนึ่งของความล่าช้าคือการที่ตำรวจบางนายยึดขั้นตอนราชการอย่างเคร่งครัดมากเกินไป โดยเฉพาะร้อยเวรที่เพิ่งจบใหม่หรือขาดประสบการณ์ แต่ในขณะที่บางกรณี โดยเฉพาะคดีเกี่ยวกับเด็ก มันจำเป็นต้องเร่งรัดอย่างรวดเร็ว และมันควรจะเร่งด่วนด้วยซ้ำ" 
+          "ต้องยอมรับว่าตำรวจเขาจะทำงานแบบมี “ขั้นตอน” แบบ “ราชการ”
+          ทุกอย่างต้องมีสเต็ป มันเลยทำให้กระบวนการต่างๆ ล่าช้า
+          สาเหตุหนึ่งของความล่าช้าคือการที่ตำรวจบางนายยึดขั้นตอนราชการอย่างเคร่งครัดมากเกินไป
+          โดยเฉพาะร้อยเวรที่เพิ่งจบใหม่หรือขาดประสบการณ์ แต่ในขณะที่บางกรณี
+          โดยเฉพาะคดีเกี่ยวกับเด็ก มันจำเป็นต้องเร่งรัดอย่างรวดเร็ว
+          และมันควรจะเร่งด่วนด้วยซ้ำ"
         </blockquote>
         <blockquote class="quote">
-          "ยกตัวอย่าง คดีข่มขืน ส่งผู้เสียหายไปตรวจร่างกาย ตามปกติต้องรอผลตรวจ 1 เดือน แต่ความจริง 1 เดือนรอไม่ได้หรอก ผู้กำกับต้องให้ตำรวจร้อยเวรไปสอบปากคำหมอเลย ตกลงมันมีร่องรอยไหม เพื่อทำบันทึก บางทีมันต้องใช้พาวเวอร์ของตัวเองพอสมควร"
+          "ยกตัวอย่าง คดีข่มขืน ส่งผู้เสียหายไปตรวจร่างกาย ตามปกติต้องรอผลตรวจ
+          1 เดือน แต่ความจริง 1 เดือนรอไม่ได้หรอก
+          ผู้กำกับต้องให้ตำรวจร้อยเวรไปสอบปากคำหมอเลย ตกลงมันมีร่องรอยไหม
+          เพื่อทำบันทึก บางทีมันต้องใช้พาวเวอร์ของตัวเองพอสมควร"
         </blockquote>
         <p class="italic">ปวีณา สะท้อนปัญหา</p>
         <p>
-          เธอสะท้อนเพิ่มเติมว่าคดีเด็กและสตรี ซึ่งเป็นคดีที่มีความละเอียดอ่อนสูง ตำรวจบางนายขาดประสบการณ์ โดยเฉพาะการออกหมายจับผู้กระทำผิดโดยทันที เพื่อป้องกันการข่มขู่เด็ก แต่ยังคงมีบางกรณีที่ตำรวจอาจไม่รับแจ้งความ หรือขอเวลาตรวจสอบก่อน ซึ่งกลับเป็นการทำให้คดีล่าช้า และเหยื่อไม่ได้รับความยุติธรรม
+          เธอสะท้อนเพิ่มเติมว่าคดีเด็กและสตรี
+          ซึ่งเป็นคดีที่มีความละเอียดอ่อนสูง ตำรวจบางนายขาดประสบการณ์
+          โดยเฉพาะการออกหมายจับผู้กระทำผิดโดยทันที เพื่อป้องกันการข่มขู่เด็ก
+          แต่ยังคงมีบางกรณีที่ตำรวจอาจไม่รับแจ้งความ หรือขอเวลาตรวจสอบก่อน
+          ซึ่งกลับเป็นการทำให้คดีล่าช้า และเหยื่อไม่ได้รับความยุติธรรม
         </p>
 
         <h2 class="text-2xl mt-4">ต่อให้มี 100 “ปวีณา” ทำ ก็ไม่ทัน</h2>
         <p>
-          ในฐานะที่เป็นรุ่นบุกเบิกของ สน.ภาคประชาชน ที่ทำหน้าที่ช่วยเหลือผู้ที่เดือดร้อน ประธานมูลนิธิปวีณาฯ ให้มุมมองถึงการที่ปัจจุบัน มีเพจ "ฮีโร่" เกิดขึ้นมากมาย  รวมถึง “องค์กรภาคประชาสังคมรุ่นใหม่”  ออกมาช่วยเหลือผู้ที่เดือดร้อนในเรื่องราวต่างๆ จนดูเหมือนว่า สน.ภาคประชาชน กลายเป็น “ที่พึ่ง” ทางเลือกใหม่ของผู้คนในทุกวันนี้ไปแล้ว แซงหน้า สถานีตำรวจ
+          ในฐานะที่เป็นรุ่นบุกเบิกของ สน.ภาคประชาชน
+          ที่ทำหน้าที่ช่วยเหลือผู้ที่เดือดร้อน ประธานมูลนิธิปวีณาฯ
+          ให้มุมมองถึงการที่ปัจจุบัน มีเพจ "ฮีโร่" เกิดขึ้นมากมาย รวมถึง
+          “องค์กรภาคประชาสังคมรุ่นใหม่”
+          ออกมาช่วยเหลือผู้ที่เดือดร้อนในเรื่องราวต่างๆ จนดูเหมือนว่า
+          สน.ภาคประชาชน กลายเป็น “ที่พึ่ง”
+          ทางเลือกใหม่ของผู้คนในทุกวันนี้ไปแล้ว แซงหน้า สถานีตำรวจ
         </p>
         <blockquote class="quote">
-          “เป็นเรื่องที่ดี หากสังคมมีการช่วยเหลือกัน เพราะปัญหาสังคมทุกวันนี้เยอะ และมีจำนวนไม่น้อยที่มีความซับซ้อน ต่อให้มีเป็น 100 ปวีณาทำ ก็ไม่สามารถทำได้ทัน เพราะสังคมปัจจุบันมันเปลี่ยนแปลงจากอดีตไปเยอะ คดีต่างๆมันเกิดขึ้นเยอะและบางครั้งก็ซับซ้อน ไม่จำเป็นต้องก่อเหตุแบบซึ่งหน้า โซเชียลมีเดียต่างๆ การหลอกลวงกันใน Cybercrime อะไรต่างๆ บางทีหลอกเด็ก 10 ขวบ พ่อแม่ก็ตกใจไปดูในวิดีโอในคลิปเด็ก ฉะนั้นใครก็ตามที่มาช่วยสังคม สำหรับพี่ชื่นชมทุกคนที่เข้ามาช่วยสังคม มาช่วยกันเถอะค่ะ เพราะว่ามันเยอะมาก ปัญหาและคนที่เดือดร้อน ก็อยากให้มาช่วยกัน แต่สิ่งสำคัญที่สุดคือต้อง “จริงใจ” แล้วก็ไม่มีผลประโยชน์ แอบแฝง "
+          “เป็นเรื่องที่ดี หากสังคมมีการช่วยเหลือกัน
+          เพราะปัญหาสังคมทุกวันนี้เยอะ และมีจำนวนไม่น้อยที่มีความซับซ้อน
+          ต่อให้มีเป็น 100 ปวีณาทำ ก็ไม่สามารถทำได้ทัน
+          เพราะสังคมปัจจุบันมันเปลี่ยนแปลงจากอดีตไปเยอะ
+          คดีต่างๆมันเกิดขึ้นเยอะและบางครั้งก็ซับซ้อน
+          ไม่จำเป็นต้องก่อเหตุแบบซึ่งหน้า โซเชียลมีเดียต่างๆ การหลอกลวงกันใน
+          Cybercrime อะไรต่างๆ บางทีหลอกเด็ก 10 ขวบ
+          พ่อแม่ก็ตกใจไปดูในวิดีโอในคลิปเด็ก ฉะนั้นใครก็ตามที่มาช่วยสังคม
+          สำหรับพี่ชื่นชมทุกคนที่เข้ามาช่วยสังคม มาช่วยกันเถอะค่ะ
+          เพราะว่ามันเยอะมาก ปัญหาและคนที่เดือดร้อน ก็อยากให้มาช่วยกัน
+          แต่สิ่งสำคัญที่สุดคือต้อง “จริงใจ” แล้วก็ไม่มีผลประโยชน์ แอบแฝง "
         </blockquote>
         <p class="italic">ปวีณา กล่าว</p>
       </div>
     </div>
 
     <section class="section relative">
-      <div class="absolute left-1/2 -translate-x-1/2 translate-y-[30%] [ChakraPetch-Regular] text-white text-center">สำรวจบนโลก Social Networks คนก็พูดถึงประเด็นที่เดือดร้อน แล้วก็ตำรวจเยอะ มีกว่า 1 ล้านกว่าโพสต์ ในช่วงระหว่างเดือน มิ.ย. - ก.ค. 68</div>
+      <div class="absolute left-1/2 -translate-x-1/2 translate-y-[30%] [ChakraPetch-Regular] text-white text-center">
+        สำรวจบนโลก Social Networks คนก็พูดถึงประเด็นที่เดือดร้อน
+        แล้วก็ตำรวจเยอะ มีกว่า 1 ล้านกว่าโพสต์ ในช่วงระหว่างเดือน มิ.ย. - ก.ค.
+        68
+      </div>
       <div class="flourish-embed flourish-word-cloud" data-src="visualisation/24458299">
         <script src="https://public.flourish.studio/resources/embed.js"></script>
         <noscript>
-          <img src="https://public.flourish.studio/visualisation/24458299/thumbnail" width="100%" alt="word-cloud visualization" />
+          <img src="https://public.flourish.studio/visualisation/24458299/thumbnail" width="100%"
+            alt="word-cloud visualization" />
         </noscript>
       </div>
     </section>
@@ -1324,37 +2498,66 @@
       </a>
 
       <a href="https://www.facebook.com/HKS2017" target="_blank">
-        <div class="absolute rotate-[4deg] right-[240px] top-[1303px] w-[80px] h-[20px] z-20 bg-red-500 opacity-50"></div>
+        <div class="absolute rotate-[4deg] right-[240px] top-[1303px] w-[80px] h-[20px] z-20 bg-red-500 opacity-50">
+        </div>
       </a>
       <a href="https://www.youtube.com/@honekrasaeofficial" target="_blank">
-        <div class="absolute rotate-[4deg] right-[188px] top-[1328px] w-[140px] h-[20px] z-20 bg-red-500 opacity-50"></div>
+        <div class="absolute rotate-[4deg] right-[188px] top-[1328px] w-[140px] h-[20px] z-20 bg-red-500 opacity-50">
+        </div>
       </a>
       <a href="https://www.tiktok.com/@honekrasae_official" target="_blank">
-        <div class="absolute rotate-[4deg] right-[200px] top-[1353px] w-[140px] h-[20px] z-20 bg-red-500 opacity-50"></div>
+        <div class="absolute rotate-[4deg] right-[200px] top-[1353px] w-[140px] h-[20px] z-20 bg-red-500 opacity-50">
+        </div>
       </a>
 
       <a href="https://www.facebook.com/ThaiPBSMissingPerson" target="_blank">
-        <div class="absolute -rotate-[7deg] right-[505px] top-[1535px] w-[150px] h-[20px] z-20 bg-red-500 opacity-50"></div>
+        <div class="absolute -rotate-[7deg] right-[505px] top-[1535px] w-[150px] h-[20px] z-20 bg-red-500 opacity-50">
+        </div>
       </a>
     </section>
 
     <section id="section-credit" class="relative section h-[900px] bg-transparent">
       <div class="absolute left-1/2 bottom-0 -translate-x-1/2 -translate-y-[10%] font-[Kanit-Regular] text-lg">
         <h3 class="font-bold">คณะผู้จัดทำ</h3>
-        <div>เรียบเรียงเนื้อหา: ดารินทร์ หอวัฒนกุล, ธีรนันท์ ขันตี, คทาวุธ แช่ม, พิกุลทิพย์ ยุระพันธุ์</div>
-        <div>ออกแบบ: <a class="underline" href="https://www.linkedin.com/in/anchisa-watthanapirom-137396320/" target="_blank">อัญชิสา วัฒนภิรมย์</a>, <a class="underline" href="https://www.linkedin.com/in/boonyavee-thanabumrung/" target="_blank">บุณยวีร์ ฐานะบำรุง</a>, <a class="underline" href="https://www.linkedin.com/in/somruetai-boonma-8096a7211/" target="_blank">สมฤทัย บุญมา</a></div>
-        <div>พัฒนา: <a class="underline" href="https://github.com/zkan/" target="_blank">กานต์ อุ่ยวิรัช</a></div>
+        <div>
+          เรียบเรียงเนื้อหา: ดารินทร์ หอวัฒนกุล, ธีรนันท์ ขันตี, คทาวุธ แช่ม,
+          พิกุลทิพย์ ยุระพันธุ์
+        </div>
+        <div>
+          ออกแบบ:
+          <a class="underline" href="https://www.linkedin.com/in/anchisa-watthanapirom-137396320/"
+            target="_blank">อัญชิสา วัฒนภิรมย์</a>,
+          <a class="underline" href="https://www.linkedin.com/in/boonyavee-thanabumrung/" target="_blank">บุณยวีร์
+            ฐานะบำรุง</a>,
+          <a class="underline" href="https://www.linkedin.com/in/somruetai-boonma-8096a7211/" target="_blank">สมฤทัย
+            บุญมา</a>
+        </div>
+        <div>
+          พัฒนา:
+          <a class="underline" href="https://github.com/zkan/" target="_blank">กานต์ อุ่ยวิรัช</a>
+        </div>
         <div class="h-4"></div>
-        <div>เว็บไซต์นี้เป็นส่วนหนึ่งของโครงการ Data Journalism for Investigative Reporting 2025</div>
-        <div>จัดทำโดย <a class="underline" href="https://tja.or.th/" target="_blank">สมาคมนักข่าวนักหนังสือพิมพ์แห่งประเทศไทย</a> x <a class="underline" href="https://odds.team/" target="_blank">ODDS-TEAM</a></div>
+        <div>
+          เว็บไซต์นี้เป็นส่วนหนึ่งของโครงการ Data Journalism for Investigative
+          Reporting 2025
+        </div>
+        <div>
+          จัดทำโดย
+          <a class="underline" href="https://tja.or.th/" target="_blank">สมาคมนักข่าวนักหนังสือพิมพ์แห่งประเทศไทย</a>
+          x
+          <a class="underline" href="https://odds.team/" target="_blank">ODDS-TEAM</a>
+        </div>
         <div class="h-4"></div>
         <div>
           ขอบคุณข้อมูลจาก
           <a class="underline" href="https://www.oja.go.th" target="_blank">สำนักงานกิจการยุติธรรม</a>,
           <a class="underline" href="https://www.coj.go.th" target="_blank">สำนักงานศาลยุติธรรม</a>,
-          <a class="underline" href="https://www3.ago.go.th/information" target="_blank">สำนักงานอัยการพิเศษฝ่ายสารสนเทศ</a>,
-          <a class="underline" href="http://thaicrimes.org" target="_blank">กองแผนงานอาชญากรรม สำนักงานตำรวจแห่งชาติ</a>,
-          <a class="underline" href="http://www.damrongdhama.moi.go.th" target="_blank">ศูนย์ดำรงธรรม กระทรวงมหาดไทย</a>,
+          <a class="underline" href="https://www3.ago.go.th/information"
+            target="_blank">สำนักงานอัยการพิเศษฝ่ายสารสนเทศ</a>,
+          <a class="underline" href="http://thaicrimes.org" target="_blank">กองแผนงานอาชญากรรม
+            สำนักงานตำรวจแห่งชาติ</a>,
+          <a class="underline" href="http://www.damrongdhama.moi.go.th" target="_blank">ศูนย์ดำรงธรรม
+            กระทรวงมหาดไทย</a>,
           <a class="underline" href="https://www.facebook.com/HKS2017" target="_blank">เพจโหนกระแส</a>
         </div>
       </div>
@@ -1367,33 +2570,35 @@
     };
 
     const observer1 = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.add("opacity-100", "translate-y-0");
         }
       });
     }, options);
-    document.querySelectorAll('.fade-in-on-scroll').forEach(el => observer1.observe(el));
+    document
+      .querySelectorAll(".fade-in-on-scroll")
+      .forEach((el) => observer1.observe(el));
 
-    const observer2 = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+    const observer2 = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const el = entry.target;
-          const target = +el.getAttribute('data-target');
+          const target = +el.getAttribute("data-target");
           let current = 0;
           const step = Math.ceil(target / 45);
 
           const updateCount = () => {
             current += step;
-            console.log(current)
+            console.log(current);
             if (current >= target) {
               el.textContent = target.toLocaleString();
             } else {
               el.innerHTML = current
                 .toString()
-                .split('')
-                .map(d => `<span>${d}</span>`)
-                .join('');
+                .split("")
+                .map((d) => `<span>${d}</span>`)
+                .join("");
               requestAnimationFrame(updateCount);
             }
           };
@@ -1402,7 +2607,9 @@
         }
       });
     }, options);
-    document.querySelectorAll('.spin-count').forEach(el => observer2.observe(el));
+    document
+      .querySelectorAll(".spin-count")
+      .forEach((el) => observer2.observe(el));
 
     // Typing
     const text = "เราเลื่อนลงไปดูสถิติ และอ่านบทสัมภาษณ์กัน";
@@ -1417,14 +2624,38 @@
       }
     }
     const observer3 = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           typeChar();
         }
       });
     }, options);
-    document.querySelectorAll('#typing').forEach(el => observer3.observe(el));
-  </script>
+    document
+      .querySelectorAll("#typing")
+      .forEach((el) => observer3.observe(el));
 
+    // Modal stuff
+    const modal = document.getElementById("interview-attorney");
+    const openBtn = document.getElementById("interview-attorney-open"); // Assuming you have an open button
+    const closeBtn = document.getElementById("interview-attorney-close");
+
+    // Open the modal
+    openBtn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // Close the modal when clicking the close button
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    // Close the modal when clicking outside of the modal content
+    modal.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
 </body>
+
 </html>
