@@ -144,16 +144,9 @@
       background-size: contain;
     }
 
-    #section-credit {
-      background-image: url("assets/images/credit.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .section {
+    /* .section {
       scroll-snap-align: start;
-    }
+    } */
 
     /* Modal container */
     .modal {
@@ -2537,14 +2530,16 @@
     <section id="section-proposing-four-reforms" class="section h-[1900px] bg-transparent">
     </section>
 
-    <section id="section-potential-solutions" class="section h-[800px] bg-transparent">
+    <section id="section-potential-solutions" class="section h-screen bg-transparent">
       <div class="flex font-[ChakraPetch-SemiBold] text-6xl text-white justify-center translate-y-[50%]">
         ทางออกเพื่อแก้ปัญหา
       </div>
     </section>
 
-    <section id="section-credit" class="relative section h-[1850px] bg-transparent">
-      <div class="absolute left-1/2 bottom-0 -translate-x-1/2 -translate-y-[10%] font-[Kanit-Regular] text-lg">
+    <section id="section-credit" class="relative section h-screen bg-transparent">
+      <image src="assets/images/credit.png" class="w-screen h-[100vh] object-cover"></image>
+      <div
+        class="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-[60%] font-[Kanit-Regular] text-lg bg-white w-screen h-auto px-96 pb-8">
         <h3 class="font-bold text-2xl">คณะผู้จัดทำ</h3>
         <div class="h-4"></div>
         <div>
